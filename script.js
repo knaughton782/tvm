@@ -1,4 +1,22 @@
 $(document).ready(function() {
+
+    var continueBtn = $("#continue");
+    function chgSlides() {
+        $("#slide1").hide();
+        $("#slide2").show();
+
+    }
+    $(continueBtn).click(chgSlides);
+    
+    
+    
+    
+    
+    
+    ////// slide 2 content switching functionality ////////////////////
+
+    //TODO: refactor to shorter code with one button functionality rather than per button
+
     var intro = $("#intro");
     var learningObj = $("#learningObj");
     var prereqs = $("#prereqs");
@@ -40,4 +58,11 @@ $(document).ready(function() {
         requirements.show();
     }
     $("#reqsB").click(addRequirements);
+/////////////////////////////////////////////////
+
+
+
+
+
+
 });
