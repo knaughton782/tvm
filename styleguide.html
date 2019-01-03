@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Time Value of Money</title>
+</head>
+
+<body class="indent">
+<h1 class="indent">Colors</h1>
+    <!----------------------------------------
+           *** COLORS ***
+        ---------------------------------------->
+    <ul class="indent">
+        <li>Future Value green text: #4fa135;</li>
+        <li>Regular text, general button background, title background in title/cover slide: #292929;</li>
+        <li>Content slide title section background: rgba(139, 144, 147, .5);</li>
+        <li>Web Page background: #DcDcDc;</li>
+        <li>Slide background: #e9e9e9;</li>
+        <li>Slide border: #A9A9A9;</li>
+        <li>Box shadow: 2px 2px 15px #292929;</li>
+    </ul>
+
+
+    <!----------------------------------------
+           *** TITLE SLIDE SKELETON ***
+        ---------------------------------------->
+
+
+    <code>
+        <div id="slide#" class="slide">
+            <!-- NOTE: change slide # to match new slide number. Add class for background image if needed. -->
+            <div class="titlePageHeadline">
+                <h1>Primary Title</h1>
+                <h2>Secondary Title</h2>
+            </div>
+            <div class="buttonSection">
+                <button type="button" id="continue" class="continueBtn">Get Started!</button>
+            </div>
+    
+        </div>
+    </code>
+
+
+
+    <!----------------------------------------
+           *** CONTENT SLIDE SKELETON - NO LEFT VERTICAL BUTTON MENU ***
+        ---------------------------------------->
+
+
+    <div id="slide#" class="slide">
+        <!-- NOTE: change slide # to match new slide number. -->
+        <div class="titleSection">
+            <div class="titleBar">
+                <h2 class="primaryTitle">TVM: The Basics</h2>
+                <h3 class="secondaryTitle">Introduction</h3>
+            </div>
+        </div>
+        <div class="contentSectionNoVertBtns">
+
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="buttonSection">
+
+            <!-- BACK BUTTON -->
+            <button type="button" id="back" class="backBtn">Back</button>
+
+            <!-- CONTINUE BUTTON -->
+            <button class="continueBtn" type="button">Continue</button>
+        </div>
+    </div>
+
+
+    <!----------------------------------------
+           *** CONTENT SLIDE SKELETON - HAS LEFT VERTICAL BUTTON MENU ***
+        ---------------------------------------->
+
+    <div id="slide#" class="slide">
+        <div class="titleSection">
+            <div class="titleBar">
+                <h2 class="primaryTitle">TVM: The Basics</h2>
+                <h3 class="secondaryTitle">Introduction</h3>
+            </div>
+        </div>
+
+        <div class="contentSectionVertBtns">
+            <p></p>
+            <div class="leftVerticalButtons">
+                <!-- //TODO: buttons need active states -->
+                <button type="button" id="introB">Introduction</button>
+                <button type="button" id="learningObjB">Learning Objectives</button>
+                <button type="button" id="prereqsB">Prereqs</button>
+                <button type="button" id="reqsB">Requirements</button>
+            </div>
+            <!-- initial state of slide defaults to ___________ -->
+            <div id="intro" class="rightContent">
+                <h3 class="contentTitle">Title</h3>
+                <p>Content</p>
+            </div>
+            <div id="learningObj" class="rightContent">
+                <h3 class="contentTitle">Title</h3>
+                <p>Content</p>
+            </div>
+            <div id="prereqs" class="rightContent">
+                <h3 class="contentTitle">Title</h3>
+                <p>Content</p>
+                <p>Contact your
+                    instructor if you need
+                    additional help.</p>
+            </div>
+            <div id="requirements" class="rightContent">
+                <h3 class="contentTitle">Title</h3>
+                <p>Content
+                </p>
+                <p>Once you have everything you need, let’s get started!</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="buttonSection">
+
+            <!-- BACK BUTTON -->
+            <button type="button" id="back" class="backBtn">Back</button>
+
+            <!-- CONTINUE BUTTON -->
+            <button class="continueBtn" type="button">Continue</button>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+        </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

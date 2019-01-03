@@ -146,5 +146,20 @@ p {
 }
 
 .greenText {
-    
+    color: #4fa135;
 }
+
+/********* SLIDE SIX BUTTON STYLES *********/
+button {
+    color: #fff;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    width: 125px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 15px #292929;
+    margin: 10px;
+}
+/***********************************************/
