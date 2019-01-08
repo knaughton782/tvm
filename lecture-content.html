@@ -42,10 +42,10 @@
             <div class="contentSectionVertBtns">
                 <div class="leftVerticalButtons">
                     <!-- //TODO: buttons need active states -->
-                    <button type="button" id="introB">Introduction</button>
-                    <button type="button" id="learningObjB">Learning Objectives</button>
-                    <button type="button" id="prereqsB">Prereqs</button>
-                    <button type="button" id="reqsB">Requirements</button>
+                    <button type="button" id="introBtn">Introduction</button>
+                    <button type="button" id="learningObjBtn">Learning Objectives</button>
+                    <button type="button" id="prereqsBtn">Prereqs</button>
+                    <button type="button" id="reqsBtn">Requirements</button>
                 </div>
                 <!-- slide 2, initial state defaults to intro button -->
                 <div id="intro" class="rightContent">
@@ -68,7 +68,7 @@
                                 assuming
                                 annual interest</li>
                         </ul>
-                    </p>
+
                 </div>
                 <div id="prereqs" class="rightContent">
                     <h3 class="contentTitle">Prereqs</h3>
@@ -78,7 +78,8 @@
                                 FOIL</li>
                         </ul>
                     </p>
-                    <p>TVM may require you to dust off some math skills that you haven’t used in a while. Contact your
+                    <p>TVM may require you to dust off some math skills that you haven’t used in a while. Contact
+                        your
                         instructor if you need
                         additional help.</p>
                 </div>
@@ -106,8 +107,8 @@
             </div>
         </div>
 
-        <!----------------- SLIDE THREE, Content Slide --------------->
 
+        <!----------------- SLIDE THREE, Content Slide --------------->
 
         <div id="slide3" class="slide">
             <div class="titleSection">
@@ -139,6 +140,7 @@
             </div>
 
         </div>
+
 
         <!---------------- SLIDE FOUR, content slide -------------------------->
         <div id="slide4" class="slide">
@@ -204,6 +206,7 @@
             </div>
         </div>
 
+
         <!----------------------------------------
                    *** SLIDE SIX - content - HAS LEFT VERTICAL BUTTON MENU ***
                 ---------------------------------------->
@@ -217,33 +220,45 @@
             </div>
 
             <div class="contentSectionVertBtns">
-                <p class="indent">What factors would you consider in determining how much <span class="greenText">(Future
+                <p class="indent">What factors would you consider in determining how much <span class="futureValue">(Future
                         Value or FV)</span> the customer should pay at a later date?</p>
                 <div class="leftVerticalButtons">
                     <!-- //TODO: buttons need active states -->
-                    <button type="button" id="presentValueB">Present Value (PV)</button>
-                    <button type="button" id="timeB">Time (N)</button>
-                    <button type="button" id="interestB">Interest (i)</button>
+                    <button type="button" id="presentValueBtn" class="presentValue">Present Value (PV)</button>
+                    <button type="button" id="timeBtn" class="time">Time (N)</button>
+                    <button type="button" id="interestBtn" class="interest">Interest (i)</button>
+                </div>
 
+                <!-- initial state of slide defaults to information about variable definitions -->
+                <div id="defaultCondition" class="rightContent">
+                    <h3 class="contentTitle"></h3>
+                    <p>Click on each of the variables to the left to find the definition.</p>
+                    <p>Please note: these colors will be used throughout the tutorials to define the variables.</p>
+                    <ul>
+                        <li class="futureValue">Future Value (FV): Green</li>
+                        <li class="presentValue">Present Value (PV): Orange</li>
+                        <li class="time">Time (N): Purple</li>
+                        <li class="interest">Interest (i): Pink</li>
+                    </ul>
                 </div>
-                <!-- initial state of slide defaults to ___________ -->
-                <div id="intro" class="rightContent">
-                    <h3 class="contentTitle">Title</h3>
-                    <p>Content</p>
+                
+                <div id="presentValue" class="rightContent">
+                    <h3 class="contentTitle presentValue">Present Value (PV)</h3>
+                    <p>How much is being borrowed?</p>
+                    <p>Present Value (PV) is the value in today's terms.</p>
                 </div>
-                <div id="learningObj" class="rightContent">
-                    <h3 class="contentTitle">Title</h3>
-                    <p>Content</p>
+                
+                <div id="time" class="rightContent">
+                    <h3 class="contentTitle time">Time (N)</h3>
+                    <p>How long before the customer pays?</p>
+                    <p>Time (N) is the measure of time in years.</p>
                 </div>
-                <div id="prereqs" class="rightContent">
-                    <h3 class="contentTitle">Title</h3>
-                    <p>Content</p>
-                    <p>Contact your instructor if you need additional help.</p>
-                </div>
-                <div id="requirements" class="rightContent">
-                    <h3 class="contentTitle">Title</h3>
-                    <p>Content</p>
-                    <p>Once you have everything you need, let’s get started!</p>
+                <div id="interest" class="rightContent">
+                    <h3 class="contentTitle interest">Interest (i)</h3>
+                    <p>What is the risk that the customer will not be able to pay the account at a later date? What
+                        else could your company do with the money if the customer paid now? If the loan is long enough,
+                        will inflation further erode the value of tomorrow's dollar?</p>
+                    <p>Interest (i) is the rate of return, compensating for risk and opportunity cost.</p>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -257,8 +272,7 @@
             </div>
         </div>
 
-        </p>
-    </div>
+    </div> <!-- End of allSlides div -->
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

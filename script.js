@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    //switchContent();
+
 /****************** BACK / CONTINUE BUTTON FUNCTIONALITY ********************/
 
     // hide all slides except first slide
@@ -30,63 +32,132 @@ $(document).ready(function() {
         }
         return false;
     });
-    
 /****************** END Back / Continue Button Functionality ********************/
     
+    
+    
+/****************** slide 2 content switching functionality ********************/
+
+    //TODO: refactor to shorter code with one button functionality rather than per button and then further with one function for content switching
+
+    // default state of slide 2
         
-    
-    
-    
-    
-    
-    ////// slide 2 content switching functionality ////////////////////
+    // function switchContent() {
+    //     var intro = $("#intro");
+    //     var learningObj = $("#learningObj");
+    //     var prereqs = $("#prereqs");
+    //     var requirements = $("#requirements");
 
-    //TODO: refactor to shorter code with one button functionality rather than per button
-
+    //     intro.show();
+    //     learningObj.hide();
+    //     prereqs.hide();
+    //     requirements.hide();
+        
+    //     if ($("#introB").click()) {
+    //         intro.show();
+    //         learningObj.hide();
+    //         prereqs.hide();
+    //         requirements.hide();
+    //     } else if ($("#learningObjB").click()) {
+    //         intro.hide();
+    //         learningObj.show();
+    //         prereqs.hide();
+    //         requirements.hide();
+    //     } else if ($("#prereqsB").click()) {
+    //         intro.hide();
+    //         learningObj.hide();
+    //         prereqs.show();
+    //         requirements.hide();
+    //     } else if ($("#reqsB").click()) {
+    //         intro.hide();
+    //         learningObj.hide();
+    //         prereqs.hide();
+    //         requirements.show();
+    //     }
+    //}
+    
+/****************** slide 2 content switching functionality ********************/
     var intro = $("#intro");
     var learningObj = $("#learningObj");
     var prereqs = $("#prereqs");
     var requirements = $("#requirements");
 
-        intro.show();
-        learningObj.hide();
-        prereqs.hide();
-        requirements.hide();
+    intro.show().addClass("selected");
+    learningObj.hide();
+    prereqs.hide();
+    requirements.hide();
 
-    function addIntro(){
-        intro.show();
+    function addIntro() {
+        intro.show().addClass("selected");
         learningObj.hide();
         prereqs.hide();
         requirements.hide();
     }
-    $("#introB").click(addIntro);
+    $("#introBtn").click(addIntro);
 
-    function addlearningObj(){
+    function addlearningObj() {
         intro.hide();
-        learningObj.show();
+        learningObj.show().addClass("selected");
         prereqs.hide();
         requirements.hide();
     }
-    $("#learningObjB").click(addlearningObj);
+    $("#learningObjBtn").click(addlearningObj);
 
-    function addPrereqs(){
-        intro.hide();
-        learningObj.hide();
-        prereqs.show();
-        requirements.hide();
-    }
-    $("#prereqsB").click(addPrereqs);
-
-    function addRequirements(){
+    function addPrereqs() {
         intro.hide();
         learningObj.hide();
-        prereqs.hide();
-        requirements.show();
+        prereqs.show().addClass("selected");
+        requirements.hide();
     }
-    $("#reqsB").click(addRequirements);
+    $("#prereqsBtn").click(addPrereqs);
+
+    function addRequirements() {
+        intro.hide();
+        learningObj.hide();
+        prereqs.hide();
+        requirements.show().addClass("selected");
+    }
+    $("#reqsBtn").click(addRequirements);
 /////////////////////////////////////////////////
 
+/****************** end slide 2 content switching ********************/
 
+/****************** slide 6 content switching functionality ********************/
+    var defaultCondition = $("#defaultCondition");
+    var presentValue = $("#presentValue");
+    var time = $("#time");
+    var interest = $("#interest");
+
+    defaultCondition.show();
+    presentValue.hide();
+    time.hide();
+    interest.hide();
+
+    function addPV() {
+        defaultCondition.hide();
+        presentValue.show();
+        time.hide();
+        interest.hide();
+    }
+    $("#presentValueBtn").click(addPV);
+
+    function addTime() {
+        defaultCondition.hide();
+        presentValue.hide();
+        time.show();
+        interest.hide();
+    }
+    $("#timeBtn").click(addTime);
+
+    function addInterest() {
+        defaultCondition.hide();
+        presentValue.hide();
+        time.hide();
+        interest.show();
+    }
+    $("#interestBtn").click(addInterest);
+
+/****************** end slide 6 content switching ********************/
 
 
 

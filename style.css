@@ -118,6 +118,21 @@ button {
     box-shadow: 2px 2px 15px #292929;
     margin: 10px;
 }
+
+button:hover {
+    background-color: #2e0606;
+}
+
+button:active {
+    background-color: #5c5b5b;
+}
+
+button:focus {
+    background-color: #5c5b5b;
+}
+
+
+
 /***********************************************/
 
 
@@ -145,21 +160,37 @@ p {
     margin-bottom: 25px;
 }
 
-.greenText {
+.futureValue {
     color: #4fa135;
 }
 
-/********* SLIDE SIX BUTTON STYLES *********/
-button {
-    color: #fff;
-    padding: 15px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    width: 125px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 15px #292929;
-    margin: 10px;
+.time {
+    color: #5a2db7;
 }
+
+.presentValue {
+    color: #ff7c25;
+}
+
+.interest {
+    color: #ff679f;
+}
+/********* SLIDE SIX BUTTON STYLES *********/
+
+
+button.presentValue {
+    background-color: #ff7c25;
+    color: #292929;
+}
+
+button.time {
+    background-color: #5a2db7;
+    color: #fff;
+}
+
+button.interest {
+    background-color: #ff679f;
+    color: #fff;
+}
+
 /***********************************************/
