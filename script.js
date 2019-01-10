@@ -4,12 +4,12 @@ $(document).ready(function() {
 
 /************* BACK / CONTINUE BUTTON FUNCTIONALITY / Page 1 ***************/
 
-    // hide all slides except first slide
-    // $(".allSlides .slide").each(function(e) {
-    //     if (e !=0) {
-    //         $(this).hide();
-    //     }
-    // });
+    //hide all slides except first slide
+    $(".allSlides .slide").each(function(e) {
+        if (e !=0) {
+            $(this).hide();
+        }
+    });
 
     // for each click on the continue button, hide the current slide and show the next one
     $(".continueBtn").click(function() {
