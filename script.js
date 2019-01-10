@@ -2,14 +2,14 @@ $(document).ready(function() {
 
     //switchContent();
 
-/****************** BACK / CONTINUE BUTTON FUNCTIONALITY ********************/
+/************* BACK / CONTINUE BUTTON FUNCTIONALITY / Page 1 ***************/
 
     // hide all slides except first slide
-    $(".allSlides .slide").each(function(e) {
-        if (e !=0) {
-            $(this).hide();
-        }
-    });
+    // $(".allSlides .slide").each(function(e) {
+    //     if (e !=0) {
+    //         $(this).hide();
+    //     }
+    // });
 
     // for each click on the continue button, hide the current slide and show the next one
     $(".continueBtn").click(function() {
@@ -32,7 +32,39 @@ $(document).ready(function() {
         }
         return false;
     });
-/****************** END Back / Continue Button Functionality ********************/
+/************ END Back / Continue Button Functionality ****************/
+
+    /********* BACK / CONTINUE BUTTON FUNCTIONALITY / Page 2 ***********/
+
+    // hide all slides except first slide
+    // $(".allSlidesPage2 .slide").each(function(e) {
+    //     if (e !=0) {
+    //         $(this).hide();
+    //     }
+    // });
+
+    // for each click on the continue button, hide the current slide and show the next one
+    $(".continueBtn").click(function () {
+        if ($(".allSlidesPage2 .slide:visible").next().length != 0) {
+            $(".allSlidesPage2 .slide:visible").next().show().prev().hide();
+        } else {
+            $(".allSlidesPage2 .slide:visible").hide();
+            $(".allSlidesPage2 .slide:first").show();
+        }
+        return false;
+    });
+
+    // for each click on the back button, hide the current slide and show the previous one
+    $(".backBtn").click(function () {
+        if ($(".allSlidesPage2 .slide:visible").prev().length != 0) {
+            $(".allSlidesPage2 .slide:visible").prev().show().next().hide();
+        } else {
+            $(".allSlidesPage2 .slide:visible").hide();
+            $(".allSlidesPage2 .slide:last").show();
+        }
+        return false;
+    });
+/********** END Back / Continue Button Functionality *************/
     
     
     

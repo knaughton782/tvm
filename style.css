@@ -23,6 +23,10 @@ body {
     
 }
 
+.helpSlide {
+    background-color: #ffebd3;
+}
+
 .clearfix {
     clear: both;
 }
@@ -81,6 +85,14 @@ right content ****/
     position: absolute;
     bottom: 35px;
     right: 180px;
+    
+}
+
+.helpBtn {
+    position: absolute;
+    bottom: 35px;
+    right: 180px;
+    background-color: #520a0a;
 }
 /***********************************************/
 
@@ -165,32 +177,44 @@ p {
 }
 
 .time {
-    color: #5a2db7;
+    color: #7546d2;
 }
 
 .presentValue {
-    color: #ff7c25;
+    /* color: #ff7c25; */
+    color: #ff6600;
 }
 
 .interest {
-    color: #ff679f;
+    /* color: #ff679f; */
+    color: #ff1a6e;
+}
+
+.faded {
+    color: #706f6f;
 }
 /********* SLIDE SIX BUTTON STYLES *********/
 
 
 button.presentValue {
-    background-color: #ff7c25;
+    /* background-color: #ff7c25; */
+    background-color: #ff6600;
     color: #292929;
 }
 
 button.time {
-    background-color: #5a2db7;
+    background-color: #7546d2;
     color: #fff;
 }
 
 button.interest {
-    background-color: #ff679f;
+    /* background-color: #ff679f; */
+    background-color: #ff1a6e;
     color: #fff;
 }
 
 /***********************************************/
+
+.noDecoration {
+    text-decoration: none;
+}
