@@ -1,0 +1,51 @@
+
+/********* BUTTON STYLES *********/
+button {
+    background-color: #292929;
+    color: #fff;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    width: 125px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 15px #292929;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #2e0606;
+}
+
+button:active {
+    background-color: #5c5b5b;
+}
+
+button:focus {
+    background-color: #5c5b5b;
+}
+
+/***********************************************/
+
+/********* SLIDE SIX BUTTON STYLES *********/
+
+
+button.presentValue {
+    /* background-color: #ff7c25; */
+    background-color: #ff6600;
+    color: #292929;
+}
+
+button.time {
+    background-color: #7546d2;
+    color: #fff;
+}
+
+button.interest {
+    /* background-color: #ff679f; */
+    background-color: #ff1a6e;
+    color: #fff;
+}
+
+/***********************************************/
