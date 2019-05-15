@@ -1,5 +1,8 @@
 
 /********* BUTTON STYLES *********/
+
+/* general button style */
+
 button {
     background-color: #292929;
     color: #fff;
@@ -14,6 +17,26 @@ button {
     margin: 10px;
 }
 
+.continueBtn {
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+}
+
+.backBtn {
+    position: absolute;
+    bottom: 35px;
+    right: 180px;
+    
+}
+
+.helpBtn {
+    position: absolute;
+    bottom: 35px;
+    right: 180px;
+    background-color: #520a0a;
+}
+
 button:hover {
     background-color: #2e0606;
 }
@@ -25,11 +48,11 @@ button:active {
 button:focus {
     background-color: #5c5b5b;
 }
-
 /***********************************************/
 
-/********* SLIDE SIX BUTTON STYLES *********/
 
+
+/********* SLIDE SIX BUTTON STYLES *********/
 
 button.presentValue {
     /* background-color: #ff7c25; */

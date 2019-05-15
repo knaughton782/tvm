@@ -43,9 +43,7 @@ body {
     display: block;
 }
 
-/**** for slides with 
-left menu buttons and 
-right content ****/
+/**** for slides with left menu buttons and right content ****/
 .leftVerticalButtons {
     float: left;
     width: 25%;
@@ -58,41 +56,22 @@ right content ****/
     width: 60%;
     margin: 40px 45px 40px 30px;
 }
-/************************/
+/*********************************************************/
 
-.contentSectionVertBtns {
-    
-}
+/* .contentSectionVertBtns {
+    For slides that need additional styles for vertical menu buttons
+} */
+
 .contentSectionNoVertBtns {
     margin: 45px 40px;
 }
 
-.buttonSection {
-
-}
+/* .buttonSection {
+For slides that need additional styles for vertical menu buttons
+} */
 
 .primaryTitle {
     padding-top: 10px;
-}
-
-.continueBtn {
-    position: absolute;
-    bottom: 35px;
-    right: 35px;
-}
-
-.backBtn {
-    position: absolute;
-    bottom: 35px;
-    right: 180px;
-    
-}
-
-.helpBtn {
-    position: absolute;
-    bottom: 35px;
-    right: 180px;
-    background-color: #520a0a;
 }
 /***********************************************/
 
@@ -109,7 +88,8 @@ right content ****/
     padding: 10px 35px;
 }
 
-/* .backgroundImage {
+/*  If a slide needs a background image
+.backgroundImage {
     background-image: url('./images/money.jpg');
     
 } */
@@ -122,3 +102,17 @@ right content ****/
     margin: 25px auto;
 }
 /***********************************************/
+
+/****************** General slide styles ************/
+
+.indent {
+    margin: 5px 25px;
+}
+
+li {
+    margin: 0 0 0 30px;
+}
+
+p {
+    margin-bottom: 25px;
+}
