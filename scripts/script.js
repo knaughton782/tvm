@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   //switchContent();
 
   /****************** slide 2 content switching functionality ********************/
@@ -124,4 +124,9 @@ $(document).ready(function() {
   $('#interestBtn').click(addInterest);
 
   /****************** end slide 6 content switching ********************/
+});
+
+// toggle active class on buttons
+$("button").click(function () {
+  $(".active").toggleClass("active");
 });
