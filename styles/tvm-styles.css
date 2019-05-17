@@ -15,7 +15,7 @@ body {
     height: 700px;
     margin: 1% auto;
     border: 1px solid rgb(197, 197, 197);
-    background-color: #e9e9e9;
+    /* background-color: #e9e9e9; */
     box-shadow: 5px 10px 18px #888888;
     position: relative;
 }
@@ -29,16 +29,14 @@ body {
 }
 
 /* main title section on slides  */
-.titleSection {
+.slideTitle {
     height: 85px;
     display: block;
-    /* background-color: rgba(139, 144, 147, .5); */
     background-color: rgba(179, 125, 78, .6);
     margin-bottom: 35px;
-    /* padding: 10px 0; */
 }
 
-.titleBar {
+.titleBlock {
     margin: 25px;
     display: block;
 }
@@ -64,24 +62,13 @@ body {
     margin: 40px 45px 40px 30px;
 }
 
-
-/* .contentSectionVertBtns {
-    For slides that need additional styles for vertical menu buttons
-} */
-
 .contentSectionNoVertBtns {
     margin: 45px 40px;
 }
-
-/* .buttonSection {
-For slides that need additional styles for vertical menu buttons
-} */
-
-
 /******* end slide setup *************/
 
 /****** Cover Slide *****************/
-.titlePageHeadline {
+.coverSlideTitle {
     margin-top: 100px;
     padding: 10px 0;
     box-shadow: 5px 10px 18px #888888;
@@ -89,7 +76,7 @@ For slides that need additional styles for vertical menu buttons
     background-color: #438496;
 }
 
-.titlePageHeadline h1, .titlePageHeadline h2{
+.coverSlideTitle h1, .coverSlideTitle h2{
     /* background-color: #292929; */
     color: #fff;
     padding: 10px 35px;
@@ -100,17 +87,17 @@ For slides that need additional styles for vertical menu buttons
     background-position: center;
 } 
 
-/****** End Cover Slide *****************/
+/****** End Cover Slide ****/
 
 
-/******* for CONTENT title area of all content slides **************/
+/** for CONTENT title section  ***/
 
 .contentTitle {
     font-size: 1.5em;
     text-align: center;
     margin: 25px auto;
 }
-/****************** end all slide titles *****************************/
+/*** end all slide titles ***/
 
 /****************** General slide styles ************/
 
@@ -175,11 +162,13 @@ button:hover {
 }
 
 .active, button:active {
-    background-color: #286da8;
+    background-color: #466365;
+    color: #ffffff;
 }
 
 button:focus {
-    background-color: #286da8;
+    background-color: #466365;
+    color: #ffffff;
 }
 /***********************************************/
 

@@ -1,45 +1,4 @@
 $(document).ready(function () {
-  //switchContent();
-
-  /****************** slide 2 content switching functionality ********************/
-
-  //TODO: refactor to shorter code with one button functionality rather than per button and then further with one function for content switching
-
-  // default state of slide 2
-
-  // function switchContent() {
-  //     var intro = $("#intro");
-  //     var learningObj = $("#learningObj");
-  //     var prereqs = $("#prereqs");
-  //     var requirements = $("#requirements");
-
-  //     intro.show();
-  //     learningObj.hide();
-  //     prereqs.hide();
-  //     requirements.hide();
-
-  //     if ($("#introB").click()) {
-  //         intro.show();
-  //         learningObj.hide();
-  //         prereqs.hide();
-  //         requirements.hide();
-  //     } else if ($("#learningObjB").click()) {
-  //         intro.hide();
-  //         learningObj.show();
-  //         prereqs.hide();
-  //         requirements.hide();
-  //     } else if ($("#prereqsB").click()) {
-  //         intro.hide();
-  //         learningObj.hide();
-  //         prereqs.show();
-  //         requirements.hide();
-  //     } else if ($("#reqsB").click()) {
-  //         intro.hide();
-  //         learningObj.hide();
-  //         prereqs.hide();
-  //         requirements.show();
-  //     }
-  //}
 
   /****************** slide 2 content switching functionality ********************/
   var intro = $('#intro');
@@ -84,11 +43,9 @@ $(document).ready(function () {
     requirements.show().addClass('selected');
   }
   $('#reqsBtn').click(addRequirements);
-  /////////////////////////////////////////////////
+  /**** end slide 2 content switching ******/
 
-  /****************** end slide 2 content switching ********************/
-
-  /****************** slide 6 content switching functionality ********************/
+  /****** slide 6 content switching *****/
   var defaultCondition = $('#defaultCondition');
   var presentValue = $('#presentValue');
   var time = $('#time');
@@ -123,10 +80,10 @@ $(document).ready(function () {
   }
   $('#interestBtn').click(addInterest);
 
-  /****************** end slide 6 content switching ********************/
+  /***** end slide 6 content switching ********/
 });
 
 // toggle active class on buttons
 $("button").click(function () {
-  $(".active").toggleClass("active");
+  $("#introBtn").toggleClass("active");
 });
