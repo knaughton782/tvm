@@ -15,13 +15,12 @@ body {
     height: 700px;
     margin: 1% auto;
     border: 1px solid rgb(197, 197, 197);
-    /* background-color: #e9e9e9; */
     box-shadow: 5px 10px 18px #888888;
     position: relative;
 }
 
 .helpSlide {
-    background-color: #ffebd3;
+    background-color: #EADBCE;
 }
 
 .clearfix {
@@ -30,19 +29,19 @@ body {
 
 /* main title section on slides  */
 .slideTitle {
-    height: 85px;
+    height: 90px;
     display: block;
-    background-color: rgba(179, 125, 78, .6);
-    margin-bottom: 35px;
+    background-color: #466365;
+    margin-bottom: 25px;
 }
 
 .titleBlock {
-    margin: 25px;
+    margin: 30px;
     display: block;
 }
 
 .primaryTitle {
-    padding-top: 10px;
+    padding-top: 20px;
     color: #ffffff;
 }
 .secondaryTitle {
@@ -50,16 +49,16 @@ body {
 }
 
 /**** for slides with left menu buttons and right content ****/
-.leftVerticalButtons {
+.btn-group-left {
     float: left;
     width: 25%;
-    margin: 10% auto auto 5%;
+    margin: 8% auto auto 5%;
 }
 
 .rightContent {
     float: left;
     width: 60%;
-    margin: 40px 45px 40px 30px;
+    margin: 30px 45px 40px 30px;
 }
 
 .contentSectionNoVertBtns {
@@ -72,12 +71,10 @@ body {
     margin-top: 100px;
     padding: 10px 0;
     box-shadow: 5px 10px 18px #888888;
-    /* background-color: #292929; */
-    background-color: #438496;
+    background-color: #466365;
 }
 
 .coverSlideTitle h1, .coverSlideTitle h2{
-    /* background-color: #292929; */
     color: #fff;
     padding: 10px 35px;
 }
@@ -119,9 +116,8 @@ p {
 
 /* general button style */
 
-button {
-    background-color: #438496;
-    /* background-color: #292929; */
+.btn {
+    background-color: #466365;
     color: #fff;
     padding: 15px 15px;
     text-align: center;
@@ -151,25 +147,26 @@ button {
     position: absolute;
     bottom: 35px;
     right: 180px;
-    background-color: #520a0a;
+    background-color: #CC444B;
 }
 
 button:hover {
-    /* background-color: #2e0606; */
-    /* background-color: #b37d4e; */
-    background-color: rgba(179, 125, 78, .6);
-    color: #444444;
+    background-color: #b37d4e;
 }
 
-.active, button:active {
-    background-color: #466365;
-    color: #ffffff;
+button:active {
+    background-color: #bfc3ba;
+    color: #292929;
+}
+.active {
+    background-color: #bfc3ba;
+    color: #292929;
 }
 
-button:focus {
+/* button:focus {
     background-color: #466365;
     color: #ffffff;
-}
+} */
 /***********************************************/
 
 
@@ -202,17 +199,17 @@ button.interest {
 }
 
 .time {
-    color: #7546d2;
+    color: #623cea;
 }
 
 .presentValue {
     /* color: #ff7c25; */
-    color: #ff6600;
+    color: #F79256;
 }
 
 .interest {
     /* color: #ff679f; */
-    color: #ff1a6e;
+    color: #F76F8E;
 }
 
 .faded {
@@ -220,3 +217,13 @@ button.interest {
 }
 
 /* end text styles *************** */
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+}
+.icon {
+    max-width: 75px;
+    max-height: 75px;
+    margin: auto;
+}

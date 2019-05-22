@@ -81,9 +81,21 @@ $(document).ready(function () {
   $('#interestBtn').click(addInterest);
 
   /***** end slide 6 content switching ********/
-});
 
-// toggle active class on buttons
-$("button").click(function () {
-  $("#introBtn").toggleClass("active");
-});
+
+  $('.btn-group-left').on('click', '.btn', function () {
+    $(this).addClass('active').siblings().removeClass('active');
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+}); // end document ready

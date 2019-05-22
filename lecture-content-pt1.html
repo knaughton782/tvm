@@ -23,7 +23,7 @@
                 <h2>Part 1: The Basics</h2>
             </div>
             <div>
-                <button type="button" class="continueBtn">Start!</button>
+                <button type="button" class="continueBtn btn">Start!</button>
             </div>
         </div>
 
@@ -39,12 +39,11 @@
             </div>
             <!-- slide 2 has left vertical button menu -->
             <div class="contentSectionVertBtns">
-                <div class="leftVerticalButtons">
-                    <!-- //TODO: buttons need active states -->
-                    <button type="button" class="active" id="introBtn">Introduction</button>
-                    <button type="button" id="learningObjBtn">Learning Objectives</button>
-                    <button type="button" id="prereqsBtn">Prereqs</button>
-                    <button type="button" id="reqsBtn">Requirements</button>
+                <div class="btn-group-left" role="group">
+                    <button type="button" class="active btn" id="introBtn">Introduction</button>
+                    <button type="button" class="btn" id="learningObjBtn">Learning Objectives</button>
+                    <button type="button" class="btn" id="prereqsBtn">Prereqs</button>
+                    <button type="button" class="btn" id="reqsBtn">Requirements</button>
                 </div>
                 <!-- slide 2, initial state defaults to intro button -->
                 <div id="intro" class="rightContent">
@@ -100,10 +99,10 @@
                 <!-- slide 2 has a continue button at the bottom that takes you to slide 3 TVM Central Concept -->
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn">Back</button>
+                <button type="button" class="backBtn btn">Back</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn" type="button">Continue</button>
+                <button class="continueBtn btn" type="button">Continue</button>
             </div>
         </div>
 
@@ -120,8 +119,11 @@
             <div class="contentSectionNoVertBtns">
                 <p>One of the central concepts of finance is that a dollar today is worth more than a dollar in the
                     future.</p>
-                <!-- //TODO: Replace with three images from Ryan  -->
-                <p style="color: red;">Three small icon images</p>
+                <p class="icons">
+                    <img src="/Users/kirstennaughton/Dropbox/WEBSTER/CODE/time-value-money/tvm/images/time.png" alt="Time" class="icon">
+                    <img src="/Users/kirstennaughton/Dropbox/WEBSTER/CODE/time-value-money/tvm/images/value.png" alt="Value" class="icon">
+                    <img src="/Users/kirstennaughton/Dropbox/WEBSTER/CODE/time-value-money/tvm/images/money-icon.png" alt="Money" class="icon">
+                </p>
                 <p>Intuitively, you already understand that today's dollar is worth more than tomorrow's dollar.
                     Transactions operate on this principle every day.</p>
                 <p>When you don't have enough cash to buy something, you may pay with a credit card; when the bill
@@ -134,9 +136,9 @@
             </div>
             <div class="buttonSection">
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn">Back</button>
+                <button type="button" class="backBtn btn">Back</button>
                 <!-- CONTINUE BUTTON -->
-                <button type="button" class="continueBtn">Continue</button>
+                <button type="button" class="continueBtn btn">Continue</button>
             </div>
 
         </div>
@@ -168,10 +170,10 @@
             <div class="buttonSection">
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn">Back</button>
+                <button type="button" class="backBtn btn">Back</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn" type="button">Continue</button>
+                <button class="continueBtn btn" type="button">Continue</button>
             </div>
         </div>
 
@@ -194,15 +196,15 @@
                     <li>What else could your company do with the money if the customer paid now?</li>
                     <li>If the loan is long enough, will inflation further erode the value of tomorrow's dollar?</li>
                 </ul>
-                <p><strong>Let's attach some variables to these factors.</strong></p>
+                <p><strong>Let's attach some variable names to these factors.</strong></p>
             </div>
             <div class="buttonSection">
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn">Back</button>
+                <button type="button" class="backBtn btn">Back</button>
 
                 <!-- CONTINUE BUTTON  -->
-                <button class="continueBtn" type="button">Continue</button>
+                <button class="continueBtn btn" type="button">Continue</button>
             </div>
         </div>
 
@@ -223,11 +225,10 @@
                 <p class="indent">What factors would you consider in determining how much <span
                         class="futureValue">(Future
                         Value or FV)</span> the customer should pay at a later date?</p>
-                <div class="leftVerticalButtons">
-                    <!-- //TODO: buttons need active states -->
-                    <button type="button" id="presentValueBtn" class="presentValue">Present Value (PV)</button>
-                    <button type="button" id="timeBtn" class="time">Time (N)</button>
-                    <button type="button" id="interestBtn" class="interest">Interest (i)</button>
+                <div class="btn-group-left">
+                    <button type="button" id="presentValueBtn" class="presentValue btn">Present Value (PV)</button>
+                    <button type="button" id="timeBtn" class="time btn">Time (N)</button>
+                    <button type="button" id="interestBtn" class="interest btn">Interest (i)</button>
                 </div>
 
                 <!-- initial state of slide defaults to information about variable definitions -->
@@ -266,10 +267,10 @@
             <div class="buttonSection">
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn">Back</button>
+                <button type="button" class="backBtn btn">Back</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn" type="button">Continue</button>
+                <button class="continueBtn btn" type="button">Continue</button>
             </div>
         </div>
 
@@ -296,10 +297,10 @@
             <div class="buttonSection">
                 <!-- TODO: change class to helpBtn -->
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn helpBtn">I Need Help</button>
+                <button type="button" class="backBtn helpBtn btn">I Need Help</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn" type="button">Continue</button>
+                <button class="continueBtn btn" type="button">Continue</button>
             </div>
         </div>
 
@@ -329,10 +330,10 @@
 
                 <!-- TODO: Update Help button styles with new logic classes -->
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn">Back - I'm good now!</button>
+                <button type="button" class="backBtn btn">Back - I'm good now!</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn" type="button">Keep helping me!</button>
+                <button class="continueBtn btn" type="button">Keep helping me!</button>
             </div>
         </div>
 
@@ -365,10 +366,10 @@
             <div class="buttonSection">
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn">Back</button>
+                <button type="button" class="backBtn btn">Back</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn" type="button">Continue</button>
+                <button class="continueBtn btn" type="button">Continue</button>
             </div>
         </div>
 
@@ -397,10 +398,10 @@
             <div class="buttonSection">
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn">Help</button>
+                <button type="button" class="backBtn btn">Help</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn" type="button">Continue</button>
+                <button class="continueBtn btn" type="button">Continue</button>
             </div>
         </div>
 
@@ -427,10 +428,10 @@
             <div class="buttonSection">
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn">I Need Help</button>
+                <button type="button btn" class="backBtn">I Need Help</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn" type="button">I've got it!</button>
+                <button class="continueBtn btn" type="button">I've got it!</button>
             </div>
         </div>
         <!----------------------------------------
@@ -460,10 +461,10 @@
             <div class="buttonSection">
                 <!-- TODO: Fix classes on all help slides -->
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn">Return to Question</button>
+                <button type="button" class="backBtn btn">Return to Question</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn" type="button">Continue helping me</button>
+                <button class="continueBtn btn" type="button">Continue helping me</button>
             </div>
         </div>
 
@@ -494,10 +495,10 @@
             <div class="buttonSection">
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn">Back - I'm good now!</button>
+                <button type="button" class="backBtn btn">Back - I'm good now!</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button type="button" class="continueBtn">Continue helping me</button>
+                <button type="button" class="continueBtn btn">Continue helping me</button>
             </div>
         </div>
 
@@ -527,10 +528,10 @@
             <div class="buttonSection">
                 <!-- TODO: Fix classes on all help slides -->
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn">Back</button>
+                <button type="button" class="backBtn btn">Back</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button type="button" class="continueBtn">Continue</button>
+                <button type="button" class="continueBtn btn">Continue</button>
             </div>
         </div>
 
@@ -560,10 +561,10 @@
             <div class="buttonSection">
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn">Back</button>
+                <button type="button" class="backBtn btn">Back</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn" type="button">Continue</button>
+                <button class="continueBtn btn" type="button">Continue</button>
             </div>
         </div>
 
@@ -597,10 +598,10 @@
             <div class="buttonSection">
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn">Back</button>
+                <button type="button" class="backBtn btn">Back</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn" type="button">Continue</button>
+                <button class="continueBtn btn" type="button">Continue</button>
             </div>
         </div>
 
@@ -633,10 +634,10 @@
             <div class="buttonSection">
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn">Back</button>
+                <button type="button" class="backBtn btn">Back</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn" type="button">Continue</button>
+                <button class="continueBtn btn" type="button">Continue</button>
             </div>
         </div>
 
@@ -668,10 +669,10 @@
             <div class="buttonSection">
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn">Back</button>
+                <button type="button" class="backBtn btn">Back</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn" type="button">Continue</button>
+                <button class="continueBtn btn" type="button">Continue</button>
             </div>
         </div>
 
@@ -701,10 +702,10 @@
             <div class="buttonSection">
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn">Back</button>
+                <button type="button" class="backBtn btn">Back</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn" type="button">Continue</button>
+                <button class="continueBtn btn" type="button">Continue</button>
             </div>
         </div>
 
@@ -729,10 +730,10 @@
             <div class="buttonSection">
                 <!-- TODO: Fix classes on all help slides -->
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn">Back</button>
+                <button type="button" class="backBtn btn">Back</button>
 
                 <!-- CONTINUE BUTTON -->
-                <a href="lecture-content-pt2.html"><button type="button" class="continueBtn">Continue</button></a>
+                <a href="lecture-content-pt2.html"><button type="button" class="continueBtn btn">Continue</button></a>
             </div>
         </div>
 
