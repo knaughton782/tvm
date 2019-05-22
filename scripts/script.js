@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  /****************** slide 2 content switching functionality ********************/
+  /**** slide 2 content switching functionality ***/
   var intro = $('#intro');
   var learningObj = $('#learningObj');
   var prereqs = $('#prereqs');

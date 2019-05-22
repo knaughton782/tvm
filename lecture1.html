@@ -12,7 +12,6 @@
 
 <body>
 
-
     <div class="allSlides">
         <!-- SLIDE ONE, Title/Cover slide -->
         <div id="slide1" class="slide backgroundImage">
@@ -27,8 +26,7 @@
         </div>
 
 
-
-        <!-- SLIDE TWO, Content Slide -->
+        <!-- SLIDE TWO, Content  -->
         <div id="slide2" class="slide">
             <div class="slideTitle">
                 <div class="titleBlock">
@@ -47,7 +45,8 @@
                 <!-- slide 2, initial state defaults to intro button -->
                 <div id="intro" class="rightContent">
                     <h3 class="contentTitle">Introduction</h3>
-                    <p>This is the first of four tutorials on the Time Value of Money. In this first part, we'll start with the
+                    <p>This is the first of four tutorials on the Time Value of Money. In this first part, we'll start
+                        with the
                         basic equation and variables. Subsequent tutorials will add complexity by introducing compound
                         interest,
                         payments, and annuities.</p>
@@ -67,7 +66,8 @@
                 </div>
                 <div id="prereqs" class="rightContent">
                     <h3 class="contentTitle">Pre-Requirements</h3>
-                    <p>To achieve the objectives in this tutorial, you will need basic algebra skills. Remember to use the order of operations (PEMDAS) and the FOIL method.
+                    <p>To achieve the objectives in this tutorial, you will need basic algebra skills. Remember to use
+                        the order of operations (PEMDAS) and the FOIL method.
                     </p>
                     <p>TVM may require you to dust off some math skills that you haven’t used in a while. Contact
                         your
@@ -88,7 +88,6 @@
                 <div class="clearfix"></div>
             </div>
             <div class="buttonSection">
-                <!-- slide 2 has a continue button at the bottom that takes you to slide 3 TVM Central Concept -->
 
                 <!-- BACK BUTTON -->
                 <button type="button" class="backBtn btn">Back</button>
@@ -99,8 +98,7 @@
         </div>
 
 
-        <!----------------- SLIDE THREE, Content Slide --------------->
-
+        <!----------------- SLIDE THREE, Content  --------------->
         <div id="slide3" class="slide">
             <div class="slideTitle">
                 <div class="titleBlock">
@@ -139,7 +137,7 @@
         </div>
 
 
-        <!---------------- SLIDE FOUR, content slide -------------------------->
+        <!---------------- SLIDE FOUR, content -------------------------->
         <div id="slide4" class="slide">
             <div class="slideTitle">
                 <div class="titleBlock">
@@ -204,9 +202,7 @@
         </div>
 
 
-        <!---- *** SLIDE SIX - content - HAS LEFT VERTICAL BUTTON MENU ***
-              --->
-
+        <!-- SLIDE SIX - content - LEFT VERTICAL BUTTON MENU -->
         <div id="slide6" class="slide">
             <div class="slideTitle">
                 <div class="titleBlock">
@@ -270,9 +266,8 @@
             </div>
         </div>
 
-        <!----------------------------------------
-                   *** SLIDE 7 - Question, Includes Need Help Button ***
-                ---------------------------------------->
+
+        <!--  SLIDE 7 - Question, Goes to Help Button -->
         <div id="slide7" class="slide">
             <div class="slideTitle">
                 <div class="titleBlock">
@@ -288,93 +283,16 @@
             </div>
             <div class="buttonSection">
                 <!-- HELP BUTTON -->
-                <a href="#help1"><button type="button" class="helpBtn btn">I Need Help</button></a>
+                <a href="./help.html#help1"><button type="button" class="helpBtn btn">I Need Help</button></a>
 
                 <!-- CONTINUE BUTTON -->
                 <button class="continueBtn btn" type="button">Continue</button>
             </div>
         </div>
 
-        <!----------------------------------------
-                       *** SLIDE 8 - HELP SLIDE ***
-                    ---------------------------------------->
 
-
-        <div id="slide8" class="slide helpSlide">
-            <!-- NOTE: change slide # to match new slide number. -->
-            <div class="slideTitle">
-                <div class="titleBlock">
-                    <h2 class="primaryTitle">TVM: The Basics</h2>
-                    <h3 class="secondaryTitle">Help Me!</h3>
-                </div>
-            </div>
-            <div class="contentSectionNoVertBtns">
-                <a name="help1">
-                    <p>To figure out how much we will have in 1 year, we first calculate the interest payment.</p>
-                    <p>The interest payment is calculated by multiplying the interest rate times the principal amount.
-                    </p>
-                    <p>Now, identify the interest rate and the principal in the word problem by clicking on the
-                        variables
-                        below.</p>
-                    <p><strong>How much money would you have in <span class="time">1 year</span> if you invested <span
-                                class="presentValue">$100</span> at a rate of <span
-                                class="interest">10%</span>?</strong>
-                    </p>
-                </a>
-            </div>
-            <div class="buttonSection">
-
-                <!-- TODO: Update Help button styles with new logic classes -->
-                <!-- BACK BUTTON -->
-                <button type="button" class="backBtn btn">Back - I'm good now!</button>
-
-                <!-- CONTINUE BUTTON -->
-                <button class="continueBtn btn" type="button">Keep helping me!</button>
-            </div>
-        </div>
-
-
-        <!----------------------------------------
-                       *** SLIDE 9 - HELP Slide ***
-                    -------------------------------->
-
-        <div id="slide9" class="slide helpSlide">
-            <!-- NOTE: change slide # to match new slide number. -->
-            <div class="slideTitle">
-                <div class="titleBlock">
-                    <h2 class="primaryTitle">TVM: The Basics</h2>
-                    <h3 class="secondaryTitle">Help Me!</h3>
-                </div>
-            </div>
-            <div class="contentSectionNoVertBtns">
-
-                <p>After calculating the interest payment, you need to add the interest payment back to the initial
-                    investment (principal).</p>
-                <p>How much money would you have in <span class="time">1 year</span> if you invested <span
-                        class="presentValue">$100</span>
-                    at a rate of <span class="interest">10%</span>?</p>
-                <p>Calculate the interest payment:</p>
-                <p><span class="interest">10%</span> x <span class="presentValue">$100</span> = <span
-                        class="interest">$10</span></p>
-                <p>Add the interest payment back to the initial investment (principal).</p>
-                <p><span class="presentValue">$100</span> + <span class="interest">$10</span> = <span
-                        class="futureValue">$110</span></p>
-            </div>
-            <div class="buttonSection">
-
-                <!-- BACK BUTTON -->
-                <button type="button" class="backBtn btn">Back</button>
-
-                <!-- CONTINUE BUTTON -->
-                <button class="continueBtn btn" type="button">Continue</button>
-            </div>
-        </div>
-
-        <!----------------------------------------
-                   *** SLIDE 10 - Content - NO LEFT VERTICAL BUTTON MENU ***
-                ---------------------------------------->
-
-        <div id="slide10" class="slide">
+        <!-- SLIDE 8 - Content - NO LEFT VERTICAL BUTTON MENU -->
+        <div id="slide8" class="slide">
             <div class="slideTitle">
                 <div class="titleBlock">
                     <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -402,11 +320,9 @@
             </div>
         </div>
 
-        <!----------------------------------------
-                   *** SLIDE 11 - CONTENT / NO LEFT VERTICAL BUTTON MENU ***
-                ---------------------------------------->
 
-        <div id="slide1" class="slide">
+        <!-- SLIDE 9 - CONTENT -->
+        <div id="slide9" class="slide">
             <!-- NOTE: change slide # to match new slide number. -->
             <div class="slideTitle">
                 <div class="titleBlock">
@@ -431,113 +347,10 @@
                 <button class="continueBtn btn" type="button">I've got it!</button>
             </div>
         </div>
-        <!----------------------------------------
-                       *** SLIDE 12 / HELP SLIDE ***
-                    ---------------------------------------->
 
-        <div id="slide12" class="slide helpSlide">
 
-            <div class="slideTitle">
-                <div class="titleBlock">
-                    <h2 class="primaryTitle">TVM: The Basics</h2>
-                    <h3 class="secondaryTitle">Help Me!</h3>
-                </div>
-            </div>
-            <div class="contentSectionNoVertBtns">
-
-                <p>Answer this question:</p>
-                <p>How much money would you have in another year if you rolled over the $110?</p>
-                <p>Let's rephrase the question to a form you're already familiar with. How much money would you have in
-                    a year if you invested $110 (calculated in the previous question) at 10% interest?</p>
-                <p>To figure out how much we'll have after the 2nd year, we need to:</p>
-                <ol>
-                    <li>Calculate the interest payment for year 2.</li>
-                    <li>Add the interest payments back to the initial investment (principal).</li>
-                </ol>
-            </div>
-            <div class="buttonSection">
-                <!-- TODO: Fix classes on all help slides -->
-                <!-- BACK BUTTON -->
-                <button type="button" class="backBtn btn">Return to Question</button>
-
-                <!-- CONTINUE BUTTON -->
-                <button class="continueBtn btn" type="button">Continue helping me</button>
-            </div>
-        </div>
-
-        <!----------------------------------------
-                       *** SLIDE 13 / HELP SLIDE ***
-                    ---------------------------------------->
-
-        <div id="slide13" class="slide helpSlide">
-
-            <div class="slideTitle">
-                <div class="titleBlock">
-                    <h2 class="primaryTitle">TVM: The Basics</h2>
-                    <h3 class="secondaryTitle">Help Me!</h3>
-                </div>
-            </div>
-            <div class="contentSectionNoVertBtns">
-
-                <p>Answer this question:</p>
-                <p>How much money would you have in a year if you invested $110 at 10% interest?</p>
-                <p>Calculate the interest payment for year 2.</p>
-                <p>Recall that the interest rate is <span class="interest">10%</span>. This time the principal is <span
-                        class="presentValue">$110</span>.</p>
-                <p>To find the interest payment, we need to multiply the <span class="interest">interest rate</span>
-                    times the <span class="presentValue">principal (Present Value)</span> amount:</p>
-                <p><span class="interest">10%</span> * <span class="presentValue">$110</span> = <span
-                        class="interest">$11</span></p>
-            </div>
-            <div class="buttonSection">
-
-                <!-- BACK BUTTON -->
-                <button type="button" class="backBtn btn">Back - I'm good now!</button>
-
-                <!-- CONTINUE BUTTON -->
-                <button type="button" class="continueBtn btn">Continue helping me</button>
-            </div>
-        </div>
-
-        <!----------------------------------------
-                   *** SLIDE 14 / HELP SLIDE ***
-                ---------------------------------------->
-
-        <div id="slide14" class="slide helpSlide">
-
-            <div class="slideTitle">
-                <div class="titleBlock">
-                    <h2 class="primaryTitle">TVM: The Basics</h2>
-                    <h3 class="secondaryTitle">Help Me!</h3>
-                </div>
-            </div>
-            <div class="contentSectionNoVertBtns">
-                <!-- TODO: create faded out text span, evaluate which help slides need it -->
-                <p>Answer this question:</p>
-                <p><strong>How much money would you have in a year if you invested $110 at 10% interest?</strong></p>
-                <p class="faded">Calculate the interest payment for year 2. Recall that the interest rate is 10%. This
-                    time the principal is $110. To find the interest payment, we need to multiply the interest rate
-                    times the principal (Present Value) amount:</p>
-                <p>10% * $110 = $11</p>
-                <p><strong>Add the interest payment to the initial investment (principal).</strong></p>
-                <p><span class="presentValue">$110</span> + $11 = $121</p>
-            </div>
-            <div class="buttonSection">
-                <!-- TODO: Fix classes on all help slides -->
-                <!-- BACK BUTTON -->
-                <button type="button" class="backBtn btn">Back</button>
-
-                <!-- CONTINUE BUTTON -->
-                <button type="button" class="continueBtn btn">Continue</button>
-            </div>
-        </div>
-
-        <!----------------------------------------
-               *** SLIDE 15 - CONTENT / NO Left Buttons ***
-            ---------------------------------------->
-
-        <div id="slide15" class="slide">
-
+        <!-- SLIDE 10 - CONTENT -->
+        <div id="slide10" class="slide">
             <div class="slideTitle">
                 <div class="titleBlock">
                     <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -565,12 +378,9 @@
             </div>
         </div>
 
-        <!----------------------------------------
-           *** SLIDE 16 - CONTENT / NO LEFT BUTTONS ***
-        ---------------------------------------->
 
-        <div id="slide16" class="slide">
-
+        <!-- SLIDE 11 - CONTENT -->
+        <div id="slide11" class="slide">
             <div class="slideTitle">
                 <div class="titleBlock">
                     <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -602,12 +412,9 @@
             </div>
         </div>
 
-        <!----------------------------------------
-           *** SLIDE 17 - CONTENT / NO LEFT VERTICAL BUTTON MENU ***
-        ---------------------------------------->
 
-        <div id="slide17" class="slide">
-
+        <!-- SLIDE 12 - CONTENT -->
+        <div id="slide12" class="slide">
             <div class="slideTitle">
                 <div class="titleBlock">
                     <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -638,12 +445,9 @@
             </div>
         </div>
 
-        <!----------------------------------------
-           *** SLIDE 18 - CONTENT / NO LEFT VERTICAL BUTTON MENU ***
-        ---------------------------------------->
 
-        <div id="slide18" class="slide">
-
+        <!--- SLIDE 13 - CONTENT --->
+        <div id="slide13" class="slide">
             <div class="slideTitle">
                 <div class="titleBlock">
                     <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -673,11 +477,9 @@
             </div>
         </div>
 
-        <!----------------------------------------
-           *** SLIDE 19 - CONTENT / NO LEFT VERTICAL BUTTON MENU ***
-        ---------------------------------------->
 
-        <div id="slide19" class="slide">
+        <!-- SLIDE 14 - CONTENT --->
+        <div id="slide14" class="slide">
 
             <div class="slideTitle">
                 <div class="titleBlock">
@@ -702,35 +504,7 @@
                 <button type="button" class="backBtn btn">Back</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn btn" type="button">Continue</button>
-            </div>
-        </div>
-
-        <!----------------------------------------
-               *** SLIDE 20 - HELP / LEFT VERTICAL BUTTON MENU ***
-            ---------------------------------------->
-        <div id="slide20" class="slide helpSlide">
-
-            <div class="slideTitle">
-                <div class="titleBlock">
-                    <h2 class="primaryTitle">TVM: The Basics</h2>
-                    <h3 class="secondaryTitle">Help Me! - Math Refresher</h3>
-                </div>
-            </div>
-            <div class="contentSectionNoVertBtns">
-
-                <h4>Principles of Algebra</h4>
-                <h4>Order of Operations: PEMDAS</h4>
-                <h4>Distributive Property</h4>
-                <h4>FOIL</h4>
-            </div>
-            <div class="buttonSection">
-                <!-- TODO: Fix classes on all help slides -->
-                <!-- BACK BUTTON -->
-                <button type="button" class="backBtn btn">Back</button>
-
-                <!-- CONTINUE BUTTON -->
-                <a href="lecture-content-pt2.html"><button type="button" class="continueBtn btn">Continue</button></a>
+                <a href="./lecture2.html"><button class="nextPageBtn btn" type="button">Continue</button></a>
             </div>
         </div>
 

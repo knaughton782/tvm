@@ -84,12 +84,10 @@ body {
     background-image: url("/Users/kirstennaughton/Dropbox/WEBSTER/CODE/time-value-money/tvm/images/money.png");
     background-position: center;
 } 
-
 /****** End Cover Slide ****/
 
 
 /** for CONTENT title section  ***/
-
 .contentTitle {
     font-size: 1.5em;
     text-align: center;
@@ -97,8 +95,7 @@ body {
 }
 /*** end all slide titles ***/
 
-/****************** General slide styles ************/
-
+/****** General slide styles ******/
 .indent {
     margin: 5px 25px;
 }
@@ -133,6 +130,12 @@ p {
     right: 35px;
 }
 
+.nextPageBtn {
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+}
+
 .backBtn {
     position: absolute;
     bottom: 35px;
@@ -159,11 +162,6 @@ button:active {
     background-color: #bfc3ba;
     color: #292929;
 }
-
-/* button:focus {
-    background-color: #466365;
-    color: #ffffff;
-} */
 /***********************************************/
 
 
