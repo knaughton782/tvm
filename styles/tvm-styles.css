@@ -20,7 +20,8 @@ body {
 }
 
 .helpSlide {
-    background-color: #EADBCE;
+    /* background-color: #FBEFF0; */
+    background-color: #FBF0F1;
 }
 
 .clearfix {
@@ -110,12 +111,8 @@ p {
     margin-bottom: 25px;
 }
 
-
-
 /********* BUTTON STYLES *********/
-
 /* general button style */
-
 .btn {
     background-color: #466365;
     color: #fff;
@@ -151,7 +148,7 @@ p {
 }
 
 button:hover {
-    background-color: #b37d4e;
+    background-color: #CEAC8E;
 }
 
 button:active {
@@ -175,18 +172,18 @@ button:active {
 
 button.presentValue {
     /* background-color: #ff7c25; */
-    background-color: #ff6600;
-    color: #292929;
+    background-color: #F79256;
+    color: #fff;
 }
 
 button.time {
-    background-color: #7546d2;
+    background-color: #623cea;
     color: #fff;
 }
 
 button.interest {
     /* background-color: #ff679f; */
-    background-color: #ff1a6e;
+    background-color: #F76F8E;
     color: #fff;
 }
 
@@ -214,6 +211,7 @@ button.interest {
 
 .faded {
     color: #706f6f;
+    font-size: .8em;
 }
 
 /* end text styles *************** */

@@ -14,7 +14,6 @@
 
 
     <div class="allSlides">
-
         <!-- SLIDE ONE, Title/Cover slide -->
         <div id="slide1" class="slide backgroundImage">
             <!-- slide 1 -->
@@ -42,15 +41,13 @@
                 <div class="btn-group-left" role="group">
                     <button type="button" class="active btn" id="introBtn">Introduction</button>
                     <button type="button" class="btn" id="learningObjBtn">Learning Objectives</button>
-                    <button type="button" class="btn" id="prereqsBtn">Prereqs</button>
+                    <button type="button" class="btn" id="prereqsBtn">Pre-Reqs</button>
                     <button type="button" class="btn" id="reqsBtn">Requirements</button>
                 </div>
                 <!-- slide 2, initial state defaults to intro button -->
                 <div id="intro" class="rightContent">
                     <h3 class="contentTitle">Introduction</h3>
-                    <p>This is the first of four tutorials on the Time Value of Money. In this first part, we'll start
-                        with
-                        the
+                    <p>This is the first of four tutorials on the Time Value of Money. In this first part, we'll start with the
                         basic equation and variables. Subsequent tutorials will add complexity by introducing compound
                         interest,
                         payments, and annuities.</p>
@@ -67,15 +64,10 @@
                                 annual interest</li>
                         </ul>
                     </p>
-
                 </div>
                 <div id="prereqs" class="rightContent">
-                    <h3 class="contentTitle">Prereqs</h3>
-                    <p>To achieve the objectives in this tutorial, you will need:
-                        <ul>
-                            <li>Basic algebra skills, including Order of Operations (remember the acronym PEMDAS) and
-                                FOIL</li>
-                        </ul>
+                    <h3 class="contentTitle">Pre-Requirements</h3>
+                    <p>To achieve the objectives in this tutorial, you will need basic algebra skills. Remember to use the order of operations (PEMDAS) and the FOIL method.
                     </p>
                     <p>TVM may require you to dust off some math skills that you haven’t used in a while. Contact
                         your
@@ -120,9 +112,12 @@
                 <p>One of the central concepts of finance is that a dollar today is worth more than a dollar in the
                     future.</p>
                 <p class="icons">
-                    <img src="/Users/kirstennaughton/Dropbox/WEBSTER/CODE/time-value-money/tvm/images/time.png" alt="Time" class="icon">
-                    <img src="/Users/kirstennaughton/Dropbox/WEBSTER/CODE/time-value-money/tvm/images/value.png" alt="Value" class="icon">
-                    <img src="/Users/kirstennaughton/Dropbox/WEBSTER/CODE/time-value-money/tvm/images/money-icon.png" alt="Money" class="icon">
+                    <img src="/Users/kirstennaughton/Dropbox/WEBSTER/CODE/time-value-money/tvm/images/time.png"
+                        alt="Time" class="icon">
+                    <img src="/Users/kirstennaughton/Dropbox/WEBSTER/CODE/time-value-money/tvm/images/value.png"
+                        alt="Value" class="icon">
+                    <img src="/Users/kirstennaughton/Dropbox/WEBSTER/CODE/time-value-money/tvm/images/money-icon.png"
+                        alt="Money" class="icon">
                 </p>
                 <p>Intuitively, you already understand that today's dollar is worth more than tomorrow's dollar.
                     Transactions operate on this principle every day.</p>
@@ -209,9 +204,8 @@
         </div>
 
 
-        <!----------------------------------------
-                   *** SLIDE SIX - content - HAS LEFT VERTICAL BUTTON MENU ***
-                ---------------------------------------->
+        <!---- *** SLIDE SIX - content - HAS LEFT VERTICAL BUTTON MENU ***
+              --->
 
         <div id="slide6" class="slide">
             <div class="slideTitle">
@@ -235,13 +229,15 @@
                 <div id="defaultCondition" class="rightContent">
                     <h3 class="contentTitle"></h3>
                     <p>Click on each of the variables to the left to find the definition.</p>
-                    <p>Please note: these colors will be used throughout the tutorials to define the variables.</p>
+                    <p class="faded"><i>Please note: these colors will be used throughout the tutorials to define the
+                            variables.</i></p>
                     <ul>
                         <li class="futureValue">Future Value (FV): Green</li>
                         <li class="presentValue">Present Value (PV): Orange</li>
                         <li class="time">Time (N): Purple</li>
                         <li class="interest">Interest (i): Pink</li>
                     </ul>
+
                 </div>
 
                 <div id="presentValue" class="rightContent">
@@ -277,9 +273,7 @@
         <!----------------------------------------
                    *** SLIDE 7 - Question, Includes Need Help Button ***
                 ---------------------------------------->
-
         <div id="slide7" class="slide">
-
             <div class="slideTitle">
                 <div class="titleBlock">
                     <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -287,17 +281,14 @@
                 </div>
             </div>
             <div class="contentSectionNoVertBtns">
-
                 <p>Now we know what variables factor in, but we'll need to derive the equation to understand how they
                     relate to each other. We'll back into the equation by using a simple example.</p>
                 <p>Answer this question:</p>
                 <p><strong>How much money would you have in 1 year if you invested $100 at a rate of 10%?</strong></p>
-
             </div>
             <div class="buttonSection">
-                <!-- TODO: change class to helpBtn -->
-                <!-- BACK BUTTON -->
-                <button type="button" class="backBtn helpBtn btn">I Need Help</button>
+                <!-- HELP BUTTON -->
+                <a href="#help1"><button type="button" class="helpBtn btn">I Need Help</button></a>
 
                 <!-- CONTINUE BUTTON -->
                 <button class="continueBtn btn" type="button">Continue</button>
@@ -308,6 +299,7 @@
                        *** SLIDE 8 - HELP SLIDE ***
                     ---------------------------------------->
 
+
         <div id="slide8" class="slide helpSlide">
             <!-- NOTE: change slide # to match new slide number. -->
             <div class="slideTitle">
@@ -317,14 +309,18 @@
                 </div>
             </div>
             <div class="contentSectionNoVertBtns">
-
-                <p>To figure out how much we will have in 1 year, we first calculate the interest payment.</p>
-                <p>The interest payment is calculated by multiplying the interest rate times the principal amount.</p>
-                <p>Now, identify the interest rate and the principal in the word problem by clicking on the variables
-                    below.</p>
-                <p><strong>How much money would you have in <span class="time">1 year</span> if you invested <span
-                            class="presentValue">$100</span> at a rate of <span class="interest">10%</span>?</strong>
-                </p>
+                <a name="help1">
+                    <p>To figure out how much we will have in 1 year, we first calculate the interest payment.</p>
+                    <p>The interest payment is calculated by multiplying the interest rate times the principal amount.
+                    </p>
+                    <p>Now, identify the interest rate and the principal in the word problem by clicking on the
+                        variables
+                        below.</p>
+                    <p><strong>How much money would you have in <span class="time">1 year</span> if you invested <span
+                                class="presentValue">$100</span> at a rate of <span
+                                class="interest">10%</span>?</strong>
+                    </p>
+                </a>
             </div>
             <div class="buttonSection">
 
@@ -336,6 +332,7 @@
                 <button class="continueBtn btn" type="button">Keep helping me!</button>
             </div>
         </div>
+
 
         <!----------------------------------------
                        *** SLIDE 9 - HELP Slide ***
