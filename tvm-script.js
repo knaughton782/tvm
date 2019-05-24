@@ -3,11 +3,11 @@ $(document).ready(function () {
   /** continue/back BUTTON FUNCTIONALITY  **/
 
   //hide all slides except first slide
-  $('.allSlides .slide').each(function (e) {
-    if (e != 0) {
-      $(this).hide();
-    }
-  });
+  // $('.allSlides .slide').each(function (e) {
+  //   if (e != 0) {
+  //     $(this).hide();
+  //   }
+  // });
 
   // for each click on the continue button, hide the current slide and show the next one
   $('.continueBtn').click(function () {
