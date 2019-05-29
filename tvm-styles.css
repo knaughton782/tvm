@@ -1,15 +1,16 @@
 * {
     margin: 0;
     padding: 0;
-    color: #292929;
 }
 
 body {
     line-height: 1.5em;
-    font-size: 1.2em;
+    font-size: 1.08em;
+    font-family: 'Open Sans', sans-serif;
+    color: #292929;
 }
 
-/***** Slide Set-up Info ********/
+/***** Basic Slide Set-up  ********/
 .slide {
     width: 800px;
     height: 650px;
@@ -20,15 +21,14 @@ body {
 }
 
 .helpSlide {
-    /* background-color: #FBEFF0; */
-    background-color: #FBF0F1;
+    background-color: #f7f2ed;
 }
 
 .clearfix {
     clear: both;
 }
 
-/* main title section on slides  */
+/*  title block on all slides except cover */
 .slideTitle {
     height: 90px;
     display: block;
@@ -38,7 +38,6 @@ body {
 
 .titleBlock {
     margin: 30px;
-    display: block;
 }
 
 .primaryTitle {
@@ -48,24 +47,8 @@ body {
 .secondaryTitle {
     color: #ffffff;
 }
-
-/**** for slides with left menu buttons and right content ****/
-.btn-group-left {
-    float: left;
-    width: 25%;
-    margin: 8% auto auto 5%;
-}
-
-.rightContent {
-    float: left;
-    width: 60%;
-    margin: 30px 45px 40px 30px;
-}
-
-.content-noBtns {
-    margin: 45px 40px;
-}
 /******* end slide setup *************/
+
 
 /****** Cover Slide *****************/
 .coverSlideTitle {
@@ -87,7 +70,7 @@ body {
 /****** End Cover Slide ****/
 
 
-/** for CONTENT title section  ***/
+/** for CONTENT section  ***/
 .contentTitle {
     font-size: 1.5em;
     text-align: center;
@@ -95,7 +78,7 @@ body {
 }
 /*** end all slide titles ***/
 
-/****** General slide styles ******/
+/****** General styles ******/
 .indent {
     margin: 5px 25px;
 }
@@ -108,44 +91,63 @@ p {
     margin-bottom: 25px;
 }
 
+.bold {
+    font-weight: 800;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon {
+    max-width: 75px;
+    max-height: 75px;
+    margin: auto;
+}
+
+
 /********* BUTTON STYLES *********/
-/* general button style */
-.btn {
-    background-color: #466365;
-    color: #fff;
-    padding: 15px 15px;
+/* standard button  */
+button {
+    padding: 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 15px;
+    font-size: 16px;
     width: 125px;
     border-radius: 8px;
     box-shadow: 5px 10px 18px #b1b1b1;
-    margin: 10px;
+    margin: 10px auto;
 }
 
-.continueBtn {
+button:hover {
+    background-color: #bfc3ba;
+    color: #292929;
+    border: 1px solid #b3b8ad;
+}
+
+button:active {
+    background-color: #bfc3ba;
+    color: #292929;
+    border: 1px solid #b3b8ad;
+}
+
+.rightBtn {
     position: absolute;
     bottom: 20px;
     right: 35px;
 }
 
-.nextPageBtn {
-    position: absolute;
-    bottom: 20px;
-    right: 35px;
-}
-
-.backBtn {
+.leftBtn {
     position: absolute;
     bottom: 20px;
     right: 180px;
 }
 
-.backHelpBtn {
-    position: absolute;
-    bottom: 20px;
-    right: 180px;
+.btn {
+    background-color: #466365;
+    color: #fff;
 }
 
 .helpBtn {
@@ -155,61 +157,86 @@ p {
     background-color: #CC444B;
 }
 
-button:hover {
-    background-color: #CEAC8E;
-}
-
-button:active {
-    background-color: #bfc3ba;
-    color: #292929;
-}
 .active {
     background-color: #bfc3ba;
     color: #292929;
+    border: 1px solid #b3b8ad;
 }
-/***********************************************/
+
+/**** for slides with left menu buttons and right content, use with .content-btns div and .rightContent ****/
+.btn-group-left {
+    float: left;
+    width: 25%;
+    margin: 8% auto auto 5%;
+}
+
+.rightContent {
+    float: left;
+    width: 60%;
+    margin: 30px 45px 40px 30px;
+}
+
+/* when the slide has no buttons in the content area */
+.content-noBtns {
+    margin: 45px 40px;
+}
+/**********************/
 
 
 
-/********* SLIDE SIX BUTTON STYLES *********/
-
+/** SLIDE SIX BUTTON STYLES ****/
 button.presentValue {
-    /* background-color: #ff7c25; */
-    background-color: #F79256;
+    background-color: #FA6400;
     color: #fff;
+    font-weight: 400;
 }
 
 button.time {
-    background-color: #623cea;
+    background-color: #884DFF;
     color: #fff;
+    font-weight: 400;
+
 }
 
 button.interest {
-    /* background-color: #ff679f; */
-    background-color: #F76F8E;
+    background-color: #EB004E;
     color: #fff;
+    font-weight: 400;
+}
+/***** end button styles *****/
+
+
+/* slide page number */
+.pageNumber {
+    position: absolute;
+    bottom: 20px;
+    left: 35px;
 }
 
-/*********** end button styles **************/
 
-/* text styles *************** */
-
+/* text styles ********* */
 .futureValue {
-    color: #4fa135;
+    color: #008A00;
+    font-weight: 600;
+    /* font-size: 1.2em; */
 }
 
 .time {
-    color: #623cea;
+    color: #884DFF;
+    font-weight: 600;
+    /* font-size: 1.2em; */
 }
 
 .presentValue {
-    /* color: #ff7c25; */
-    color: #F79256;
+    color: #FA6400;
+    font-weight: 600;
+    /* font-size: 1.2em; */
 }
 
 .interest {
-    /* color: #ff679f; */
-    color: #F76F8E;
+    color: #EB004E;
+    font-weight: 600;
+    /* font-size: 1.2em; */
 }
 
 .faded {
@@ -217,14 +244,7 @@ button.interest {
     font-size: .8em;
 }
 
+.help {
+    background-color: #CC444B;
+}
 /* end text styles *************** */
-
-.icons {
-    display: flex;
-    justify-content: space-around;
-}
-.icon {
-    max-width: 75px;
-    max-height: 75px;
-    margin: auto;
-}

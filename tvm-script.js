@@ -10,7 +10,7 @@ $(document).ready(function () {
   // });
 
   // for each click on the continue button, hide the current slide and show the next one
-  $('.continueBtn').click(function () {
+  $('.continue').click(function () {
     if ($('.allSlides .slide:visible').next().length != 0) {
       $('.allSlides .slide:visible')
         .next()
@@ -25,7 +25,7 @@ $(document).ready(function () {
   });
 
   // for each click on the back button, hide the current slide and show the previous one
-  $('.backBtn').click(function () {
+  $('.back').click(function () {
     if ($('.allSlides .slide:visible').prev().length != 0) {
       $('.allSlides .slide:visible')
         .prev()

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="tvm-styles.css">
 
     <title>Time Value of Money - Part 1</title>
@@ -13,15 +14,15 @@
 <body>
 
     <div class="allSlides">
+
         <!-- SLIDE ONE, Title/Cover slide  *************** -->
         <div id="slide1" class="slide backgroundImage">
-            <!-- slide 1 *************** -->
             <div class="coverSlideTitle">
                 <h1>Time Value of Money</h1>
                 <h2>Part 1: The Basics</h2>
             </div>
             <div>
-                <button type="button" class="continueBtn btn">Start!</button>
+                <button type="button" class="continue btn rightBtn">Start!</button>
             </div>
         </div>
 
@@ -87,16 +88,17 @@
                 </div>
                 <div class="clearfix"></div>
             </div>
+            <div class="pageNumber">2</div>
             <div class="bottomBtns">
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn btn">Back</button>
+                <button type="button" class="back leftBtn btn">Back</button>
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn btn" type="button">Continue</button>
+                <button class="continue btn rightBtn" type="button">Continue</button>
             </div>
         </div>
 
 
-        <!----------------- SLIDE THREE, Content  --------------->
+        <!-- SLIDE THREE, Content ********************** -->
         <div id="slide3" class="slide">
             <div class="slideTitle">
                 <div class="titleBlock">
@@ -113,15 +115,19 @@
                     <img src="https://olc.webster.edu/sandbox/kirsten/tvm/images/money-icon.png" alt="Money"
                         class="icon">
                 </p>
-                <p>Intuitively, you already understand that today's dollar is worth more than tomorrow's dollar. Transactions operate on this principle every day.</p>
-                <p>When you don't have enough cash to buy something, you may pay with a credit card; when the bill arrives, interest has been added to compensate the credit card company for lending you money.</p>
-                <p>Conversely, if you deposit money in a savings account, the bank pays you interest to compensate you for lending them money.</p>
+                <p>Intuitively, you already understand that today's dollar is worth more than tomorrow's dollar.
+                    Transactions operate on this principle every day.</p>
+                <p>When you don't have enough cash to buy something, you may pay with a credit card; when the bill
+                    arrives, interest has been added to compensate the credit card company for lending you money.</p>
+                <p>Conversely, if you deposit money in a savings account, the bank pays you interest to compensate you
+                    for lending them money.</p>
             </div>
+            <div class="pageNumber">3</div>
             <div class="bottomBtns">
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn btn">Back</button>
+                <button type="button" class="back leftBtn btn">Back</button>
                 <!-- CONTINUE BUTTON -->
-                <button type="button" class="continueBtn btn">Continue</button>
+                <button type="button" class="continue btn rightBtn">Continue</button>
             </div>
 
         </div>
@@ -144,19 +150,18 @@
                     requests
                     an extension. If you forego the payment for a while, you should be compensated for the delay.</p>
                 <br>
-                <p class="indent"><strong>What factors would you consider in determining how much the customer should
-                        pay
-                        at a later date?</strong></p>
+                <p class="indent bold">What factors would you consider in determining how much the customer should
+                    pay
+                    at a later date?</p>
                 <br>
                 <p class="indent">Pause here to think about the question, then click continue.</p>
             </div>
+            <div class="pageNumber">4</div>
             <div class="bottomBtns">
-
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn btn">Back</button>
-
+                <button type="button" class="back leftBtn btn">Back</button>
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn btn" type="button">Continue</button>
+                <button class="continue btn rightBtn" type="button">Continue</button>
             </div>
         </div>
 
@@ -170,7 +175,8 @@
                 </div>
             </div>
             <div class="content-noBtns">
-                <p>What factors would you consider in determining how much the customer whould pay at a later date?</p>
+                <p class="bold">What factors would you consider in determining how much the customer whould pay at a
+                    later date?</p>
                 <p>Most lenders would want to know:</p>
                 <ul class="indent">
                     <li>How much is being borrowed?</li>
@@ -179,15 +185,14 @@
                     <li>What else could your company do with the money if the customer paid now?</li>
                     <li>If the loan is long enough, will inflation further erode the value of tomorrow's dollar?</li>
                 </ul>
-                <p><strong>Let's attach some variable names to these factors.</strong></p>
+                <p class="bold">Let's attach some variable names to these factors.</p>
             </div>
+            <div class="pageNumber">5</div>
             <div class="bottomBtns">
-
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn btn">Back</button>
-
+                <button type="button" class="back leftBtn btn">Back</button>
                 <!-- CONTINUE BUTTON  -->
-                <button class="continueBtn btn" type="button">Continue</button>
+                <button class="continue btn rightBtn" type="button">Continue</button>
             </div>
         </div>
 
@@ -205,7 +210,7 @@
                 <p class="indent">What factors would you consider in determining how much <span
                         class="futureValue">(Future
                         Value or FV)</span> the customer should pay at a later date?</p>
-                <div class="btn-group-left">
+                <div class="btn-group-left" role="group">
                     <button type="button" id="presentValueBtn" class="presentValue btn">Present Value (PV)</button>
                     <button type="button" id="timeBtn" class="time btn">Time (N)</button>
                     <button type="button" id="interestBtn" class="interest btn">Interest (i)</button>
@@ -228,31 +233,31 @@
 
                 <div id="presentValue" class="rightContent">
                     <h3 class="contentTitle presentValue">Present Value (PV)</h3>
-                    <p>How much is being borrowed?</p>
-                    <p>Present Value (PV) is the value in today's terms.</p>
+                    <p>How much is being borrowed? <span class="presentValue">Present Value (PV)</span> is the value in
+                        today's terms.</p>
                 </div>
 
                 <div id="time" class="rightContent">
                     <h3 class="contentTitle time">Time (N)</h3>
-                    <p>How long before the customer pays?</p>
-                    <p>Time (N) is the measure of time in years.</p>
+                    <p>How long before the customer pays? <span class="time">Time (N)</span> is the measure of time in
+                        years.</p>
                 </div>
                 <div id="interest" class="rightContent">
                     <h3 class="contentTitle interest">Interest (i)</h3>
                     <p>What is the risk that the customer will not be able to pay the account at a later date? What
                         else could your company do with the money if the customer paid now? If the loan is long enough,
                         will inflation further erode the value of tomorrow's dollar?</p>
-                    <p>Interest (i) is the rate of return, compensating for risk and opportunity cost.</p>
+                    <p><span class="interest">Interest (i)</span> is the rate of return, compensating for risk and
+                        opportunity cost.</p>
                 </div>
                 <div class="clearfix"></div>
             </div>
+            <div class="pageNumber">6</div>
             <div class="bottomBtns">
-
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn btn">Back</button>
-
+                <button type="button" class="back leftBtn btn">Back</button>
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn btn" type="button">Continue</button>
+                <button class="continue btn rightBtn" type="button">Continue</button>
             </div>
         </div>
 
@@ -269,19 +274,18 @@
             </div>
             <div class="content-noBtns">
                 <p>Now we know what variables factor in, but we'll need to derive the equation to understand how
-                    they relate to each other. We'll back into the equation by using a simple example.</p>
+                    they relate to each other. We'll practice the equation by using a simple example.</p>
                 <p>Answer this question:</p>
-                <p><strong>How much money would you have in 1 year if you invested $100 at a rate of 10%?</strong>
+                <p class="bold indent">How much money would you have in 1 year if you invested $100 at a rate of 10%?
                 </p>
             </div>
+            <div class="pageNumber">7</div>
             <div class="bottomBtns">
                 <!-- HELP BUTTON -->
                 <button type="button" class="helpBtn btn">I Need Help</button>
-
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn btn" type="button">Continue</button>
+                <button class="continue btn rightBtn" type="button">Continue</button>
             </div>
-
         </div>
 
 
@@ -297,31 +301,58 @@
             </div>
             <div class="content-noBtns">
 
-                <p>To figure out how much we will have in 1 year, we first calculate the interest payment.</p>
-                <p>The interest payment is calculated by multiplying the interest rate times the principal
-                    amount.
-                </p>
-                <p>Now, identify the interest rate and the principal in the word problem by clicking on the
-                    variables
-                    below.</p>
-                <p><strong>How much money would you have in <span class="time">1 year</span> if you invested
-                        <span class="presentValue">$100</span> at a rate of <span class="interest">10%</span>?</strong>
-                </p>
+                <p>First, we need to calculate the interest payment by multiplying the interest rate times the principal
+                    amount. Identify the interest rate and the principal in the word problem below.</p>
+                <p class="indent">How much money would you have in <span class="time">1 year</span> if you invested
+                    <span class="presentValue">$100</span> at a rate of <span class="interest">10%</span>?</p>
 
             </div>
+            <div class="pageNumber">8</div>
             <div class="bottomBtns">
                 <!-- BACK BUTTON -->
-                <button type="button" class="backHelpBtn btn">Back - I'm good
-                    now!</button>
-
+                <button class="back btn leftBtn help" type="button">Keep helping me!</button>
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn btn" type="button">Keep helping me!</button>
+                <button type="button" class="continue rightBtn btn">I'm good
+                    now!</button>
             </div>
             </a>
         </div>
 
-        <!-- Content SLIDE 8 ******************* -->
-        <div id="slide8" class="slide">
+
+        <!-- Slide 9 - HELP -->
+        <div id="help2" class="slide helpSlide">
+            <div class="slideTitle">
+                <div class="titleBlock">
+                    <h2 class="primaryTitle">TVM: The Basics</h2>
+                    <h3 class="secondaryTitle">Help Me!</h3>
+                </div>
+            </div>
+            <div class="content-noBtns">
+
+                <p>After calculating the interest payment, you need to add the interest payment back to the initial
+                    investment (principal).</p>
+                <p>How much money would you have in <span class="time">1 year</span> if you invested <span
+                        class="presentValue">$100</span>
+                    at a rate of <span class="interest">10%</span>?</p>
+                <p>Calculate the interest payment:</p>
+                <p><span class="interest">10%</span> x <span class="presentValue">$100</span> = <span
+                        class="interest">$10</span></p>
+                <p>Add the interest payment back to the initial investment (principal).</p>
+                <p><span class="presentValue">$100</span> + <span class="interest">$10</span> = <span
+                        class="futureValue">$110</span></p>
+            </div>
+            <div class="pageNumber">9</div>
+            <div class="bottomBtns">
+                <!-- BACK BUTTON -->
+                <button type="button" class="back leftBtn btn">Back</button>
+                <!-- CONTINUE BUTTON -->
+                <button class="continue btn rightBtn" type="button">Continue</button>
+            </div>
+        </div>
+
+
+        <!-- Content SLIDE 9 ******************* -->
+        <div id="slide9" class="slide">
             <div class="slideTitle">
                 <div class="titleBlock">
                     <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -344,7 +375,7 @@
                 <button type="button" class="helpBtn btn">Help</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn btn" type="button">Continue</button>
+                <button class="continue btn rightBtn" type="button">Continue</button>
             </div>
         </div>
 
@@ -370,10 +401,10 @@
             <div class="bottomBtns">
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn btn">I Need Help</button>
+                <button type="button" class="back leftBtn btn">I Need Help</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn btn" type="button">I've got it!</button>
+                <button class="continue btn rightBtn" type="button">I've got it!</button>
             </div>
         </div>
 
@@ -400,10 +431,10 @@
             <div class="bottomBtns">
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn btn">Back</button>
+                <button type="button" class="back leftBtn btn">Back</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn btn" type="button">Continue</button>
+                <button class="continue btn rightBtn" type="button">Continue</button>
             </div>
         </div>
 
@@ -434,10 +465,10 @@
             <div class="bottomBtns">
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn btn">Back</button>
+                <button type="button" class="back leftBtn btn">Back</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn btn" type="button">Continue</button>
+                <button class="continue btn rightBtn" type="button">Continue</button>
             </div>
         </div>
 
@@ -467,10 +498,10 @@
             <div class="bottomBtns">
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn btn">Back</button>
+                <button type="button" class="back leftBtn btn">Back</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn btn" type="button">Continue</button>
+                <button class="continue btn rightBtn" type="button">Continue</button>
             </div>
         </div>
 
@@ -499,10 +530,10 @@
             <div class="bottomBtns">
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn btn">Back</button>
+                <button type="button" class="back leftBtn btn">Back</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn btn" type="button">Continue</button>
+                <button class="continue btn rightBtn" type="button">Continue</button>
             </div>
         </div>
 
@@ -530,10 +561,10 @@
             <div class="bottomBtns">
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn btn">Back</button>
+                <button type="button" class="back leftBtn btn">Back</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn btn" type="button">Continue</button>
+                <button class="continue btn rightBtn" type="button">Continue</button>
             </div>
         </div>
 
@@ -584,10 +615,10 @@
             <div class="bottomBtns">
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn">Back</button>
+                <button type="button" class="back leftBtn btn">Back</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn" type="button">Continue</button>
+                <button class="continue rightBtn" type="button">Continue</button>
             </div>
         </div>
 
@@ -617,10 +648,10 @@
             <div class="bottomBtns">
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn btn">Back</button>
+                <button type="button" class="back leftBtn btn">Back</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn btn" type="button">Continue</button>
+                <button class="continue btn rightBtn" type="button">Continue</button>
             </div>
         </div>
 
@@ -647,10 +678,10 @@
             <div class="bottomBtns">
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn">Back</button>
+                <button type="button" class="back leftBtn btn">Back</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn" type="button">Continue</button>
+                <button class="continue rightBtn" type="button">Continue</button>
             </div>
         </div>
 
@@ -676,10 +707,10 @@
             <div class="bottomBtns">
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn">Back</button>
+                <button type="button" class="back leftBtn btn">Back</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn" type="button">Continue</button>
+                <button class="continue rightBtn" type="button">Continue</button>
             </div>
         </div>
 
@@ -715,10 +746,10 @@
             <div class="bottomBtns">
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn">Back</button>
+                <button type="button" class="back leftBtn btn">Back</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn" type="button">Continue</button>
+                <button class="continue rightBtn" type="button">Continue</button>
             </div>
         </div>
 
@@ -753,10 +784,10 @@
             <div class="bottomBtns">
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn">Back</button>
+                <button type="button" class="back leftBtn btn">Back</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn" type="button">Continue</button>
+                <button class="continue rightBtn" type="button">Continue</button>
             </div>
         </div>
 
@@ -792,10 +823,10 @@
             <div class="bottomBtns">
 
                 <!-- BACK BUTTON -->
-                <button type="button" class="backBtn">Back</button>
+                <button type="button" class="back leftBtn btn">Back</button>
 
                 <!-- CONTINUE BUTTON -->
-                <button class="continueBtn" type="button">Continue</button>
+                <button class="continue rightBtn" type="button">Continue</button>
             </div>
         </div>
 
