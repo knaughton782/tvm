@@ -64,8 +64,10 @@ body {
 }
 
 .backgroundImage {
-    background-image: url("https://olc.webster.edu/sandbox/kirsten/tvm/images/money.png");
-    background-position: center;
+    background-image: url("./images/tvm-cover.png");
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: auto;
 } 
 /****** End Cover Slide ****/
 
@@ -106,6 +108,16 @@ p {
     margin: auto;
 }
 
+.sideBySide {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image {
+    margin: 20px auto 15px auto;
+    display: block;
+    max-width: 450px;
+}
 
 /********* BUTTON STYLES *********/
 /* standard button  */
@@ -240,8 +252,8 @@ button.interest {
 }
 
 .faded {
-    color: #706f6f;
-    font-size: .8em;
+    color: #575656;
+    font-size: .9em;
 }
 
 .help {
