@@ -2,7 +2,7 @@ $(document).ready(function () {
 
   /** continue/back BUTTON FUNCTIONALITY  **/
 
-  //hide all slides except first slide
+  // hide all slides except first slide
   // $('.allSlides .slide').each(function (e) {
   //   if (e != 0) {
   //     $(this).hide();
@@ -38,6 +38,9 @@ $(document).ready(function () {
     }
     return false;
   });
+
+
+
   /** END Back / Continue Button Functionality ****************/
 
   /**** slide 2 content switching functionality ***/
@@ -121,6 +124,52 @@ $(document).ready(function () {
   $('#interestBtn').click(addInterest);
 
   /***** end slide 6 content switching ********/
+
+  /****** slide 19, help slide 6 button/content switching *****/
+  var principles = $('#principles');
+  var pemdas = $('#pemdas');
+  var dist = $('#dist');
+  var foil = $('#foil');
+
+  principles.show();
+  pemdas.hide();
+  dist.hide();
+  foil.hide();
+
+  function showPemdas() {
+    principles.hide();
+    pemdas.show();
+    dist.hide();
+    foil.hide();
+  }
+  $('#pemdasBtn').click(showPemdas);
+
+  function showDist() {
+    principles.hide();
+    pemdas.hide();
+    dist.show();
+    foil.hide();
+  }
+  $('#distBtn').click(showDist);
+
+  function showFoil() {
+    principles.hide();
+    pemdas.hide();
+    dist.hide();
+    foil.show();
+  }
+  $('#foilBtn').click(showFoil);
+
+  function showPrinciples() {
+    principles.show().addClass('selected');
+    pemdas.hide();
+    dist.hide();
+    foil.hide();
+  }
+  $('#principlesBtn').click(showPrinciples);
+
+  /***** end slide 19 content switching ********/
+
 
 
   $('.btn-group-left').on('click', '.btn', function () {
