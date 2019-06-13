@@ -157,7 +157,7 @@
                         <li>What else could your company do with the money if the customer paid now?</li>
                         <li>If the loan is long enough, will inflation further erode the value of tomorrow's dollar?</li>
                     </ul>
-                </>
+                </p>
                 <p class="bold">Let's attach some variable names to these factors.</p>
             </div>
             <div class="pageNumber">5</div>
@@ -183,7 +183,7 @@
                 <p class="indent">What factors would you consider in determining how much <span class="futureValue">(Future Value or FV)</span> the customer should pay at a later date?</p>
                 <div class="btn-group-left" role="group">
                     <button type="button" id="presentValueBtn" class="presentValue btn">Present Value (PV)</button>
-                    <button type="button" id="timeBtn" class="time btn">Time (N)</button>
+                    <button type="button" id="timeBtn" class="time btn">Time (n)</button>
                     <button type="button" id="interestBtn" class="interest btn">Interest (i)</button>
                 </div>
 
@@ -195,7 +195,7 @@
                     <ul>
                         <li class="futureValue">Future Value (FV): Green</li>
                         <li class="presentValue">Present Value (PV): Orange</li>
-                        <li class="time">Time (N): Purple</li>
+                        <li class="time">Time (n): Purple</li>
                         <li class="interest">Interest (i): Pink</li>
                     </ul>
                 </div>
@@ -205,8 +205,8 @@
                     <p>How much is being borrowed? <span class="presentValue">Present Value (PV)</span> is the value in today's terms.</p>
                 </div>
                 <div id="time" class="rightContent">
-                    <h3 class="contentTitle time">Time (N)</h3>
-                    <p>How long before the customer pays? <span class="time">Time (N)</span> is the measure of time in years.</p>
+                    <h3 class="contentTitle time">Time (n)</h3>
+                    <p>How long before the customer pays? <span class="time">Time (n)</span> is the measure of time in years.</p>
                 </div>
                 <div id="interest" class="rightContent">
                     <h3 class="contentTitle interest">Interest (i)</h3>
@@ -271,13 +271,15 @@
                             <li>How much money would you have in <span class="time">1 year</span> if you invested
                                 <span class="presentValue">$100</span> at a rate of <span class="interest">10%</span>?</li>
                             <li>Calculate the interest payment using the variables you've identified:
-                                <div class="image"><span class="interest">10%</span> x <span class="presentValue">$100</span> = <span class="interest">$10</span></div></li>
+                                <div class="image"><span class="interest">10%</span> x <span class="presentValue">$100</span> = <span class="interest">$10</span></div>
+                            </li>
                         </ul>
                     </li>
                     <li>Next, <strong>add the interest payment back to the initial investment (principal)</strong>.
                         <ul>
                             <li>Add the interest payment back to the initial investment (principal).
-                                <div class="image"><span class="presentValue">$100</span> + <span class="interest">$10</span> = <span class="futureValue">$110</span></div></li>
+                                <div class="image"><span class="presentValue">$100</span> + <span class="interest">$10</span> = <span class="futureValue">$110</span></div>
+                            </li>
                         </ul>
                     </li>
                 </ol>
@@ -417,8 +419,9 @@
                 <p class="indent bold">How much money would you have in a year if you invested $110 at 10% interest?</p>
                 <p>Calculate the interest payment for year 2.<br> Recall that the interest rate is <span class="interest">10%</span>. This time the principal is <span class="presentValue">$110</span>.
                 </p>
-                <p>To find the interest payment, multiply the <span class="interest">interest rate</span> times the <span class="presentValue">principal (PV)</span> amount. 
-                    <div class="image"><span class="interest">10%</span> * <span class="presentValue">$110</span> = <span class="interest">$11</span></div></p>
+                <p>To find the interest payment, multiply the <span class="interest">interest rate</span> times the <span class="presentValue">principal (PV)</span> amount.
+                    <div class="image"><span class="interest">10%</span> * <span class="presentValue">$110</span> = <span class="interest">$11</span></div>
+                </p>
             </div>
             <div class="pageNumber">12</div>
             <div class="bottomBtns">
@@ -500,12 +503,15 @@
                 <p>Review:</p>
                 <ul>
                     <li>We calculated the 1st year of interest by multiplying the interest rate, 10%, times the 1st year starting principle, $100.
-                        <div class="image">(<span class="presentValue">$100</span> * <span class="interest">10%</span>) = $10</div></li>
-                
+                        <div class="image">(<span class="presentValue">$100</span> * <span class="interest">10%</span>) = $10</div>
+                    </li>
+
                     <li>We calculated the 2nd year of interest by finding 10% of the 2nd year starting principal, $110.
-                        <div class="image">($110 * <span class="interest">10%</span>) = $11</div></li>
+                        <div class="image">($110 * <span class="interest">10%</span>) = $11</div>
+                    </li>
                     <li>We added the 1st and 2nd year interest to the principal of $100.
-                        <div class="image"><strong>(<span class="presentValue">$100</span> + $10 + $11) = $121</strong></div></li>
+                        <div class="image"><strong>(<span class="presentValue">$100</span> + $10 + $11) = $121</strong></div>
+                    </li>
                 </ul>
             </div>
             <div class="pageNumber">15</div>
@@ -536,7 +542,7 @@
                     consuming and fortunately, unncessary.</p>
                 <p>Instead, we'll derive a general equation that will allow you to solve for <span class="futureValue">Future
                         Value (FV)</span>, <span class="presentValue">Present Value (PV)</span>, <span class="interest">Interest
-                        rate (i)</span>, or number of <span class="time">years (N)</span>.</p>
+                        rate (i)</span>, or number of <span class="time">years (n)</span>.</p>
             </div>
             <div class="pageNumber">16</div>
             <div class="bottomBtns">
@@ -596,7 +602,7 @@
                         <li><span class="presentValue">PV</span> = 100</li>
                         <li><span class="futureValue">FV</span> = ?</li>
                         <li><span class="interest">i</span> = 10% or 0.10</li>
-                        <li><span class="time">N</span> = 2</li>
+                        <li><span class="time">n</span> = 2</li>
                     </ul>
                     <div>
                         <img src="images/derive2.png" alt="interest calculation" class="image">
@@ -639,15 +645,10 @@
                         <li>Cancel out variables or numbers by performing the same action to both sides of the equal side.</li>
                         <li>Find the reciprocal of a number by converting the number to a fraction, then switching the numerator and denominator. A number multiplied by its reciprocal equals 1. Reciprocals are useful for canceling numbers and exponents.</li>
                     </ul>
-                    <!-- <p>
-                        Cancel out variables or numbers by performing the same action to both sides of the equal side.<br>
-                        Find the reciprocal of a number by converting the number to a fraction, then switching the numerator and denominator. A number multiplied by its reciprocal equals 1. Reciprocals are useful for canceling numbers and exponents.
-                    </p> -->
-                    <!-- TODO: add this image back in -->
-                    <!-- <div>
-                        <p>Examples of reciprocals:</p>
+                    <div>
+                        <p>Examples:</p>
                         <img src="images/reciprocals.png" alt="examples of reciprocals" class="image">
-                    </div> -->
+                    </div>
                 </div>
                 <div id="pemdas" class="rightContent">
                     <h3 class="contentTitle">Order of Operations</h3>
@@ -664,12 +665,11 @@
                 <div id="dist" class="rightContent">
                     <h3 class="contentTitle">Distributive Property</h3>
                     <p>We'll use the Distributive Property to distribute a number that is multiplied by a polynomial in parentheses. For instance:<br>
-                        <img src="images/distributive_property.png" alt="example of the distributive property" class="image">
+                        <img src="images/distributive_property.png" alt="example of the distributive property" class="image" style="width: 200px;">
                     </p>
-                    <!-- TODO: add the below back in  -->
-                    <!-- <p>The Distributive Property is easy enough to understand when real numbers are involved. However, its important to understand how to distribute with variables.<br>
-                        <img src="images/distributive_property_with_variables.png" alt="example of the distributive property using variables" class="image">
-                    </p> -->
+                    <p>The Distributive Property is easy enough to understand when real numbers are involved. However, its important to understand how to distribute with variables.<br>
+                        <img src="images/distributive_property_with_variables.png" alt="example of the distributive property using variables" class="image" style="width: 200px;">
+                    </p>
                 </div>
                 <div id="foil" class="rightContent">
                     <h3 class="contentTitle">FOIL</h3>
@@ -699,68 +699,27 @@
             <div class="content-noBtns">
                 <p>Now its just a matter of simplifying the formula and grouping like variables.<br>
                     <img src="images/derive3_part1b.png" alt="" class="image"></p>
-                <br>
-                <ol>
+                <ol class="indent">
                     <li>Start with the parenthesis by multiplying the variables within.<br>
-                        <img src="images/derive3_part1a.png" alt="" class="image">
+                        <img src="images/derive3_part1a.png" alt="" class="image" style="width: 200px;">
                     </li>
                     <li>Distribute the multiplication to the variables within the middle bracket.<br>
-                        <div class="image">
-                            <span class="presentValue">PV</span><span class="interest">i</span> + <span class="presentValue">PV</span><span class="interest">i</span><sup>2</sup> + <span class="presentValue">PV</span><span class="interest">i</span>
-                            + <span class="presentValue">PV</span>
-                        </div>
+                        <img src="images/derive3_part2.png" alt="" class="image" style="width: 200px;">
                     </li>
                     <li>Group like variables.<br>
-                        <div class="image">
-                            <span class="presentValue">PV</span><span class="interest">i</span> + <span class="presentValue">PV</span><span class="interest">i</span><sup>2</sup> + <span class="presentValue">PV</span><span class="interest">i</span>
-                            + <span class="presentValue">PV</span> &rarr; <span class="presentValue">PV</span><span class="interest">i</span><sup>2</sup>
-                            + 2<span class="presentValue">PV</span><span class="interest">i</span> + <span class="presentValue">PV</span>
-                        </div>
+                        <img src="images/derive3_part3a.png" alt="" class="image">
                     </li>
                     <li>Use the distributive property to separate the like term, PV.<br>
-                        <div class="image">
-                            <span class="presentValue">PV</span><span class="interest">i</span><sup>2</sup> + 2<span class="presentValue">PV</span><span class="interest">i</span> + <span class="presentValue">PV</span>
-                            &rarr; <span class="presentValue">PV</span>(<span class="interest">i</span><sup>2</sup> + 2<span class="interest">i</span> + 1)
-                            <div>
+                        <img src="images/derive3_part4.png" alt="" class="image">
                     </li>
                 </ol>
             </div>
-            <div class="pageNumber">19</div>
+            <div class="pageNumber">20</div>
             <div class="bottomBtns">
                 <!-- BACK BUTTON -->
                 <button type="button" class="back leftBtn btn">Back</button>
                 <!-- CONTINUE BUTTON -->
                 <button class="continue rightBtn btn" type="button">Continue</button>
-            </div>
-        </div>
-
-
-
-        <!-- SLIDE 20 - CONTENT -->
-        <div id="slide20" class="slide">
-            <div class="slideTitle">
-                <div class="titleBlock">
-                    <h2 class="primaryTitle">TVM: The Basics</h2>
-                    <h3 class="secondaryTitle">Equation</h3>
-                </div>
-            </div>
-            <div class="content-noBtns">
-                <br>
-                <ul class="noDecoration">
-                    <li>The equation in the parentheses can be simplified to (x + 1)(x + 1). You can find information on this equation in the math help under FOIL.</li><br>
-                    <li>Think of (i + 1) as a number. A number multiplied by itself is also known as squaring that
-                        number, which is what we will do here.</li><br>
-                    <li>Remember, back to the problem: the term is 2 years. Therefore, n = 2 and we can replace the
-                        number in the exponent with the variable.</li>
-                </ul>
-                <br>
-            </div>
-            <div class="pageNumber">22</div>
-            <div class="bottomBtns">
-                <!-- BACK BUTTON -->
-                <button type="button" class="back leftBtn btn">Back</button>
-                <!-- CONTINUE BUTTON -->
-                <button class="continue btn rightBtn" type="button">Continue</button>
             </div>
         </div>
 
@@ -775,19 +734,22 @@
                 </div>
             </div>
             <div class="content-noBtns">
-                <p>Adding FV to the other side of the equal sign, we arrive at:</p>
-                <h2><span class="futureValue">FV</span> = <span class="presentValue">PV</span>(1 + <span class="interest">i</span>)<sup><span class="time">n</span></sup></h2>
                 <br>
-                <p>We could continue to derive the equation for 3, 10, 100 years. After a lot of algebraic
-                    manipulation, the outcome would be the same. Its not so important that you're able to repeat the
-                    derivation, but that you understand the equation can be derived from individual calculations.</p>
+                <ul class="noDecoration">
+                    <li>The equation in the parentheses can be simplified to (x + 1)(x + 1). You can find information on this equation in the math help under FOIL.<br></li>
+                    <img src="images/derive3_part5.png" alt="" class="image"><br><img src="images/derive3_part5a.png" alt="" class="image">
+                    <li>Think of (i + 1) as a number. A number multiplied by itself is also known as squaring that number, which is what we will do here.<br></li>
+                    <img src="images/derive3_part6.png" alt="" class="image" style="width: 400px;">
+                    <li>Remember, back to the problem: the term is 2 years. Therefore, n = 2 and we can replace the number in the exponent with the variable.<br><img src="images/derive3_part7.png" alt="" class="image" style="width: 100px;"></li>
+                </ul>
+                <br>
             </div>
-            <div class="pageNumber">23</div>
+            <div class="pageNumber">21</div>
             <div class="bottomBtns">
                 <!-- BACK BUTTON -->
                 <button type="button" class="back leftBtn btn">Back</button>
                 <!-- CONTINUE BUTTON -->
-                <button class="continue rightBtn" type="button">Continue</button>
+                <button class="continue btn rightBtn" type="button">Continue</button>
             </div>
         </div>
 
@@ -802,17 +764,16 @@
                 </div>
             </div>
             <div class="content-noBtns">
-                <p>Now that we have a general equation, let's try some examples.</p>
-                <h2><span class="futureValue">FV</span> = <span class="presentValue">PV</span>(1 + <span class="interest">i</span>)<sup><span class="time">n</span></sup></h2>
-                <br>
-                <p>What would a $100 investment be worth 10 years at 10%?</p>
+                <p>Adding FV to the other side of the equal sign, we arrive at:<br>
+                    <img src="images/tvm_basic_equation.png" alt="" class="image" style="width: 200px;"></p>
+                <p>We could continue to derive the equation for 3, 10, 100 years. After a lot of algebraic manipulation, the outcome would be the same. Its not so important that you're able to repeat the derivation, but that you understand the equation can be derived from individual calculations.</p>
             </div>
-            <div class="pageNumber">24</div>
+            <div class="pageNumber">22</div>
             <div class="bottomBtns">
                 <!-- BACK BUTTON -->
                 <button type="button" class="back leftBtn btn">Back</button>
                 <!-- CONTINUE BUTTON -->
-                <button class="continue rightBtn" type="button">Continue</button>
+                <button class="continue btn rightBtn" type="button">Continue</button>
             </div>
         </div>
 
@@ -827,27 +788,18 @@
                 </div>
             </div>
             <div class="content-noBtns">
-                <p>The first hurdle is to find the variables in the word problem. Can you identify the variables in the
-                    example word problem?</p>
-                <p>Don't use dollar signs. Interest should be expressed as a decimal or percentage. Type a ? for the
-                    unknown variable.</p>
-                <p>What would the $100 investment be worth in 10 years at 10% interest?</p>
-                <!-- TODO: STYLE the form and INPUTS -->
-                <form action="">
-                    <label>PV <input type="text"></label><br>
-                    <label>FV <input type="text"></label><br>
-                    <label>i <input type="text"></label><br>
-                    <label>n <input type="text"></label><br>
-                </form>
-                <button>Calculate</button>
-                <!-- TODO: place for answer to display and continue if correct button -->
+                <p>Now that we have a general equation, let's try some examples.</p>
+                <img src="images/tvm_basic_equation.png" alt="" class="image" style="width: 200px;">
+                <br>
+                <p class="bold">Answer this question:</p>
+                <p>What would a $100 investment be worth 10 years at 10%?</p>
             </div>
-            <div class="pageNumber">25</div>
+            <div class="pageNumber">23</div>
             <div class="bottomBtns">
                 <!-- BACK BUTTON -->
                 <button type="button" class="back leftBtn btn">Back</button>
                 <!-- CONTINUE BUTTON -->
-                <button class="continue rightBtn" type="button">Continue</button>
+                <button class="continue btn rightBtn" type="button">Continue</button>
             </div>
         </div>
 
@@ -862,27 +814,24 @@
                 </div>
             </div>
             <div class="content-noBtns">
-                <p>First, identify the variables from the problem:</p>
-                <p>What would the $100 investment be worth in 10 years at 10%?</p>
-                <p><span class="presentValue">PV = 100</span><br>
-                    <span class="futureValue">FV = ?</span><br>
-                    <span class="interest">i = 10% or 0.10</span><br>
-                    <span class="time">n = 10</span></p>
-                <p>Did you come up with the right numbers? Here are some tips:</p>
-                <ul>
-                    <li>i is a rate. Look for a percentage or decimal.</li>
-                    <li>n will be an expression of time or number of years.</li>
-                    <li>To distinguish between PV and FV, ask yourselv whether the dollar amount is money you have now
-                        or in the future. Since the $100 is today's investment, it must be PV. The question asks what
-                        it will be worth, indicating we want to find FV.</li>
-                </ul>
+                <p>The first hurdle is to find the variables in the word problem. Can you identify the variables in the example word problem?</p>
+                <p class="question">What would the $100 investment be worth in 10 years at 10% interest?</p>
+                <p class="faded indent">Don't use dollar signs. Interest should be expressed as a decimal or percentage. Leave the unknown variable box empty.</p>
+                <form action="" class="indent">
+                    <label><span class="presentValue">PV</span> </label><input id="pValue" type="text"><br>
+                    <label><span class="futureValue">FV</span> </label><input id="fValue" type="text"><br>
+                    <label>&nbsp;&nbsp;<span class="interest">i </span></label><input id="interest" type="text"><br>
+                    <label><span class="time">n</span> </label><input id="numYrs" type="text"><br>
+                </form>
+                <button onclick="calculateFV()" class="btn calculateBtn">Calculate</button>
+                <div id="answer"></div>
             </div>
-            <div class="pageNumber">26</div>
+            <div class="pageNumber">24</div>
             <div class="bottomBtns">
                 <!-- BACK BUTTON -->
                 <button type="button" class="back leftBtn btn">Back</button>
                 <!-- CONTINUE BUTTON -->
-                <button class="continue rightBtn" type="button">Continue</button>
+                <button class="continue btn rightBtn" type="button">Continue</button>
             </div>
         </div>
 
@@ -890,6 +839,36 @@
 
         <!-- SLIDE 25 - CONTENT -->
         <div id="slide25" class="slide">
+            <div class="slideTitle">
+                <div class="titleBlock">
+                    <h2 class="primaryTitle">TVM: The Basics</h2>
+                    <h3 class="secondaryTitle">Equation</h3>
+                </div>
+            </div>
+            <div class="content-noBtns">
+                <p>First, identify the variables from the problem:</p>
+                <p>What would the $100 investment be worth in 10 years at 10%?</p>
+                <p class="indent"><span class="presentValue">PV = 100</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="futureValue">FV = ?</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="interest">i = 10% or 0.10</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="time">n = 10</span></p>
+                <p>Did you come up with the right numbers? Here are some tips:</p>
+                <ul>
+                    <li>i is a rate. Look for a percentage or decimal.</li>
+                    <li>n is an expression of time or number of years.</li>
+                    <li>To distinguish between PV and FV, ask yourself whether the dollar amount is money you have now or in the future. Since the $100 is today's investment, it must be PV. The question asks what it <i>will be</i> worth, indicating we want to find FV.</li>
+                </ul>
+            </div>
+            <div class="pageNumber">25</div>
+            <div class="bottomBtns">
+                <!-- BACK BUTTON -->
+                <button type="button" class="back leftBtn btn">Back</button>
+                <!-- CONTINUE BUTTON -->
+                <button class="continue btn rightBtn" type="button">Continue</button>
+            </div>
+        </div>
+
+
+
+        <!-- SLIDE 26 - CONTENT -->
+        <div id="slide26" class="slide">
             <div class="slideTitle">
                 <div class="titleBlock">
                     <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -915,12 +894,12 @@
                         <span class="futureValue">FV</span> = $259.37</li>
                 </ol>
             </div>
-            <div class="pageNumber">27</div>
+            <div class="pageNumber">26</div>
             <div class="bottomBtns">
                 <!-- BACK BUTTON -->
                 <button type="button" class="back leftBtn btn">Back</button>
                 <!-- CONTINUE BUTTON -->
-                <button class="continue rightBtn" type="button">Continue</button>
+                <button class="continue btn rightBtn" type="button">Continue</button>
             </div>
         </div>
 

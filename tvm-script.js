@@ -176,15 +176,25 @@ $(document).ready(function () {
     $(this).addClass('active').siblings().removeClass('active');
   });
 
+  
 
 
 
+function FV(PV, i, n) {
+  var x = (1 + i / 100)
+  var FV = PV * (Math.pow(x, n))
+  return FV;
+  console.log("FV ran");
+}
 
+function calculateFV() {
+  var pvalue = parseFloat(document.getElementById("pValue").value);
+  var interest = parseFloat(document.getElementById("interest").value);
+  var numYrs = parseInt(document.getElementById("numYrs").value);
+  var fvalue = FV(pvalue, interest, numYrs);
+  var fv = fvalue.toFixed(2);
+  document.getElementById('answer').textContent = "The future value is= " + fv;
+  console.log('calc FV ran 2');
+}
 
-
-
-
-
-
-
-}); // end document ready
+  }); // end document ready
