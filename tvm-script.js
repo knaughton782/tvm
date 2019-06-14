@@ -180,21 +180,62 @@ $(document).ready(function () {
 
 
 
-function FV(PV, i, n) {
-  var x = (1 + i / 100)
-  var FV = PV * (Math.pow(x, n))
-  return FV;
-  console.log("FV ran");
-}
 
-function calculateFV() {
-  var pvalue = parseFloat(document.getElementById("pValue").value);
-  var interest = parseFloat(document.getElementById("interest").value);
-  var numYrs = parseInt(document.getElementById("numYrs").value);
-  var fvalue = FV(pvalue, interest, numYrs);
-  var fv = fvalue.toFixed(2);
-  document.getElementById('answer').textContent = "The future value is= " + fv;
-  console.log('calc FV ran 2');
-}
+
+// function FV(PV, i, n) {
+//   var x = (1 + i / 100)
+//   var FV = PV * (Math.pow(x, n))
+//   return FV;
+//   console.log("FV ran");
+ // document.getElementById("answer").innerHTML = fv;
+// }
+
+// function getNumbers() {
+//   var pvalue = parseFloat(document.getElementById("pValue").value);
+//   var interest = parseFloat(document.getElementById("interest").value);
+//   var numYrs = parseInt(document.getElementById("numYrs").value);
+//   var fvalue = FV(pvalue, interest, numYrs);
+//   var fv = fvalue.toFixed(2);
+//   document.getElementById('answer').textContent = "The future value is= " + fv;
+//   console.log('calc FV ran 2');
+  //document.getElementById('answer').innerHTML = "The future value is= " + fv;
+  //console.log('calc FV ran 2');
+// }
 
   }); // end document ready
+
+// function getNumbers() {
+//   var pvalue = parseFloat(document.getElementById("presentValue").value);
+//   console.log(pvalue);
+//   var int = parseFloat(document.getElementById("int").value);
+//   console.log(int);
+//   var numYrs = parseInt(document.getElementById("numYrs").value);
+//   console.log(numYrs);
+//   // var fvalue = parseFloat(document.getElementById('futureValue').value).toFixed(2);
+//   // console.log(fvalue);
+
+//   calculateFV(pvalue, int, numYrs);
+// }
+
+// function calculateFV(pvalue, int, numYrs) {
+//   var x = (1 + int / 100);
+//   var fvalue = pvalue * (Math.pow(x, numYrs));
+//   console.log(fvalue);
+//   return fvalue;
+
+// }
+
+
+function FV(PV, i, n) {
+  var x = (1 + i / 100);
+  var FV = PV * (Math.pow(x, n));
+  return FV;
+}
+function cal_FV() {
+  var pvalue = parseFloat(document.getElementById("a").value);
+  var interest = parseFloat(document.getElementById("b").value);
+  var num = parseInt(document.getElementById("c").value);
+  var fvalue = FV(pvalue, interest, num);
+  var fv = fvalue.toFixed(2);
+  document.getElementById('ans').textContent = "The future value is= " + fv;
+}

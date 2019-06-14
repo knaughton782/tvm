@@ -124,6 +124,7 @@ p {
     margin-top: 20px;
 }
 
+
 /********* BUTTON STYLES *********/
 /* standard button  */
 button {
@@ -170,7 +171,7 @@ button:active {
 
 .calculateBtn {
     background-color:  #89002d;
-    width: 25%;
+    width: 50%;
     color: white;
     font-size: 14px;
     margin: 10px 60px;
@@ -278,6 +279,20 @@ button.interest {
     margin: auto;
     width: 95%;
 }
+
+/* .right {
+
+}
+.left {
+
+} */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    align-content: space-between;
+    margin: 10px;
+} 
 /* end text styles *************** */
 
 
@@ -287,19 +302,20 @@ button.interest {
 } */
 
 input[type=text], input[type=password], input[type=email], input[type=number], textarea, select {
-    width: 30%;
+    width: 70%;
     padding: 10px 10px;
     margin: 10px 10px;
-    /* display: block; */
+    /* display: inline-block; */
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     font-size: .8em;
+    box-shadow: 20px 10px 50px #eeeeee;
 }
 
 
 input[type=submit] {
-    width: 25%;
+    width: 50%;
     background-color:  #89002d;
     color: white;
     padding: 13px;

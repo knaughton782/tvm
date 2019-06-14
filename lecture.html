@@ -814,17 +814,20 @@
                 </div>
             </div>
             <div class="content-noBtns">
-                <p>The first hurdle is to find the variables in the word problem. Can you identify the variables in the example word problem?</p>
-                <p class="question">What would the $100 investment be worth in 10 years at 10% interest?</p>
+                <p>Can you identify the variables in the example word problem? <span class="question bold">What would the $100 investment be worth in 10 years at 10% interest?</span></p>
                 <p class="faded indent">Don't use dollar signs. Interest should be expressed as a decimal or percentage. Leave the unknown variable box empty.</p>
-                <form action="" class="indent">
-                    <label><span class="presentValue">PV</span> </label><input id="pValue" type="text"><br>
-                    <label><span class="futureValue">FV</span> </label><input id="fValue" type="text"><br>
-                    <label>&nbsp;&nbsp;<span class="interest">i </span></label><input id="interest" type="text"><br>
-                    <label><span class="time">n</span> </label><input id="numYrs" type="text"><br>
-                </form>
-                <button onclick="calculateFV()" class="btn calculateBtn">Calculate</button>
-                <div id="answer"></div>
+               <div class="container">
+                   <div class="left">
+                        <form action="" class="indent">
+                            <label><span class="presentValue">PV</span> </label><input id="a" type="number"  value="" step="1"><br>
+                            <label><span class="futureValue">FV</span> </label><input id="futureValue" type="number"  value="" step="1"><br>
+                            <label>&nbsp;&nbsp;&nbsp;<span class="interest">i </span></label><input id="b" type="number" value="" step=".1"><br>
+                            <label>&nbsp;&nbsp;<span class="time">n</span> </label><input id="c" type="number" value="" step="1"><br>
+                        </form>
+                        <button onclick="cal_FV()" type="button" class="btn calculateBtn">Calculate</button>
+                   </div>
+                    <div class="right answer" id="ans"></div>
+               </div>
             </div>
             <div class="pageNumber">24</div>
             <div class="bottomBtns">
@@ -851,9 +854,9 @@
                 <p class="indent"><span class="presentValue">PV = 100</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="futureValue">FV = ?</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="interest">i = 10% or 0.10</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="time">n = 10</span></p>
                 <p>Did you come up with the right numbers? Here are some tips:</p>
                 <ul>
-                    <li>i is a rate. Look for a percentage or decimal.</li>
-                    <li>n is an expression of time or number of years.</li>
-                    <li>To distinguish between PV and FV, ask yourself whether the dollar amount is money you have now or in the future. Since the $100 is today's investment, it must be PV. The question asks what it <i>will be</i> worth, indicating we want to find FV.</li>
+                    <li><span class="interest">i</span> is a rate. Look for a percentage or decimal.</li>
+                    <li><span class="time">n</span> is an expression of time or number of years.</li>
+                    <li>To distinguish between <span class="presentValue">PV</span> and <span class="futureValue">FV</span>, ask yourself whether the dollar amount is money you have now or in the future. Since the $100 is today's investment, it must be PV. The question asks what it <i>will be</i> worth, indicating we want to find FV.</li>
                 </ul>
             </div>
             <div class="pageNumber">25</div>
