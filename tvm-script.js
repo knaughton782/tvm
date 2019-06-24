@@ -176,33 +176,33 @@ $(document).ready(function () {
     $(this).addClass('active').siblings().removeClass('active');
   });
 
-  
 
 
 
 
 
-// function FV(PV, i, n) {
-//   var x = (1 + i / 100)
-//   var FV = PV * (Math.pow(x, n))
-//   return FV;
-//   console.log("FV ran");
- // document.getElementById("answer").innerHTML = fv;
-// }
 
-// function getNumbers() {
-//   var pvalue = parseFloat(document.getElementById("pValue").value);
-//   var interest = parseFloat(document.getElementById("interest").value);
-//   var numYrs = parseInt(document.getElementById("numYrs").value);
-//   var fvalue = FV(pvalue, interest, numYrs);
-//   var fv = fvalue.toFixed(2);
-//   document.getElementById('answer').textContent = "The future value is= " + fv;
-//   console.log('calc FV ran 2');
+  // function FV(PV, i, n) {
+  //   var x = (1 + i / 100)
+  //   var FV = PV * (Math.pow(x, n))
+  //   return FV;
+  //   console.log("FV ran");
+  // document.getElementById("answer").innerHTML = fv;
+  // }
+
+  // function getNumbers() {
+  //   var pvalue = parseFloat(document.getElementById("pValue").value);
+  //   var interest = parseFloat(document.getElementById("interest").value);
+  //   var numYrs = parseInt(document.getElementById("numYrs").value);
+  //   var fvalue = FV(pvalue, interest, numYrs);
+  //   var fv = fvalue.toFixed(2);
+  //   document.getElementById('answer').textContent = "The future value is= " + fv;
+  //   console.log('calc FV ran 2');
   //document.getElementById('answer').innerHTML = "The future value is= " + fv;
   //console.log('calc FV ran 2');
-// }
+  // }
 
-  }); // end document ready
+}); // end document ready
 
 // function getNumbers() {
 //   var pvalue = parseFloat(document.getElementById("presentValue").value);
@@ -225,17 +225,39 @@ $(document).ready(function () {
 
 // }
 
+// future value calculation is FV = PV(1 + i)^time
 
-function FV(PV, i, n) {
-  var x = (1 + i / 100);
-  var FV = PV * (Math.pow(x, n));
-  return FV;
+function FV(principal, interest, time) {
+  var answer = principal * Math.pow((1 + interest), time);
+  return answer.toFixed(2);
 }
-function cal_FV() {
-  var pvalue = parseFloat(document.getElementById("a").value);
-  var interest = parseFloat(document.getElementById("b").value);
-  var num = parseInt(document.getElementById("c").value);
-  var fvalue = FV(pvalue, interest, num);
-  var fv = fvalue.toFixed(2);
-  document.getElementById('ans').textContent = "The future value is= " + fv;
+
+function calc_FV() {
+  
+  var principal = parseFloat(document.getElementById('pvalue').value);
+  principal.toFixed(2);
+  console.log("principal = " + principal);
+
+  var futureValue = document.getElementById('futureValue').value;
+  
+  var interest = parseFloat(document.getElementById('int').value);
+  interest.toFixed(2);
+  
+  console.log("interest = " + interest);
+  
+  var time = document.getElementById('yrs').value;
+  console.log("time = " + time);
+  
+  var ans = FV(principal, interest, time);
+  
+  document.getElementById('answer').innerHTML = "The future value is $" + ans;
 }
+
+// function calculate() {
+// var principal = 100;
+// var interest = .10;
+// var time = 10;
+//   // FV = PV(1 + i) ^ time
+  
+// }
+// console.log(calculate());

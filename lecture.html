@@ -815,18 +815,27 @@
             </div>
             <div class="content-noBtns">
                 <p>Can you identify the variables in the example word problem? <span class="question bold">What would the $100 investment be worth in 10 years at 10% interest?</span></p>
-                <p class="faded indent">Don't use dollar signs. Interest should be expressed as a decimal or percentage. Leave the unknown variable box empty.</p>
+                <p class="faded indent">Don't use dollar signs. Interest should be expressed as a decimal. Leave the unknown variable box empty.</p>
                <div class="container">
                    <div class="left">
                         <form action="" class="indent">
-                            <label><span class="presentValue">PV</span> </label><input id="a" type="number"  value="" step="1"><br>
-                            <label><span class="futureValue">FV</span> </label><input id="futureValue" type="number"  value="" step="1"><br>
-                            <label>&nbsp;&nbsp;&nbsp;<span class="interest">i </span></label><input id="b" type="number" value="" step=".1"><br>
-                            <label>&nbsp;&nbsp;<span class="time">n</span> </label><input id="c" type="number" value="" step="1"><br>
+
+                            <label><span class="presentValue">PV</span> </label>
+                            <input id="pvalue" type="number"  placeholder="0" ><br>
+
+                            <label><span class="futureValue">FV</span> </label>
+                            <input id="futureValue" type="number"  placeholder="0" ><br>
+
+                            <label>&nbsp;&nbsp;&nbsp;<span class="interest">i </span></label>
+                            <input id="int" type="number" placeholder="0.00" ><br>
+
+                            <label>&nbsp;&nbsp;<span class="time">n</span> </label>
+                            <input id="yrs" type="number" placeholder="0" ><br>
+
                         </form>
-                        <button onclick="cal_FV()" type="button" class="btn calculateBtn">Calculate</button>
+                        <button onclick="calc_FV()" type="button" class="btn calculateBtn">Calculate</button>
                    </div>
-                    <div class="right answer" id="ans"></div>
+                    <div class="right answer" id="answer"></div>
                </div>
             </div>
             <div class="pageNumber">24</div>
@@ -898,6 +907,27 @@
                 </ol>
             </div>
             <div class="pageNumber">26</div>
+            <div class="bottomBtns">
+                <!-- BACK BUTTON -->
+                <button type="button" class="back leftBtn btn">Back</button>
+                <!-- CONTINUE BUTTON -->
+                <button class="continue btn rightBtn" type="button">Continue</button>
+            </div>
+        </div>
+
+
+        <!-- SLIDE 27 - CONTENT -->
+        <div id="slide27" class="slide">
+            <div class="slideTitle">
+                <div class="titleBlock">
+                    <h2 class="primaryTitle">TVM: The Basics</h2>
+                    <h3 class="secondaryTitle">Equation</h3>
+                </div>
+            </div>
+            <div class="content-noBtns">
+                
+            </div>
+            <div class="pageNumber">27</div>
             <div class="bottomBtns">
                 <!-- BACK BUTTON -->
                 <button type="button" class="back leftBtn btn">Back</button>
