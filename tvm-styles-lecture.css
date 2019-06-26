@@ -9,29 +9,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #292929;
 }
-.container {
-    
-} 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-    
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    
-}
-
 
 /***** Basic Slide Set-up  ********/
 .slide {
@@ -45,6 +22,10 @@ body {
 
 .helpSlide {
     background-color: #f7f2ed;
+}
+
+.clearfix {
+    clear: both;
 }
 
 /*  title block on all slides except cover */
@@ -61,7 +42,7 @@ body {
 
 .primaryTitle {
     padding-top: 20px;
-    /* color: #ffffff; */
+    color: #ffffff;
 }
 .secondaryTitle {
     color: #ffffff;
@@ -305,8 +286,14 @@ button.interest {
 .left {
 
 } */
-
-
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    align-content: space-between;
+    margin: 10px;
+} 
+/* end text styles *************** */
 
 
 /*********************** forms general ***************/
