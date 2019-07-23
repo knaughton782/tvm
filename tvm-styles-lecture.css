@@ -335,6 +335,10 @@ button.interest {
     align-content: space-between;
     margin: 10px;
 } 
+
+.question {
+    font-style: italic;
+}
 /* end text styles *************** */
 
 
