@@ -118,8 +118,71 @@ body {
 }
 /****** End Cover Slide ****/
 
+/********** TEXT STYLES ********* */
+.futureValue {
+    color: #008A00;
+    font-weight: 600;
+    /* font-size: 1.2em; */
+}
+
+.time {
+    color: #884DFF;
+    font-weight: 600;
+    /* font-size: 1.2em; */
+}
+
+.presentValue {
+    color: #FA6400;
+    font-weight: 600;
+    /* font-size: 1.2em; */
+}
+
+.interest {
+    color: #EB004E;
+    font-weight: 600;
+    /* font-size: 1.2em; */
+}
+
+.note {
+    color: #575656;
+    font-size: .85em;
+}
+
+.help {
+    background-color: #CC444B;
+}
+
+.answer {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #292929;
+    margin-left: 25px;
+}
+
+.question {
+    color: #292929;
+    font-style: italic;
+    font-size: 1.2em;
+    margin-left: 25px;
+}
+
+
+
+
+/* end text styles *************** */
 
 /** for CONTENT section  ***/
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    align-content: space-between;
+    margin: 10px;
+} 
+
+
+
 .contentTitle {
     font-size: 1.5em;
     text-align: center;
@@ -130,6 +193,11 @@ body {
 /****** General styles ******/
 .indent {
     margin-left: 25px;
+}
+
+.center {
+    margin: auto;
+    width: 95%;
 }
 
 li {
@@ -161,10 +229,11 @@ p {
 }
 
 .math {
-    margin: 10px auto 10px;
-    display: inline-block;
-    width: 100%;
+    margin: 10px auto 20px;
+    /* display: inline-block; */
+    /* width: 100%; */
     max-width: 350px;
+    font-size: 1.5em;
 }
 
 .topSpace {
@@ -283,63 +352,7 @@ button.interest {
 }
 
 
-/* text styles ********* */
-.futureValue {
-    color: #008A00;
-    font-weight: 600;
-    /* font-size: 1.2em; */
-}
 
-.time {
-    color: #884DFF;
-    font-weight: 600;
-    /* font-size: 1.2em; */
-}
-
-.presentValue {
-    color: #FA6400;
-    font-weight: 600;
-    /* font-size: 1.2em; */
-}
-
-.interest {
-    color: #EB004E;
-    font-weight: 600;
-    /* font-size: 1.2em; */
-}
-
-.faded {
-    color: #575656;
-    font-size: .9em;
-}
-
-.help {
-    background-color: #CC444B;
-}
-
-.answer {
-    font-size: 1.5em;
-    font-weight: 700;
-    color: #292929;
-}
-
-.center {
-    margin: auto;
-    width: 95%;
-}
-
-.container {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    align-content: space-between;
-    margin: 10px;
-} 
-
-.question {
-    font-style: italic;
-}
-/* end text styles *************** */
 
 
 /*********************** forms general ***************/
