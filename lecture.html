@@ -385,11 +385,11 @@
                     <p>To review:</p>
                     <ul>
                         <li>We calculated the 1st year of interest earned by multiplying the interest rate, 10%, times the 1st year starting principle, $100.
-                            <div class="math">(<span class="presentValue">$100</span> * <span class="interest">10%</span>) = $10</div>
+                            <div class="math">(<span class="presentValue">$100</span> * <span class="interest">10%</span>) = <span class="interest">$10</span></div>
                         </li>
 
                         <li>We calculated the 2nd year of interest earned by finding 10% of the 2nd year starting principal, $110.
-                            <div class="math">(<span class="presentValue">$110</span c> * <span class="interest">10%</span>) = $11</div>
+                            <div class="math">(<span class="presentValue">$110</span c> * <span class="interest">10%</span>) = <span class="interest">$11</span></div>
                         </li>
                         <li>We added the 1st and 2nd year interest to the principal of $100.
                             <div class="math"><strong>(<span class="presentValue">$100</span> + <span class="interest">$10</span> + <span class="interest">$11</span>) = <span class="futureValue">$121</span></strong></div>
@@ -412,8 +412,8 @@
 
 
 
-            <!--- SLIDE 11 - CONTENT --->
-            <div id="slide11" class="slide">
+            <!--- SLIDE 10 - CONTENT --->
+            <div id="slide10" class="slide">
                 <div class="slideTitle">
                     <div class="titleBlock">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -422,19 +422,102 @@
                 </div>
                 <div class="content-noBtns">
                     <p>Although calculating the interest for each individual year and adding it to the principle does produce the correct answer, what would you do if asked for the future value after 100 years? You could create a spreadsheet of formulas with 100 interest payment calculations. However, its time consuming and fortunately, unncessary.</p>
-                    <p>Instead, we'll derive a general equation that will allow you to solve for <span class="futureValue">Future
-                            Value (FV)</span>, <span class="presentValue">Present Value (PV)</span>, <span class="interest">Interest
-                            rate (i)</span>, or number of <span class="time">years (n)</span>.</p>
+                    <p>Instead, we'll derive a general equation that will allow you to solve for <span class="futureValue">Future Value (FV)</span>, <span class="presentValue">Present Value (PV)</span>, <span class="interest">Interest rate (i)</span>, or number of <span class="time">years (n)</span>.</p>
                     <p>Let's look back at our previous calculations:</p>
-                    <ol>
-                        <li>Figure out the 1st year of interest by finding 10% of $100.<br>
-                            <span class="math">(100 * 0.10) = 10</span></li>
-                        <li>Figure out the 2nd year of interest by finding 10% of $110.<br>
-                            <span class="math">(110 * 0.10) = 11</span></li>
-                        <li>Add the 1st and 2nd year interest to the principal of 100.<br>
-                            <span class="math">100 + 10 + 11 = $121</span></li>
+                    <ol class="indent">
+                        <li>Figure out the 1st year of interest by finding 10% of $100.
+                            <div class="math">(<span class="presentValue">100</span> * <span class="interest">0.10</span>) = <span class="interest">10</span></div>
+                        </li>
+                        <li>Figure out the 2nd year of interest by finding 10% of $110.
+                            <div class="math">(<span class="presentValue">110</span> * <span class="interest">0.10</span>) = <span class="interest">11</span></div>
+                        </li>
+                        <li>Add the 1st and 2nd year interest to the principal of 100.
+                            <div class="math"><span class="presentValue">100</span> + <span class="interest">10</span> + <span class="interest">11</span> = <span class="futureValue">$121</span></div>
+                        </li>
+                        <li>Now look at these steps as one equation.
+                            <div class="math"><img src="./images/derive1.png" alt="interest calculation" class="mathImg"></div>
+                        </li>
+                        <li>Let's replace the numbers with variables to make it easier to manipulate the equation.
+                            <div class="math"><img src="images/derive2.png" alt="interest calculation" class="mathImg"></div>
+                        </li>
                     </ol>
-                    <div><img src="./images/derive1.png" alt="interest calculation"></div>
+                    <br>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1 offset-sm-1">
+                        <div class="pageNumber">10</div>
+                    </div>
+                    <div class="offset-sm-6 col-sm-4 bottomBtn">
+                        <div class="btn-group-bottom">
+                            <button type="button" class="back btn leftBtn">Back</button>
+                            <button type="button" class="continue btn rightBtn">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--- SLIDE 11 - CONTENT -->
+            <div id="slide11" class="slide">
+                <div class="slideTitle">
+                    <div class="titleBlock">
+                        <h2 class="primaryTitle">TVM: The Basics</h2>
+                        <h3 class="secondaryTitle">Equation</h3>
+                    </div>
+                </div>
+                <div class="content-noBtns">
+                    <p>Now that we have variables in place of numbers, its just a matter of simplifying the formula and grouping like variables.
+                        <div class="math">
+                            [(<span class="presentValue">PV</span> +
+                            <span class="interest">i</span>)] +
+                            [(<span class="presentValue">PV</span> *
+                            <span class="interest">i</span>) +
+                            <span class="presentValue">PV</span>] *
+                            <span class="interest">i</span> +
+                            <span class="presentValue">PV</span>
+                        </div>
+                    </p>
+                    <ol class="indent">
+                        <li>Start with the parenthesis by multiplying the variables within.
+                            <div class="math">
+                                <span class="presentValue">PV</span><span class="interest">i</span> +
+                                [<span class="presentValue">PV</span><span class="interest">i</span> +
+                                <span class="presentValue">PV</span>] * <span class="interest">i</span> +
+                                <span class="presentValue">PV</span>
+                            </div>
+                        </li>
+                        <li>Distribute the multiplication to the variables within the middle bracket.<br>
+                            <div class="math">
+                                <span class="presentValue">PV</span><span class="interest">i</span> +
+                                <span class="presentValue">PV</span><span class="interest">i</span><sup>2</sup> + <span class="presentValue">PV</span><span class="interest">i</span> +
+                                <span class="presentValue">PV</span>
+                            </div>
+                        </li>
+                        <li>Group like variables.
+                            <div class="math">
+                                <i><span class="presentValue">PV</span><span class="interest">i</span></i> +
+                                <span class="presentValue">PV</span><span class="interest">i</span><sup>2</sup> +
+                                <i><span class="presentValue">PV</span><span class="interest">i</span></i> +
+                                <span class="presentValue">PV</span> <b>&xrarr;</b>
+                                <span class="presentValue">PV</span><span class="interest">i</span><sup>2</sup> +
+                                2<span class="presentValue">PV</span><span class="interest">i</span> +
+                                <span class="presentValue">PV</span>
+                            </div>
+                        </li>
+                        <li>Use the distributive property to separate the like term, PV.
+                            <div class="math">
+                                <i><span class="presentValue">PV</span></i>
+                                <span class="interest">i</span><sup>2</sup> +
+                                2<i><span class="presentValue">PV</span></i>
+                                <span class="interest">i</span> +
+                                <i><span class="presentValue">PV</span></i> &xrarr; 
+                                <span class="presentValue">PV</span>
+                                (<span class="interest">i</span><sup>2</sup> + 
+                                2<span class="interest">i</span> + 1)
+                            </div>
+                        </li>
+                    </ol>
                 </div>
                 <div class="row">
                     <div class="col-sm-1 offset-sm-1">
@@ -451,87 +534,8 @@
 
 
 
-            <!-- SLIDE 12 - CONTENT --->
+            <!-- SLIDE 12 - CONTENT -->
             <div id="slide12" class="slide">
-                <div class="slideTitle">
-                    <div class="titleBlock">
-                        <h2 class="primaryTitle">TVM: The Basics</h2>
-                        <h3 class="secondaryTitle">Equation</h3>
-                    </div>
-                </div>
-                <div class="content-noBtns">
-                    <div><img src="./images/derive1.png" alt="interest calculation"></div>
-                    <p>Let's replace the numbers with variables to make it easier to manipulate the equation.</p>
-                    <div class="sideBySide">
-                        <ul class="topSpace">
-                            <li><span class="presentValue">PV</span> = 100</li>
-                            <li><span class="futureValue">FV</span> = ?</li>
-                            <li><span class="interest">i</span> = 10% or 0.10</li>
-                            <li><span class="time">n</span> = 2</li>
-                        </ul>
-                        <div>
-                            <img src="images/derive2.png" alt="interest calculation"><br><br>
-                            <img src="images/derive3_part1.png" alt="interest calculation">
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-1 offset-sm-1">
-                        <div class="pageNumber">12</div>
-                    </div>
-                    <div class="offset-sm-6 col-sm-4 bottomBtn">
-                        <div class="btn-group-bottom">
-                            <button type="button" class="back btn leftBtn">Back</button>
-                            <button type="button" class="continue btn rightBtn">Continue</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--- SLIDE 13 - CONTENT -->
-            <div id="slide13" class="slide">
-                <div class="slideTitle">
-                    <div class="titleBlock">
-                        <h2 class="primaryTitle">TVM: The Basics</h2>
-                        <h3 class="secondaryTitle">Equation</h3>
-                    </div>
-                </div>
-                <div class="content-noBtns">
-                    <p>Now its just a matter of simplifying the formula and grouping like variables.<br>
-                        <img src="images/derive3_part1b.png" alt=""></p>
-                    <ol class="indent">
-                        <li>Start with the parenthesis by multiplying the variables within.<br>
-                            <img src="images/derive3_part1a.png" alt="" style="width: 200px;">
-                        </li>
-                        <li>Distribute the multiplication to the variables within the middle bracket.<br>
-                            <img src="images/derive3_part2.png" alt="" style="width: 200px;">
-                        </li>
-                        <li>Group like variables.<br>
-                            <img src="images/derive3_part3a.png" alt="">
-                        </li>
-                        <li>Use the distributive property to separate the like term, PV.<br>
-                            <img src="images/derive3_part4.png" alt="">
-                        </li>
-                    </ol>
-                </div>
-                <div class="row">
-                    <div class="col-sm-1 offset-sm-1">
-                        <div class="pageNumber">13</div>
-                    </div>
-                    <div class="offset-sm-6 col-sm-4 bottomBtn">
-                        <div class="btn-group-bottom">
-                            <button type="button" class="back btn leftBtn">Back</button>
-                            <button type="button" class="continue btn rightBtn">Continue</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <!-- SLIDE 14 - CONTENT -->
-            <div id="slide14" class="slide">
                 <div class="slideTitle">
                     <div class="titleBlock">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -551,7 +555,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-1 offset-sm-1">
-                        <div class="pageNumber">14</div>
+                        <div class="pageNumber">12</div>
                     </div>
                     <div class="offset-sm-6 col-sm-4 bottomBtn">
                         <div class="btn-group-bottom">
@@ -564,8 +568,8 @@
 
 
 
-            <!-- SLIDE 15 - CONTENT -->
-            <div id="slide15" class="slide">
+            <!-- SLIDE 13 - CONTENT -->
+            <div id="slide13" class="slide">
                 <div class="slideTitle">
                     <div class="titleBlock">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -582,7 +586,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-1 offset-sm-1">
-                        <div class="pageNumber">15</div>
+                        <div class="pageNumber">13</div>
                     </div>
                     <div class="offset-sm-6 col-sm-4 bottomBtn">
                         <div class="btn-group-bottom">
@@ -595,8 +599,8 @@
 
 
 
-            <!-- SLIDE 16 - CONTENT -->
-            <div id="slide16" class="slide">
+            <!-- SLIDE 14 - CONTENT -->
+            <div id="slide14" class="slide">
                 <div class="slideTitle">
                     <div class="titleBlock">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -631,7 +635,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-1 offset-sm-1">
-                        <div class="pageNumber">16</div>
+                        <div class="pageNumber">14</div>
                     </div>
                     <div class="offset-sm-6 col-sm-4 bottomBtn">
                         <div class="btn-group-bottom">
@@ -644,8 +648,8 @@
 
 
 
-            <!-- SLIDE 18 - CONTENT -->
-            <div id="slide18" class="slide">
+            <!-- SLIDE 15 - CONTENT -->
+            <div id="slide15" class="slide">
                 <div class="slideTitle">
                     <div class="titleBlock">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -665,7 +669,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-1 offset-sm-1">
-                        <div class="pageNumber">18</div>
+                        <div class="pageNumber">15</div>
                     </div>
                     <div class="offset-sm-6 col-sm-4 bottomBtn">
                         <div class="btn-group-bottom">
@@ -678,8 +682,8 @@
 
 
 
-            <!-- SLIDE 19 - CONTENT -->
-            <div id="slide19" class="slide">
+            <!-- SLIDE 16 - CONTENT -->
+            <div id="slide16" class="slide">
                 <div class="slideTitle">
                     <div class="titleBlock">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -706,7 +710,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-1 offset-sm-1">
-                        <div class="pageNumber">19</div>
+                        <div class="pageNumber">16</div>
                     </div>
                     <div class="offset-sm-6 col-sm-4 bottomBtn">
                         <div class="btn-group-bottom">
@@ -718,8 +722,8 @@
             </div>
 
 
-            <!-- SLIDE 20  - CONTENT -->
-            <div id="slide20 " class="slide">
+            <!-- SLIDE 17  - CONTENT -->
+            <div id="slide17" class="slide">
                 <div class="slideTitle">
                     <div class="titleBlock">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -735,7 +739,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-1 offset-sm-1">
-                        <div class="pageNumber">20</div>
+                        <div class="pageNumber">17</div>
                     </div>
                     <div class="offset-sm-6 col-sm-4 bottomBtn">
                         <div class="btn-group-bottom">
@@ -748,8 +752,8 @@
 
 
 
-            <!-- SLIDE 21  - CONTENT -->
-            <div id="slide21 " class="slide">
+            <!-- SLIDE 18  - CONTENT -->
+            <div id="slide18" class="slide">
                 <div class="slideTitle">
                     <div class="titleBlock">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -765,7 +769,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-1 offset-sm-1">
-                        <div class="pageNumber">21</div>
+                        <div class="pageNumber">18</div>
                     </div>
                     <div class="offset-sm-6 col-sm-4 bottomBtn">
                         <div class="btn-group-bottom">
@@ -777,8 +781,8 @@
             </div>
 
 
-            <!-- SLIDE 22  - CONTENT -->
-            <div id="slide22 " class="slide">
+            <!-- SLIDE 19  - CONTENT -->
+            <div id="slide19" class="slide">
                 <div class="slideTitle">
                     <div class="titleBlock">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -790,7 +794,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-1 offset-sm-1">
-                        <div class="pageNumber">22</div>
+                        <div class="pageNumber">19</div>
                     </div>
                     <div class="offset-sm-6 col-sm-4 bottomBtn">
                         <div class="btn-group-bottom">
@@ -803,7 +807,7 @@
 
 
             <!-- SLIDE  23 - CONTENT -->
-            <div id="slide23 " class="slide">
+            <div id="slide23" class="slide">
                 <div class="slideTitle">
                     <div class="titleBlock">
                         <h2 class="primaryTitle">TVM: The Basics</h2>

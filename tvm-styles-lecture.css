@@ -45,7 +45,7 @@ body {
 /***** Basic Slide Set-up  ********/
 .slide {
     width: 100%;
-    max-height: 1000px;
+    max-height: 1500px;
     margin: 0 auto 2% auto;
     position: relative;
     border-bottom: 2px solid #466365;
@@ -132,13 +132,16 @@ body {
 }
 
 .presentValue {
-    color: #FA6400;
+    color: #FA6400; 
+    /* #FF8533 */
     font-weight: 600;
     /* font-size: 1.2em; */
 }
 
 .interest {
     color: #EB004E;
+    /* color: #57001A; */
+    /* #7A0025 */
     font-weight: 600;
     /* font-size: 1.2em; */
 }
@@ -230,10 +233,14 @@ p {
 
 .math {
     margin: 10px auto 20px;
-    /* display: inline-block; */
-    /* width: 100%; */
-    max-width: 350px;
-    font-size: 1.5em;
+    max-width: 450px;
+    font-size: 1.3em;
+    line-height: 1.4em;
+}
+.mathImg {
+    margin: 10px auto 20px;
+    max-width: 400px;
+    /* font-size: 1.5em; */
 }
 
 .topSpace {
