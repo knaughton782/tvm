@@ -499,7 +499,7 @@
                                 <i><span class="presentValue">PV</span><span class="interest">i</span></i> +
                                 <span class="presentValue">PV</span><span class="interest">i</span><sup>2</sup> +
                                 <i><span class="presentValue">PV</span><span class="interest">i</span></i> +
-                                <span class="presentValue">PV</span> <b>&xrarr;</b>
+                                <span class="presentValue">PV</span> <b>&nbsp;&xrarr;&nbsp;</b>
                                 <span class="presentValue">PV</span><span class="interest">i</span><sup>2</sup> +
                                 2<span class="presentValue">PV</span><span class="interest">i</span> +
                                 <span class="presentValue">PV</span>
@@ -511,9 +511,9 @@
                                 <span class="interest">i</span><sup>2</sup> +
                                 2<i><span class="presentValue">PV</span></i>
                                 <span class="interest">i</span> +
-                                <i><span class="presentValue">PV</span></i> &xrarr; 
+                                <i><span class="presentValue">PV</span></i> <b>&nbsp;&xrarr; &nbsp;</b>
                                 <span class="presentValue">PV</span>
-                                (<span class="interest">i</span><sup>2</sup> + 
+                                (<span class="interest">i</span><sup>2</sup> +
                                 2<span class="interest">i</span> + 1)
                             </div>
                         </li>
@@ -543,15 +543,28 @@
                     </div>
                 </div>
                 <div class="content-noBtns">
-                    <br>
-                    <ul class="noDecoration">
-                        <li>The equation in the parentheses can be simplified to (x + 1)(x + 1). You can find information on this equation in the math help under FOIL.<br></li>
-                        <img src="images/derive3_part5.png" alt=""><br><img src="images/derive3_part5a.png" alt="">
-                        <li>Think of (i + 1) as a number. A number multiplied by itself is also known as squaring that number, which is what we will do here.<br></li>
-                        <img src="images/derive3_part6.png" alt="" style="width: 400px;">
-                        <li>Remember, back to the problem: the term is 2 years. Therefore, n = 2 and we can replace the number in the exponent with the variable.<br><img src="images/derive3_part7.png" alt="" style="width: 100px;"></li>
-                    </ul>
-                    <br>
+                    <p>The equation in the parentheses can be simplified to (x + 1)(x + 1). You can find information on this equation in the math help under FOIL.</p>
+                    <div class="math">
+                        <span class="presentValue">PV</span>
+                        (<span class="interest">i</span><sup>2</sup> +
+                        2<span class="interest">i</span> + 1) <b>&nbsp;&xrarr; &nbsp;</b>
+                        <span class="presentValue">PV</span>(<span class="interest">i</span> + 1)(<span class="interest">i</span> + 1)
+                    </div>
+                    <p>Think of (i + 1) as a number. A number multiplied by itself is that number squared.</p>
+                    <div class="math">
+                        <span class="presentValue">PV</span>(<span class="interest">i</span> + 1)(<span class="interest">i</span> + 1) <b>&nbsp;&xrarr; &nbsp;</b>
+                        <span class="presentValue">PV</span>(<span class="interest">i</span> + 1)<sup>2</sup>
+                    </div>
+                    <p>Remember back to the problem: the term is 2 years. Therefore, n = 2. We can replace the number in the exponent with the variable.</p>
+                    <div class="math">
+                        <span class="presentValue">PV</span>(
+                        <span class="interest">i</span> + 1)
+                        <span class="time"><sup>2</sup></span>
+                        <b>&nbsp;&xrarr; &nbsp;</b>
+                        <span class="presentValue">PV</span>(
+                        <span class="interest">i</span> + 1)
+                        <span class="time"><sup>n</sup></span>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-1 offset-sm-1">
@@ -577,11 +590,12 @@
                     </div>
                 </div>
                 <div class="content-noBtns">
-                    <p>Adding FV to the other side of the equal sign, we arrive at:</p>
-                    <p class="math"><span class="futureValue">FV</span> = <span class="presentValue">PV</span>(1 + <span class="interest">i</span>)<span class="time">n</span></p>
-                    <p>We could continue to derive the equation for 3, 10, 100 years. After a lot of algebraic manipulation, the outcome would be the same. Its not so important that you're able to repeat the derivation, but that you understand the equation can be derived from individual calculations.</p>
+                    <p>This equation provides the future value so let's add <span class="futureValue">FV</span> to the other side of the equal sign.</p>
+                    <div class="math">
+                        <span class="futureValue">FV</span> = <span class="presentValue">PV</span>(1 + <span class="interest">i</span>)<span class="time"><sup>n</sup></span>
+                    </div>
+                    <p>We could continue to derive the equation for 3, 10, 100 years. After a lot of algebraic manipulation, the outcome would be the same. Its not important that you're able to repeat the derivation, but that you understand <b>the equation can be derived from individual calculations</b>.</p>
                     <p>Now that we have a general equation, let's try some examples. Answer this question:</p>
-                    <br>
                     <p class="question">What would a $100 investment be worth 10 years at 10%?</p>
                 </div>
                 <div class="row">
@@ -658,13 +672,13 @@
                 </div>
                 <div class="content-noBtns">
                     <p>First, identify the variables from the problem:</p>
-                    <p>What would the $100 investment be worth in 10 years at 10%?</p>
-                    <p class="indent"><span class="presentValue">PV = 100</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="futureValue">FV = ?</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="interest">i = 10% or 0.10</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="time">n = 10</span></p>
-                    <p>Did you come up with the right numbers? Here are some tips:</p>
+                    <p class="question">What would the $100 investment be worth in 10 years at 10%?</p>
+                    <!-- <p class="math"><span class="presentValue">PV = 100</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="futureValue">FV = ?</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="interest">i = 10% or 0.10</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="time">n = 10</span></p> -->
+                    <p>Here are some tips for identifying the variables.</p>
                     <ul>
                         <li><span class="interest">i</span> is a rate. Look for a percentage or decimal.</li>
                         <li><span class="time">n</span> is an expression of time or number of years.</li>
-                        <li>To distinguish between <span class="presentValue">PV</span> and <span class="futureValue">FV</span>, ask yourself whether the dollar amount is money you have now or in the future. Since the $100 is today's investment, it must be <span class="presentValue">PV</span>. The question asks what it <i>will be</i> worth, indicating we want to find FV.</li>
+                        <li>To distinguish between <span class="presentValue">PV</span> and <span class="futureValue">FV</span>, ask yourself whether the dollar amount is money you have now or in the future. Since the $100 is today's investment, it must be <span class="presentValue">PV</span>. The question asks what it <i>will be</i> worth, indicating we want to find <span class="futureValue">FV</span>.</li>
                     </ul>
                 </div>
                 <div class="row">
@@ -691,21 +705,40 @@
                     </div>
                 </div>
                 <div class="content-noBtns">
-                    <p>Then plug the numbers into the equation: </p>
-                    <h2><span class="futureValue">FV</span> = <span class="presentValue">PV</span>(1 + <span class="interest">i</span>)<sup><span class="time">n</span></sup></h2>
-                    <p><span class="presentValue">PV = 100</span>&nbsp;&nbsp;&nbsp;&nbsp; <span class="futureValue">FV = ?</span>&nbsp;&nbsp;&nbsp;&nbsp; <span class="interest">i = 10% or 0.10</span>&nbsp;&nbsp;&nbsp;&nbsp; <span class="time">n = 10</span></p>
+                    <p>Once you've identified the variables, plug the numbers into the equation: </p>
+                    <div class="math"><span class="futureValue">FV</span> =
+                        <span class="presentValue">PV</span>(1 +
+                        <span class="interest">i</span>)<sup>
+                            <span class="time">n</span></sup>
+                    </div>
+                    <div class="math">
+                        <span class="presentValue">PV = 100</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="futureValue">FV = ?</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="interest">i = 10% or 0.10</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="time">n = 10</span>
+                    </div>
                     <ol>
-                        <li>Starting with the parentheses, add the numbers in place of the variables.<br>
-                            <p>
-                                <span class="futureValue">FV</span> = <span class="presentValue">100</span>(1 +
-                                <span class="interest">0.10</span>)<span class="time"><sup>10</sup></span>
-                            </p> &rarr; <span class="futureValue">FV</span></span> = <span class="presentValue">100</span>(1.10)<sup>10</sup>
+                        <li>Starting with the parentheses, add the numbers in place of the variables and do the addition. 
+                            <div class="math">
+                                <span class="futureValue">FV</span> = 
+                                <span class="presentValue">100</span>(1 +
+                                <span class="interest">0.10</span>)
+                                <span class="time"><sup>10</sup></span>
+                                <b>&nbsp;&xrarr;&nbsp;</b> 
+                                <span class="futureValue">FV</span> = 
+                                <span class="presentValue">100</span>(1.10)
+                                <span class="time"><sup>10</sup></span>
+                            </div>
                         </li><br>
                         <li>Next, apply the exponent. Be careful about rounding.<br>
-                            <span class="futureValue">FV</span> = <span class="presentValue">100</span>(2.5937424601)</li>
+                            <div class="math">
+                                <span class="futureValue">FV</span> = 
+                                <span class="presentValue">100</span>(2.5937424601)</div>
+                        </li>
                         <br>
-                        <li>Finally, multiply.<br>
-                            <span class="futureValue">FV</span> = $259.37</li>
+                        <li>Finally, do the multiplication.<br>
+                            <div class="math"><span class="futureValue">FV</span> = $259.37</div>
+                        </li>
                     </ol>
                 </div>
                 <div class="row">

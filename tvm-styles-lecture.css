@@ -156,7 +156,7 @@ body {
 }
 
 .answer {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 600;
     color: #292929;
     margin-left: 25px;
@@ -165,7 +165,7 @@ body {
 .question {
     color: #292929;
     font-style: italic;
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-left: 25px;
 }
 
@@ -183,8 +183,6 @@ body {
     align-content: space-between;
     margin: 10px;
 } 
-
-
 
 .contentTitle {
     font-size: 1.5em;
@@ -233,9 +231,9 @@ p {
 
 .math {
     margin: 10px auto 20px;
-    max-width: 450px;
+    max-width: 500px;
     font-size: 1.3em;
-    line-height: 1.4em;
+    line-height: 1.5em;
 }
 .mathImg {
     margin: 10px auto 20px;
