@@ -178,6 +178,9 @@ $(document).ready(function () {
   });
 
 
+
+});
+
 // future value calculation is FV = PV(1 + i)^time
 
 function FV(principal, interest, time) {
@@ -186,23 +189,23 @@ function FV(principal, interest, time) {
 }
 
 function calc_FV() {
-  
+
   var principal = parseFloat(document.getElementById('pvalue').value);
   principal.toFixed(2);
   console.log("principal = " + principal);
 
   var futureValue = document.getElementById('futureValue').value;
-  
+
   var interest = parseFloat(document.getElementById('int').value);
   interest.toFixed(2);
-  
+
   console.log("interest = " + interest);
-  
+
   var time = document.getElementById('yrs').value;
   console.log("time = " + time);
-  
+
   var ans = FV(principal, interest, time);
-  
+
   document.getElementById('answer').innerHTML = "The future value is $" + ans;
 }
 
@@ -211,7 +214,6 @@ function calc_FV() {
 // var interest = .10;
 // var time = 10;
 //   // FV = PV(1 + i) ^ time
-  
+
 // }
 // console.log(calculate());
-});

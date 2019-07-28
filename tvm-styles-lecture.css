@@ -223,7 +223,9 @@ p {
     max-height: 75px;
     margin: auto;
 }
-
+.border {
+    border: 1px solid #575656;
+}
 .sideBySide {
     display: flex;
     justify-content: space-around;
@@ -239,6 +241,12 @@ p {
     margin: 10px auto 20px;
     max-width: 400px;
     /* font-size: 1.5em; */
+}
+.math2 {
+    margin: 10px;
+    max-width: 500px;
+    font-size: 1.3em;
+    line-height: 1.5em;
 }
 
 .topSpace {

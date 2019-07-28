@@ -623,7 +623,7 @@
                 </div>
                 <div class="content-noBtns">
                     <p>Can you identify the variables in the example word problem? <span class="question">What would the $100 investment be worth in 10 years at 10% interest?</span></p>
-                    <p class="note indent">Don't use dollar signs. Interest should be expressed as a decimal. Leave the unknown variable box empty.</p>
+                    <p class="note indent">Interest should be expressed as a decimal. Leave the unknown variable box empty.</p>
                     <div class="container">
                         <div class="left">
                             <form action="" class="indent">
@@ -644,7 +644,7 @@
                             <button onclick="calc_FV()" type="button" class="btn calculateBtn">Calculate</button>
                         </div>
                         <div class="right answer" id="answer"></div>
-                        Question 1 of 15
+                        <!-- Question 1 of 15 -->
                     </div>
                 </div>
                 <div class="row">
@@ -718,21 +718,21 @@
                         <span class="time">n = 10</span>
                     </div>
                     <ol>
-                        <li>Starting with the parentheses, add the numbers in place of the variables and do the addition. 
+                        <li>Starting with the parentheses, add the numbers in place of the variables and do the addition.
                             <div class="math">
-                                <span class="futureValue">FV</span> = 
+                                <span class="futureValue">FV</span> =
                                 <span class="presentValue">100</span>(1 +
                                 <span class="interest">0.10</span>)
                                 <span class="time"><sup>10</sup></span>
-                                <b>&nbsp;&xrarr;&nbsp;</b> 
-                                <span class="futureValue">FV</span> = 
+                                <b>&nbsp;&xrarr;&nbsp;</b>
+                                <span class="futureValue">FV</span> =
                                 <span class="presentValue">100</span>(1.10)
                                 <span class="time"><sup>10</sup></span>
                             </div>
                         </li><br>
                         <li>Next, apply the exponent. Be careful about rounding.<br>
                             <div class="math">
-                                <span class="futureValue">FV</span> = 
+                                <span class="futureValue">FV</span> =
                                 <span class="presentValue">100</span>(2.5937424601)</div>
                         </li>
                         <br>
@@ -764,11 +764,26 @@
                     </div>
                 </div>
                 <div class="content-noBtns">
-                    In the problem we just solved, the number in parentheses (below) is called the Future Value factor. In the ‘good old days’ before calculators, people used tables of pre-calculated Future Value factors to solve the TVM equation. Find the intersection of the number of periods (years) on the left and the interest rate at the top to find the Future Value factor. Then multiply <span class="presentValue">PV</span> times the Future Value factor to calculate <span class="futureValue">FV</span>.
+                    In the problem we just solved, the number in parentheses is called the Future Value Factor. In the ‘good old days’ before calculators, people used tables of pre-calculated Future Value Factors to solve the TVM equation.</p>
+                    <p>First, find the intersection of the number of periods (years) on the left and the interest rate at the top to find the Future Value Factor. Then multiply <span class="presentValue">PV</span> times the Future Value Factor to calculate <span class="futureValue">FV</span>.</p>
 
-                    <span class="futureValue">FV</span> = <span class="presentValue">PV</span>(Future Value factor <span class="futureValue">FV</span> = (100 * 2.5937) <span class="futureValue">FV</span> = $259.37
-                    <img src="./images/fv_factor_table_example_10_years.png" alt=""><br>
-                    <img src="./images/era_equation_example_10_years.png" alt=""><br>
+                    <div class="sideBySide">
+                        <div class="math2">
+                            <img src="./images/fv_factor_table_example_10_years.png" class="mathImg border">
+                        </div>
+                        <div class="math2">
+                            <br>
+                            <p>
+                                <span class="futureValue">FV</span> =
+                                <span class="presentValue">PV</span>(Future Value Factor)
+                            </p>
+                            <p><span class="futureValue">FV</span> = (100 * 2.5937)
+                            </p>
+                            <p><span class="futureValue">FV</span> = $259.37
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="row">
                     <div class="col-sm-1 offset-sm-1">
@@ -794,11 +809,14 @@
                     </div>
                 </div>
                 <div class="content-noBtns">
-                    So far we have calculated FV with the TVM equation and the Future Value Factor. A third way to calculate TVM is with a financial calculator. If you have a financial calculator, now would be a good time to make sure you know how to use it. Plug in the numbers to verify that the equation and calculator find the same FV. Answer this question: How much would the $100 grow in 10 years at 10%?
+                    <p>So far we have calculated FV with the TVM equation and the Future Value Factor. A third way to calculate TVM is with a financial calculator. If you have a financial calculator, now would be a good time to make sure you know how to use it.</p>
+                    <p>Plug in the numbers to verify that the equation and calculator find the same FV using the math question you are familiar with.</p>
+                        <p>Answer this question: <span class="question">How much would $100 grow in 10 years at 10%?</span></p>
+                        <p class="math">
+                            <img src="./images/tvm1_calculator_check_example.png" class="mathImg">
+                        </p>
 
-                    Note: Your calculator must be on End mode -- this is the most common mistake made on tests. Also, notice that PV and FV are opposite signs (+/-).
-
-                    NEEDS IMAGE
+                        <p class="note">Note: Your calculator must be on End mode -- this is the most common mistake made on tests. Also, notice that PV and FV are opposite signs (+/-).</p>
                 </div>
                 <div class="row">
                     <div class="col-sm-1 offset-sm-1">
@@ -823,7 +841,9 @@
                     </div>
                 </div>
                 <div class="content-noBtns">
-                    Many textbooks will present you with four different TVm equations, one solving for each variable. as as result you have to memorize four equations instead of one. There's n easier route:I fyou know the genreal TVM equation and have some bsic math skills you can solve for any of the four variables. We've already solved for <span class="futureValue">FV</span>. Now we'll try 3 more example problmes, solving for the other 3 variables. For all these questions, solve without using the TVM buttons on your financial calculator.
+                    <p>Many textbooks will present you with four different TVM equations; one solving for each variable: <span class="futureValue">FV</span class>, <span class="presentValue">PV</span>, <span class="interest">i</span>, and <span class="time">n</span>. As a result you have to memorize four equations instead of one. There's an easier route!</p>
+                    <p>If you know the general TVM equation and have some basic math skills, you can solve for any of the four variables. We've already solved for <span class="futureValue">Future Value (FV)</span>. Now we'll try 3 more example problems, solving for the other 3 variables.</p>
+                        <p>For all these questions, solve without using the TVM buttons on your financial calculator.</p>
                 </div>
                 <div class="row">
                     <div class="col-sm-1 offset-sm-1">
@@ -839,8 +859,8 @@
             </div>
 
 
-            <!-- SLIDE  23 - CONTENT -->
-            <div id="slide23" class="slide">
+            <!-- SLIDE 20 - CONTENT -->
+            <div id="slide20" class="slide">
                 <div class="slideTitle">
                     <div class="titleBlock">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -848,13 +868,14 @@
                     </div>
                 </div>
                 <div class="content-noBtns">
-                    Answer this question: How much would you pay today for a promise of $259.37 in 10 years at a discount rate of 10%?
+                    <p>Answer this question:</p>
+                    <p class="question">How much would you pay today for a promise of $259.37 in 10 years at a discount rate of 10%?</p>
 
-                    When you think you have the answer, click Next If you don’t know how to calculate the answer, click “HELP ME!”
+                    When you have the answer, click Continue. If you don’t know how to calculate the answer, click Help.
                 </div>
                 <div class="row">
                     <div class="col-sm-1 offset-sm-1">
-                        <div class="pageNumber">23</div>
+                        <div class="pageNumber">20</div>
                     </div>
                     <div class="offset-sm-6 col-sm-4 bottomBtn">
                         <div class="btn-group-bottom">
@@ -864,69 +885,6 @@
                     </div>
                 </div>
             </div>
-
-
-
-            <!-- SLIDE HELP  - CONTENT -->
-            <div id="slide " class="slide">
-                <div class="slideTitle">
-                    <div class="titleBlock">
-                        <h2 class="primaryTitle">TVM: The Basics</h2>
-                        <h3 class="secondaryTitle">Equation</h3>
-                    </div>
-                </div>
-                <div class="content-noBtns">
-                    TVM: The BasicsHelp Me!
-
-                    First, identify the variables in the problem: How much would you pay today for a promise of $259.37 in 10 years at a suitable discount rate of 10%? <span class="presentValue">PV</span> <span class="futureValue">FV</span> i n This time we’re looking for <span class="presentValue">PV</span>, because the question asks how much you would pay today. We know that the $259.37 is the <span class="futureValue">FV</span>, because it will be paid in the future.
-
-                    Back to the Question
-
-                    I’ve got this part, Next
-                    TVM: The BasicsHelp Me!
-
-                    Then solve for the unknown variable, in this case PV. Remember to use the order of operations (PEMDAS).
-                    3 images on this slide
-                    Back to the Question
-
-                    I’m good, Next
-
-                    Step 1: Parentheses Add the numbers in the parentheses.
-
-                    Step 2: Exponents Raise the number in the parentheses to the exponent. Leave enough significant digits so that you don’t commit a rounding error.
-
-                    Step 3: Multiple and Divide Divide both sides by the same number to isolate PV.
-
-                    Step 1: Parentheses Add the numbers in the parentheses.
-
-                    Then simplify the fraction to solve for <span class="presentValue">PV</span>.
-
-                    Step 4: Add and Subtract Adding and Subtracting is not necessary for this problem.
-
-                    P
-
-                    E
-
-                    MD
-
-                    AS
-
-                    Click on the buttons to the left to see each step of PEMDAS in this equation.
-                </div>
-                <div class="row">
-                    <div class="col-sm-1 offset-sm-1">
-                        <div class="pageNumber"> </div>
-                    </div>
-                    <div class="offset-sm-6 col-sm-4 bottomBtn">
-                        <div class="btn-group-bottom">
-                            <button type="button" class="back btn leftBtn">Back</button>
-                            <button type="button" class="continue btn rightBtn">Continue</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
 
 
             <!-- SLIDE 24  - CONTENT -->
@@ -934,19 +892,16 @@
                 <div class="slideTitle">
                     <div class="titleBlock">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
-                        <h3 class="secondaryTitle">Equation</h3>
+                        <h3 class="secondaryTitle">Sample Problems</h3>
                     </div>
                 </div>
                 <div class="content-noBtns">
-                    TVM: The BasicsSample Problems
+                    <p>Answer this question:</p> 
+                    <p class="question">How much would you pay today for a promise of $259.37 in 10 years at a discount rate of 10%?</p>
 
-                    Answer this question: How much would you pay today for a promise of $259.37 in 10 years at a discount rate of 10%?
+                    <p class="answer">The answer is $100.</p> 
+                   <p> If you answered correctly, click Continue. If you answered incorrectly, click Help to calculate the answer.</p>
 
-                    The answer is $100. Did you get the right answer? If you answered correctly, go ahead and click Next to continue. If you answered incorrectly....Click the HELP ME! button to calculate the answer
-
-                    HELP ME!
-
-                    I’m good, Next
                 </div>
                 <div class="row">
                     <div class="col-sm-1 offset-sm-1">
@@ -960,6 +915,8 @@
                     </div>
                 </div>
             </div>
+
+
             <!-- SLIDE 25   - CONTENT -->
             <div id="slide25" class="slide">
                 <div class="slideTitle">
