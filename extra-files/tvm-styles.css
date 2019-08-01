@@ -299,20 +299,8 @@ button.interest {
     width: 95%;
 }
 
-/* .right {
-
-}
-.left {
-
-} */
-
-
-
 
 /*********************** forms general ***************/
-/* form {
-    border: 1px solid #292929;
-} */
 
 input[type=text], input[type=password], input[type=email], input[type=number], textarea, select {
     width: 70%;
