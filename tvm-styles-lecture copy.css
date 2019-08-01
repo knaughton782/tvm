@@ -1,4 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    line-height: 1.5em;
+    font-size: 1.08em;
     font-family: 'Open Sans', sans-serif;
     color: #292929;
 }
@@ -7,56 +14,134 @@ body {
 /* Small devices (small phone screens) */
 @media (min-width: 320px) {
 
+    /* slide setup */
     .slide {
         width: 100%;
+        max-height: 1000px;
+        margin: 0 auto 2% auto;
         position: relative;
         border-bottom: 2px solid #466365;
     }
-    .slideTitle {
-        background-color: #466365;
-        color: #ffffff;
+    .row {
+        margin-top: 25px;
     }
-    .primaryTitle {
-        font-size: 30px;
-        padding: 10px 0 0 0;
-    }
-    .secondaryTitle {
-        font-size: 20px; 
-        padding: 0 0 10px 0;
-    }
-    /* .row {
-        padding: 10px 0;
-    } */
-    .backgroundImage {
-        background-image: url("./images/tvm-cover.png");
-        background-position: center;
-        background-size: auto;
-        height: 650px;
-    } 
-    #slide1 {
-        height: 650px;
-    }
-    /* .img-fluid, .mathImg {
-        max-width: 80%;
-    }
+    /* end slide setup */
     .mathImg {
         max-width: 100%;
-    } */
-    
-    /***** Basic Slide Set-up  ********/
-    .hide {
-        visibility: hidden;
+    }
+    .rightContent {
+        width: 70%; 
+        margin: 30px 45px 40px 30px; 
+    }
+    .img-fluid, .mathImg {
+        max-width: 80%;
     }
     /*  title block on all slides except cover */
-   
-    .titleBlock {
-        margin: 0 30px;
-    } 
-    /******* end slide setup *************/
+.slideTitle {
+    height: 130px;
+    display: block;
+    background-color: #466365;
+    /* margin-bottom: 20px; */
+    color: #ffffff;
+}
 
-    /****** Cover Slide *****************/
+.titleBlock {
+    margin: 0 30px;
+}
+
+.primaryTitle {
+    padding-top: 20px;
+    color: #ffffff;
+}
+.secondaryTitle {
+    color: #ffffff;
+}
+/******* end slide setup *************/
+   
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
+}
+
+/***** Basic Slide Set-up  ********/
+.slide {
+    width: 100%;
+    max-height: 1500px;
+    margin: 0 auto 2% auto;
+    position: relative;
+    border-bottom: 2px solid #466365;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.row {
+    margin-top: 25px;
+}
+
+.helpSlide {
+    background-color: #f7f2ed;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/*  title block on all slides except cover */
+.slideTitle {
+    height: 130px;
+    display: block;
+    background-color: #466365;
+    /* margin-bottom: 20px; */
+    color: #ffffff;
+}
+
+.titleBlock {
+    margin: 0 30px;
+}
+
+.primaryTitle {
+    padding-top: 20px;
+    color: #ffffff;
+}
+.secondaryTitle {
+    color: #ffffff;
+}
+/******* end slide setup *************/
+
+
+/****** Cover Slide *****************/
 .coverSlide {
     margin-top: 500px;
+}
+
+.coverSlideTitle {
+    margin-top: 100px;
+    padding: 10px 0;
+    box-shadow: 5px 10px 18px #888888;
+    background-color: #466365;
+}
+
+.coverSlideTitle h1, .coverSlideTitle h2{
+    color: #fff;
+    padding: 10px 35px;
 }
 
 .backgroundImage {
@@ -134,7 +219,7 @@ button:active {
 }
 
 .btn-group-bottom {
-    /* margin: 25px auto 15px auto; */
+    margin: 25px auto 15px auto;
     /* position: relative; */
 }
 
@@ -224,9 +309,21 @@ button.interest {
     font-size: 1.1em;
     margin-left: 25px;
 }
+
+
+
+
 /* end text styles *************** */
 
 /** for CONTENT section  ***/
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    align-content: space-between;
+    margin: 10px;
+} 
 
 .contentTitle {
     font-size: 1.5em;
@@ -297,10 +394,17 @@ p {
     margin-top: 20px;
 }
 
+
+
+
+
 /* slide page number */
 .pageNumber {
     margin-top: 25px;
 }
+
+
+
 
 
 /*********************** forms general ***************/
@@ -370,26 +474,4 @@ a.helpLink {
     width: 125px;
     border-radius: 4px;
     box-shadow: 5px 10px 18px #b1b1b1;
-}
-
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-    
 }
