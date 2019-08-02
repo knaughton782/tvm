@@ -2,7 +2,8 @@ $(document).ready(function () {
 
   /** continue/back BUTTON FUNCTIONALITY  **/
 
-  // hide all slides except first slide
+  /** HIDE ALL SLIDES EXCEPT CURRENT, starts with first slide **/
+
   // $('.allSlides .slide').each(function (e) {
   //   if (e != 0) {
   //     $(this).hide();
@@ -44,89 +45,89 @@ $(document).ready(function () {
   /** END Back / Continue Button Functionality ****************/
 
   /**** slide 2 content switching functionality ***/
-  var intro = $('#intro');
-  var learningObj = $('#learningObj');
-  var prereqs = $('#prereqs');
-  var requirements = $('#requirements');
+  // var intro = $('#intro');
+  // var learningObj = $('#learningObj');
+  // var prereqs = $('#prereqs');
+  // var requirements = $('#requirements');
 
   //default
-  intro.show().addClass('selected');
-  learningObj.hide();
-  prereqs.hide();
-  requirements.hide();
+  // intro.show().addClass('selected');
+  // learningObj.hide();
+  // prereqs.hide();
+  // requirements.hide();
 
-  function addIntro() {
-    intro.show().addClass('selected');
-    learningObj.hide();
-    prereqs.hide();
-    requirements.hide();
-  }
-  $('#introBtn').click(addIntro);
+  // function addIntro() {
+  //   intro.show().addClass('selected');
+  //   learningObj.hide();
+  //   prereqs.hide();
+  //   requirements.hide();
+  // }
+  // $('#introBtn').click(addIntro);
 
-  function addlearningObj() {
-    intro.hide();
-    learningObj.show().addClass('selected');
-    prereqs.hide();
-    requirements.hide();
-  }
-  $('#learningObjBtn').click(addlearningObj);
+  // function addlearningObj() {
+  //   intro.hide();
+  //   learningObj.show().addClass('selected');
+  //   prereqs.hide();
+  //   requirements.hide();
+  // }
+  // $('#learningObjBtn').click(addlearningObj);
 
-  function addPrereqs() {
-    intro.hide();
-    learningObj.hide();
-    prereqs.show().addClass('selected');
-    requirements.hide();
-  }
-  $('#prereqsBtn').click(addPrereqs);
+  // function addPrereqs() {
+  //   intro.hide();
+  //   learningObj.hide();
+  //   prereqs.show().addClass('selected');
+  //   requirements.hide();
+  // }
+  // $('#prereqsBtn').click(addPrereqs);
 
-  function addRequirements() {
-    intro.hide();
-    learningObj.hide();
-    prereqs.hide();
-    requirements.show().addClass('selected');
-  }
-  $('#reqsBtn').click(addRequirements);
+  // function addRequirements() {
+  //   intro.hide();
+  //   learningObj.hide();
+  //   prereqs.hide();
+  //   requirements.show().addClass('selected');
+  // }
+  // $('#reqsBtn').click(addRequirements);
   /**** end slide 2 content switching ******/
 
 
   /****** slide 6 content switching *****/
-  var defaultCondition = $('#defaultCondition');
-  var presentValue = $('#presentValue');
-  var time = $('#time');
-  var interest = $('#interest');
+  // var defaultCondition = $('#defaultCondition');
+  // var presentValue = $('#presentValue');
+  // var time = $('#time');
+  // var interest = $('#interest');
 
-  defaultCondition.show();
-  presentValue.hide();
-  time.hide();
-  interest.hide();
+  // defaultCondition.show();
+  // presentValue.hide();
+  // time.hide();
+  // interest.hide();
 
-  function addPV() {
-    defaultCondition.hide();
-    presentValue.show();
-    time.hide();
-    interest.hide();
-  }
-  $('#presentValueBtn').click(addPV);
+  // function addPV() {
+  //   defaultCondition.hide();
+  //   presentValue.show();
+  //   time.hide();
+  //   interest.hide();
+  // }
+  // $('#presentValueBtn').click(addPV);
 
-  function addTime() {
-    defaultCondition.hide();
-    presentValue.hide();
-    time.show();
-    interest.hide();
-  }
-  $('#timeBtn').click(addTime);
+  // function addTime() {
+  //   defaultCondition.hide();
+  //   presentValue.hide();
+  //   time.show();
+  //   interest.hide();
+  // }
+  // $('#timeBtn').click(addTime);
 
-  function addInterest() {
-    defaultCondition.hide();
-    presentValue.hide();
-    time.hide();
-    interest.show();
-  }
-  $('#interestBtn').click(addInterest);
+  // function addInterest() {
+  //   defaultCondition.hide();
+  //   presentValue.hide();
+  //   time.hide();
+  //   interest.show();
+  // }
+  // $('#interestBtn').click(addInterest);
 
   /***** end slide 6 content switching ********/
 
-  /****** slide 19, help slide 6 button/content switching *****/
+  /****** slide 19, slide button/content switching *****/
   var principles = $('#principles');
   var pemdas = $('#pemdas');
   var dist = $('#dist');
