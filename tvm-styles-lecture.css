@@ -75,15 +75,12 @@ body {
         color: #fff;
         margin: 5px;
     }
+    .text-center {
+        /* for the div that surrounds images */
+        margin-bottom: 25px;
+    }
     .img-fluid {
         margin: 10px auto;
-    }
-    .mathImg {
-        /* for the div that surrounds images */
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 25px;
-        max-width: 400px;
     }
     .math {
         margin: 10px auto 20px;
@@ -132,8 +129,10 @@ body {
         width: 50%;
         color: white;
         font-size: 14px;
-        margin: 10px 60px;
-        border: none;
+        margin: 10px 0 10px 25%;
+    }
+    .calculateBtn:active, .calculateBtn:focus {
+        color: white;
     }
     button.presentValue {
         background-color: #FA6400;
@@ -192,53 +191,49 @@ body {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .btn {
-        background-color: #466365;
-        color: #fff;
-        margin: 20px;
+        margin: 15px 10px;
+    }
+    input[type=text], input[type=password], input[type=email], input[type=number], textarea, select {
+        width: 40%;
+        font-size: 1em;
+    }
+    input[type=submit] {
+        width: 30%;
+    }
+    .calculateBtn {
+        width: 30%;
+        margin-left: 15%;
+    }
+    .math-img {
+        max-width: 400px;
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    
+    input[type=submit] {
+        width: 25%;
+    }
+    .calculateBtn {
+        width: 25%;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    
+    input[type=text], input[type=password], input[type=email], input[type=number], textarea, select {
+        width: 30%;
+    }
+    input[type=submit] {
+        width: 20%;
+    }
+    .calculateBtn {
+        width: 20%;
+        margin-left: 10%;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+/* @media (min-width: 1200px) { 
     
-}
-
-
-
-
-
-
-
-
-
-/* button:hover {
-    background-color: #bfc3ba;
-    color: #292929;
-    border: 1px solid #b3b8ad;
-}
-
-button:active {
-    background-color: #bfc3ba;
-    color: #292929;
-    border: 1px solid #b3b8ad;
-}
-.time:active  .presentValue:active, .interest:active{
-    color: #fff;
-    border: 1px solid #b3b8ad;
-} */
-
-/* .active {
-    background-color: #bfc3ba;
-    color: #292929;
-    border: 1px solid #b3b8ad;
 } */
