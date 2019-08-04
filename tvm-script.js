@@ -1,10 +1,10 @@
 $(document).ready(function () {
 
   // for anchor tags
-  if (window.location.hash) {
-    var slide7 = window.location.hash.substring(1);
-    $("#slide7" + slide7).trigger('click');
-  }
+  // if (window.location.hash) {
+  //   var slide7 = window.location.hash.substring(1);
+  //   $("#slide7" + slide7).trigger('click');
+  // }
   /** continue/back BUTTON FUNCTIONALITY  **/
 
   /** HIDE ALL SLIDES EXCEPT CURRENT, starts with first slide **/
