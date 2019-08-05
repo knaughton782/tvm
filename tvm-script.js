@@ -51,9 +51,15 @@ $(document).ready(function () {
 // future value calculation is FV = PV(1 + i)^time
 
 function FV(principal, interest, time) {
-  var answer = principal * Math.pow((1 + interest), time);
-  return answer.toFixed(2);
+  // console.log(interest = "this");
+  if (principal == 100 && interest == .10 && time == 10) {
+    var answer = principal * Math.pow((1 + interest), time);
+    return "The future value is $" + answer.toFixed(2) + ". Good job!";
+  } else {
+    return answer = "Please check your variables and try again."
+  }
 }
+
 
 function calc_FV() {
 
@@ -73,5 +79,5 @@ function calc_FV() {
 
   var ans = FV(principal, interest, time);
 
-  document.getElementById('answer').innerHTML = "The future value is $" + ans;
+  document.getElementById('answer').innerHTML = ans;
 }
