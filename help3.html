@@ -27,64 +27,83 @@
             <div class="row">
                 <div class="col-12 col-sm-12">
                     <div class="content">
-
-                        <p>First, identify the variables in the problem: How much would you pay today for a promise of $259.37 in 10 years at a suitable discount rate of 10%? </p>
-                        <span class="presentValue">PV</span> = ? <br>
-                        <span class="futureValue">FV</span> = ?<br>
-                        <span class="interest">i</span> = ? <br>
-                        <span class="time">n</span> = ?<br>
-                        <p>This time we’re looking for <span class="presentValue">PV</span>, because the question asks how much you would pay today. We know that the $259.37 is the <span class="futureValue">FV</span>, because it will be paid in the future.</p>
-
-                        <p>Then solve for the unknown variable, in this case PV. Remember to use the order of operations (PEMDAS).</p>
-
-                        <p>Step 1: Parentheses Add the numbers in the parentheses.</p>
-
-                        <p>Step 2: Exponents Raise the number in the parentheses to the exponent. Leave enough significant digits so that you don’t commit a rounding error.</p>
-
-                        <p>Step 3: Multiple and Divide Divide both sides by the same number to isolate PV.
-
-                            Then simplify the fraction to solve for <span class="presentValue">PV</span>.</p>
-                        <div>
-                            <p>How much money would you have in another year if you rolled over the $110.00?</p>
-                            <p>Let’s rephrase the question to a form you’re already familiar with: </p>
-                            <p>How much money would you have in a year if you invested $110 (calculated in the previous question) at 10% interest?</p>
-                            <p>To figure out how much we will have in 2 year, we need to: </p>
-                            <p>Calculate the interest payment for year 2.</p>
-                            <p>Add the interest payments back to the initial investment (principal).</p>
-
-                        </div>
-                        <div>
-
-                            <p>How much money would you have in a year if you invested $110 at 10% interest?</p>
-                            <p>Calculate the interest payment for year 2.</p>
-                            <p>Recall that the interest rate is 10%. This time the principal is $110.</p>
-                            <p>To find the interest payment, we need to multiply the times the principal (Present Value) amount:</p>
-                            <p>10% * $110 = $11</p>
-
-                            <p>Add the interest payment to the initial investment (principal).</p>
-                            <p>$110 + $11 = $121</p>
-
-                        </div>
-
-                        Step 4: Adding and Subtracting is not necessary for this problem.
+                        <p>Follow the same pattern we used to solve our first problem.</p>
+                        <p class="question">How much would you pay today for a promise of $259.37 in 10 years at a suitable discount rate of 10%?</p>
+                        <p>
+                            <ul>
+                                <li>
+                                    First, identify the variables in the problem:
+                                    <p>This time we’re looking for <span class="presentValue">PV</span>, because the question asks how much you would pay today.
+                                        <div class="math"><span class="presentValue">PV</span> = ?</div>
+                                    </p>
+                                    <p>We know that the $259.37 is the <span class="futureValue">FV</span>, because it will be paid in the future.
+                                        <div class="math"><span class="futureValue">FV</span> = $259.37</div>
+                                    </p>
+                                    <p>Remember that <span class="interest">i</span> is a percentage or decimal.
+                                        <div class="math"><span class="interest">i</span> = 10% or .10</div>
+                                    </p>
+                                    <p><span class="time">n</span> is an expression of time such as years or decades.
+                                        <div class="math"><span class="time">n</span> = 10</div>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Once you've identified the variables, plug the numbers into the equation: </p>
+                                    <div class="math"><span class="futureValue">FV</span> =
+                                        <span class="presentValue">PV</span>(1 +
+                                        <span class="interest">i</span>)<sup>
+                                            <span class="time">n</span></sup> &nbsp;&nbsp;&xrarr;&nbsp;&nbsp;
+                                            <span class="futureValue">$259.37</span> =
+                                            <span class="presentValue">PV</span>(1 +
+                                            <span class="interest">0.10</span>)<sup>
+                                                <span class="time">10</span></sup>
+                                    </div>
+                                </li>
+                                <li>Then solve for the unknown variable, in this case PV. Remember to use the order of operations (PEMDAS).
+                                    <ul>
+                                        <li>Parentheses: Add the numbers in the parentheses.
+                                            <div class="math">
+                                                    <span class="futureValue">$259.37</span> =
+                                                    <span class="presentValue">PV</span>(1.10</span>)<sup>
+                                                        <span class="time">10</span></sup>
+                                            </div>
+                                        </li>
+                                        <li>Exponents: Raise the number in the parentheses to the exponent. Leave enough significant digits so that you don’t commit a rounding error.
+                                            <div class="math">
+                                                <span class="futureValue">$259.37</span> =
+                                                <span class="presentValue">PV</span>(2.5937</span>)
+                                            </div>
+                                        </li>
+                                        <li>Multiple and Divide: Divide both sides by the same number to isolate PV. 
+                                            <div class="math">
+                                                <img src="./images/tvm_basic_pv_example_part1_help3.png" alt="" class="img-fluid math-img">
+                                            </div>
+                                        </li>
+                                        <li>Adding and Subtracting is not necessary for this problem. The addition in this specific equation was taken care of in the parentheses.</li>
+                                    </ul>
+                                </li>
+                                <li>Finally, simplify the fraction to solve for <span class="presentValue">PV</span>.
+                                <div class="math">
+                                    <img src="./images/tvm_basic_pv_example_part1_help4.png" alt="" class="img-fluid math-img">
+                                </div></li>
+                        </p>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-1 offset-sm-1">
-                    <div class="pageNumber">Help 3</div>
+                <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg 5 offset-xl-8 col-xl-4">
+                    <button type="button" class="back btn hide">Back</button>
+                    <a href="lecture1.html" class="continue lectureLink btn">Continue</a>
                 </div>
-                <div class="offset-sm-6 col-sm-4 bottomBtn">
-                    <div class="btn-group-bottom">
-                        <button type="button" class="back btn leftBtn">Back</button>
-                        <button type="button" class="continue btn rightBtn">Continue</button>
-                    </div>
+            </div>
+            <div class="row">
+                <div class="col-5 col-sm-3">
+                    <div class="pageNumber">Help 3</div>
                 </div>
             </div>
         </div>
+    </div><!-- end container for all content  -->
 
-
-    </div>
 
 
 
