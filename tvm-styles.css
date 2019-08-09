@@ -10,7 +10,7 @@ body {
     .slide {
         width: 100%;
         position: relative;
-        border-bottom: 2px solid #466365;
+        /* border-bottom: 2px solid #466365; */
         margin-bottom: 10px;
     }
     .slideTitle {
