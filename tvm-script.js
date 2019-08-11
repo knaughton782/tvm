@@ -1,14 +1,19 @@
 $(document).ready(function () {
 
+  var hash = window.location.hash; // would be "#div1" anchor tag info
+  if (hash != "") {
+    var id = hash.substr(1); // get rid of #
+    document.getElementById(id).innerHTML;
+  }
   /** continue/back BUTTON FUNCTIONALITY  **/
 
   /** HIDE ALL SLIDES EXCEPT CURRENT, starts with first slide **/
 
-  $('.allSlides .slide').each(function (e) {
-    if (e != 0) {
-      $(this).hide();
-    }
-  });
+  // $('.allSlides .slide').each(function (e) {
+  //   if (e != 0) {
+  //     $(this).hide();
+  //   }
+  // });
 
   // for each click on the continue button, hide the current slide and show the next one
   $('.continue').click(function () {
@@ -20,7 +25,7 @@ $(document).ready(function () {
         .hide();
     } else {
       $('.allSlides .slide:visible').hide();
-      $('.allSlides .slide:first').show();
+      $('.allSlides .slide:first').show(); //wraps around and shows first slide again
     }
     return false;
   });
@@ -40,6 +45,20 @@ $(document).ready(function () {
     return false;
   });
   /** END Back / Continue Button Functionality ****************/
+
+  // help button functionality
+  $('.help').click(function () {
+    if ($('.allSlides .slide:visible').next().length != 0) {
+      $('.allSlides .helpSlide:visible')
+        .next()
+        .show()
+        .prev()
+        .hide();
+    }
+    return false;
+  });
+
+
 
 });
 
