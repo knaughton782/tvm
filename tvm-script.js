@@ -9,11 +9,11 @@ $(document).ready(function () {
 
   /** HIDE ALL SLIDES EXCEPT CURRENT, starts with first slide **/
 
-  $('.allSlides .slide').each(function (e) {
-    if (e != 0) {
-      $(this).hide();
-    }
-  });
+  // $('.allSlides .slide').each(function (e) {
+  //   if (e != 0) {
+  //     $(this).hide();
+  //   }
+  // });
 
   // for each click on the continue button, hide the current slide and show the next one
   $('.continue').click(function () {
@@ -46,19 +46,42 @@ $(document).ready(function () {
   });
   /** END Back / Continue Button Functionality ****************/
 
-  // help button functionality
-  $('.help').click(function () {
+  // for each click on the skip button, hide the current slide and show the next one with the land class
+  $('.skip').click(function () {
+    // console.log('skip clicked');
     if ($('.allSlides .slide:visible').next().length != 0) {
-      $('.allSlides .helpSlide:visible')
-        .next()
+      // console.log('did this one go?');
+      $('.allSlides .slide:visible')
+        .nextUntil('div.stop')
         .show()
         .prev()
         .hide();
+      console.log('skip to stop triggered');
+    } else {
+      $('.allSlides .slide:visible').hide();
+      $('.allSlides .slide:first').show(); //wraps around and shows first slide again
     }
     return false;
   });
 
 
+  // for each click on the skipback button, hide the current slide and show the previous one with the landback class
+  $('.skipBack').click(function () {
+    // console.log('skip clicked');
+    if ($('.allSlides .slide:visible').next().length != 0) {
+      // console.log('did this one go?');
+      $('.allSlides .slide:visible')
+        .prevUntil('div.stopBack')
+        .show()
+        .next()
+        .hide();
+      console.log('skip to stop triggered');
+    } else {
+      $('.allSlides .slide:visible').hide();
+      $('.allSlides .slide:first').show(); //wraps around and shows first slide again
+    }
+    return false;
+  });
 
 });
 

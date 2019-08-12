@@ -241,7 +241,7 @@
                     <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
                         <!-- to help 1 -->
                         <button type="button" class="help continue btn">Help</button>
-                        <button type="button" class="btn">Continue</button>
+                        <button type="button" class="skip btn">Continue</button>
                     </div>
                 </div>
                 <div class="row">
@@ -307,7 +307,7 @@
 
 
             <!---------------- SLIDE 7 - content ******************* -->
-            <div id="slide7" class="slide" name="slide7">
+            <div id="slide7" class="slide">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -342,7 +342,7 @@
 
 
             <!---------------- SLIDE 8 - CONTENT *********** -->
-            <div id="slide8" class="slide">
+            <div id="slide8" class="slide stop">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -362,7 +362,7 @@
                     <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
                         <!-- to help 2 -->
                         <button type="button" class="help continue btn">Help</a>
-                            <button type="button" class="btn">Continue</button>
+                            <button type="button" class="skip btn">Continue</button>
                     </div>
                 </div>
                 <div class="row">
@@ -441,8 +441,8 @@
                 <div class="row">
                     <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
                         <!-- to help 2 -->
-                        <!-- <a href="./help2.html" class="help helpLink btn" target="_blank">Help</a> -->
-                        <button type="button" class="help helpLink back btn">Help</button>
+                        <!-- <a href="./help2.html" class="help  btn" target="_blank">Help</a> -->
+                        <button type="button" class="help  back btn">Help</button>
                         <button type="button" class="continue btn">Continue</button>
                     </div>
                 </div>
@@ -456,7 +456,7 @@
 
 
             <!---------------- SLIDE 10 - CONTENT -->
-            <div id="slide10" class="slide">
+            <div id="slide10" class="slide stop">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -538,7 +538,7 @@
                     <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
                         <!-- goes to math refresher -->
                         <button type="button" class="help continue btn">Help</button>
-                        <button type="button" class="btn">Continue</button>
+                        <button type="button" class="skip btn">Continue</button>
                     </div>
                 </div>
                 <div class="row">
@@ -628,7 +628,7 @@
                 <div class="row">
                     <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
                         <button type="button" class="back btn hide">Back</button>
-                        <button type="button" class="continue lectureLink btn">Continue</button>
+                        <button type="button" class="continue  btn">Continue</button>
                     </div>
                 </div>
                 <div class="row">
@@ -637,11 +637,13 @@
                     </div>
                 </div>
             </div>
+            <!---------------- end math refresher -->
+
 
 
 
             <!---------------- SLIDE 12 - CONTENT -->
-            <div id="slide12" class="slide">
+            <div id="slide12" class="slide stop">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -701,10 +703,36 @@
                                         2<span class="interest">i</span> + 1)
                                     </div>
                                 </li>
+                                <li>The equation in the parentheses can be simplified to (x + 1)(x + 1). You can find information on this equation in the math help under FOIL.
+                                    <div class="math">
+                                        <span class="presentValue">PV</span>
+                                        (<span class="interest">i</span><sup>2</sup> +
+                                        2<span class="interest">i</span> + 1) <b>&nbsp;&xrarr; &nbsp;</b>
+                                        <span class="presentValue">PV</span>(<span class="interest">i</span> + 1)(<span class="interest">i</span> + 1)
+                                    </div>
+                                </li>
+                                <li>Think of (i + 1) as a number. A number multiplied by itself is that number squared.
+                                    <div class="math">
+                                        <span class="presentValue">PV</span>(<span class="interest">i</span> + 1)(<span class="interest">i</span> + 1) <b>&nbsp;&xrarr; &nbsp;</b>
+                                        <span class="presentValue">PV</span>(<span class="interest">i</span> + 1)<sup>2</sup>
+                                    </div>
+                                </li>
+                                <li>Remember back to the problem: the term is 2 years. Therefore, n = 2. We can replace the number in the exponent with the variable.
+                                    <div class="math">
+                                        <span class="presentValue">PV</span>(
+                                        <span class="interest">i</span> + 1)
+                                        <span class="time"><sup>2</sup></span>
+                                        <b>&nbsp;&xrarr; &nbsp;</b>
+                                        <span class="presentValue">PV</span>(
+                                        <span class="interest">i</span> + 1)
+                                        <span class="time"><sup>n</sup></span>
+                                    </div>
+                                </li>
                             </ol>
-                            <p>Click Help if you need to review the math principles. Click Continue if you understand how we got to this equation: <div class="math"><span class="presentValue">PV</span>
-                                    (<span class="interest">i</span><sup>2</sup> +
-                                    2<span class="interest">i</span> + 1)
+                            <p>Click Help if you need to review the math principles. Click Continue if you understand how we got to this equation: <div class="math">
+                                    <span class="presentValue">PV</span>(
+                                    <span class="interest">i</span> + 1)
+                                    <span class="time"><sup>n</sup></span>
                                 </div>
                             </p>
                         </div>
@@ -727,65 +755,9 @@
 
 
 
+
             <!---------------- SLIDE 13 - CONTENT -->
             <div id="slide13" class="slide">
-                <div class="row slideTitle">
-                    <div class="col-12 col-sm-12">
-                        <h2 class="primaryTitle">TVM: The Basics</h2>
-                        <h3 class="secondaryTitle">TVM Equation</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-sm-12">
-                        <div class="content">
-                            <p>5. The equation in the parentheses can be simplified to (x + 1)(x + 1). You can find information on this equation in the math help under FOIL.</p>
-                            <div class="math">
-                                <span class="presentValue">PV</span>
-                                (<span class="interest">i</span><sup>2</sup> +
-                                2<span class="interest">i</span> + 1) <b>&nbsp;&xrarr; &nbsp;</b>
-                                <span class="presentValue">PV</span>(<span class="interest">i</span> + 1)(<span class="interest">i</span> + 1)
-                            </div>
-                            <p>6. Think of (i + 1) as a number. A number multiplied by itself is that number squared.</p>
-                            <div class="math">
-                                <span class="presentValue">PV</span>(<span class="interest">i</span> + 1)(<span class="interest">i</span> + 1) <b>&nbsp;&xrarr; &nbsp;</b>
-                                <span class="presentValue">PV</span>(<span class="interest">i</span> + 1)<sup>2</sup>
-                            </div>
-                            <p>7. Remember back to the problem: the term is 2 years. Therefore, n = 2. We can replace the number in the exponent with the variable.</p>
-                            <div class="math">
-                                <span class="presentValue">PV</span>(
-                                <span class="interest">i</span> + 1)
-                                <span class="time"><sup>2</sup></span>
-                                <b>&nbsp;&xrarr; &nbsp;</b>
-                                <span class="presentValue">PV</span>(
-                                <span class="interest">i</span> + 1)
-                                <span class="time"><sup>n</sup></span>
-                            </div>
-                            <p>Click Help if you need to review the math principles. Click Continue if you understand how we got to this equation: <div class="math"><span class="presentValue">PV</span>(
-                                    <span class="interest">i</span> + 1)
-                                    <span class="time"><sup>n</sup></span>
-                                </div>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
-                        <!-- goes to math refresher -->
-                        <button type="button" class="help helpLink btn">Help</a>
-                            <button type="button" class="continue btn">Continue</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1 col-sm-1">
-                        <div class="pageNumber">13</div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <!---------------- SLIDE 14 - CONTENT -->
-            <div id="slide14" class="slide">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -813,7 +785,7 @@
                 </div>
                 <div class="row">
                     <div class="col-1 col-sm-1">
-                        <div class="pageNumber">14</div>
+                        <div class="pageNumber">13</div>
                     </div>
                 </div>
             </div>
@@ -821,8 +793,8 @@
 
 
 
-            <!---------------- SLIDE 15 - CONTENT -->
-            <div id="slide15" class="slide">
+            <!---------------- SLIDE 14 - CONTENT -->
+            <div id="slide14" class="slide exerciseSlide">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -874,7 +846,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12 col-sm-6">
-                        <div class="pageNumber">15 <span class="note">&nbsp;(Question 1 of 15)</span></div>
+                        <div class="pageNumber">14 <span class="note">&nbsp;(Question 1 of 15)</span></div>
                     </div>
                 </div>
             </div>
@@ -882,8 +854,8 @@
 
 
 
-            <!---------------- SLIDE 16 - CONTENT -->
-            <div id="slide16" class="slide">
+            <!---------------- SLIDE 15 - CONTENT -->
+            <div id="slide15" class="slide">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -942,15 +914,15 @@
                 </div>
                 <div class="row">
                     <div class="col-1 col-sm-1">
-                        <div class="pageNumber">16</div>
+                        <div class="pageNumber">15</div>
                     </div>
                 </div>
             </div>
 
 
 
-            <!---------------- SLIDE 17  - CONTENT -->
-            <div id="slide17" class="slide">
+            <!---------------- SLIDE 16  - CONTENT -->
+            <div id="slide16" class="slide">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -989,15 +961,15 @@
                 </div>
                 <div class="row">
                     <div class="col-1 col-sm-1">
-                        <div class="pageNumber">17</div>
+                        <div class="pageNumber">16</div>
                     </div>
                 </div>
             </div>
 
 
 
-            <!---------------- SLIDE 18  - CONTENT -->
-            <div id="slide18" class="slide">
+            <!---------------- SLIDE 17  - CONTENT -->
+            <div id="slide17" class="slide">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -1026,14 +998,14 @@
                 </div>
                 <div class="row">
                     <div class="col-1 col-sm-1">
-                        <div class="pageNumber">18</div>
+                        <div class="pageNumber">17</div>
                     </div>
                 </div>
             </div>
 
 
-            <!---------------- SLIDE 19  - CONTENT -->
-            <div id="slide19" class="slide">
+            <!---------------- SLIDE 18  - CONTENT -->
+            <div id="slide18" class="slide">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -1063,14 +1035,14 @@
                 </div>
                 <div class="row">
                     <div class="col-1 col-sm-1">
-                        <div class="pageNumber">19</div>
+                        <div class="pageNumber">18</div>
                     </div>
                 </div>
             </div>
 
 
-            <!---------------- SLIDE 20 - CONTENT -->
-            <div id="slide20" class="slide">
+            <!---------------- SLIDE 19 - CONTENT -->
+            <div id="slide19" class="slide">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -1089,16 +1061,17 @@
                 <div class="row">
                     <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
                         <!-- to help 3 -->
-                        <button type="button" class="help helpLink continue btn">Help</button>
-                        <button type="button" class="btn">Continue</button>
+                        <button type="button" class="help  continue btn">Help</button>
+                        <button type="button" class="skip btn">Continue</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-1 col-sm-1">
-                        <div class="pageNumber">20</div>
+                        <div class="pageNumber">19</div>
                     </div>
                 </div>
             </div>
+
 
 
             <!-- ********** help 3 ************************ -->
@@ -1193,8 +1166,8 @@
 
 
 
-            <!---------------- SLIDE 21  - CONTENT -->
-            <div id="slide21" class="slide">
+            <!---------------- SLIDE 20  - CONTENT -->
+            <div id="slide20" class="slide">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -1213,20 +1186,20 @@
                 <div class="row">
                     <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
                         <!-- to help 3 -->
-                        <button class="help helpLink back btn">Help</button>
+                        <button class="help  back btn">Help</button>
                         <button type="button" class="continue btn">Continue</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-1 col-sm-1">
-                        <div class="pageNumber">21</div>
+                        <div class="pageNumber">20</div>
                     </div>
                 </div>
             </div>
 
 
-            <!---------------- SLIDE 22  -->
-            <div id="slide22" class="slide">
+            <!---------------- SLIDE 21  -->
+            <div id="slide21" class="slide stop">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -1254,15 +1227,15 @@
                 </div>
                 <div class="row">
                     <div class="col-1 col-sm-1">
-                        <div class="pageNumber">22</div>
+                        <div class="pageNumber">21</div>
                     </div>
                 </div>
             </div>
 
 
 
-            <!---------------- SLIDE 23 -->
-            <div id="slide23" class="slide">
+            <!---------------- SLIDE 22 -->
+            <div id="slide22" class="slide">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -1281,13 +1254,13 @@
                 <div class="row">
                     <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
                         <!-- to help 4 -->
-                        <button type="button" class="help helpLink continue btn">Help</a>
-                            <button type="button" class="btn">Continue</button>
+                        <button type="button" class="help  continue btn">Help</a>
+                            <button type="button" class="skip btn">Continue</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-1 col-sm-1">
-                        <div class="pageNumber">23</div>
+                        <div class="pageNumber">22</div>
                     </div>
                 </div>
             </div>
@@ -1327,7 +1300,7 @@
                 <div class="row">
                     <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
                         <button type="button" class="back btn hide">Back</button>
-                        <button type="button" class="continue lectureLink btn">Continue</button>
+                        <button type="button" class="continue  btn">Continue</button>
                     </div>
                 </div>
                 <div class="row">
@@ -1341,8 +1314,8 @@
 
 
 
-            <!---------------- SLIDE 24   - CONTENT -->
-            <div id="slide24" class="slide">
+            <!---------------- SLIDE 23   - CONTENT -->
+            <div id="slide23" class="slide">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -1361,21 +1334,21 @@
                 <div class="row">
                     <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
                         <!-- to help 4 -->
-                        <button type="button" class="help helpLink back btn">Help</a>
+                        <button type="button" class="help  back btn">Help</a>
                             <button type="button" class="continue btn">Continue</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-1 col-sm-1">
-                        <div class="pageNumber">24</div>
+                        <div class="pageNumber">23</div>
                     </div>
                 </div>
             </div>
 
 
 
-            <!---------------- SLIDE 25 - CONTENT -->
-            <div id="slide25" class="slide">
+            <!---------------- SLIDE 24 - CONTENT -->
+            <div id="slide24" class="slide stop">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -1396,13 +1369,13 @@
                 <div class="row">
                     <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
                         <!-- to help 5 -->
-                        <button type="button" class="help helpLink continue btn">Help</button>
-                        <button type="button" class="btn">Continue</button>
+                        <button type="button" class="help  continue btn">Help</button>
+                        <button type="button" class="skip btn">Continue</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-1 col-sm-1">
-                        <div class="pageNumber">25</div>
+                        <div class="pageNumber">24</div>
                     </div>
                 </div>
             </div>
@@ -1458,7 +1431,7 @@
                 <div class="row">
                     <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
                         <button type="button" class="back btn hide">Back</button>
-                        <a href="lecture1.html" class="continue lectureLink btn">Continue</a>
+                        <a href="lecture1.html" class="continue  btn">Continue</a>
                     </div>
                 </div>
                 <div class="row">
@@ -1473,8 +1446,8 @@
 
 
 
-            <!---------------- SLIDE 26 - CONTENT -->
-            <div id="slide26" class="slide">
+            <!---------------- SLIDE 25 - CONTENT -->
+            <div id="slide25" class="slide">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -1499,15 +1472,15 @@
                 </div>
                 <div class="row">
                     <div class="col-1 col-sm-1">
-                        <div class="pageNumber">26</div>
+                        <div class="pageNumber">25</div>
                     </div>
                 </div>
             </div>
 
 
 
-            <!---------------- SLIDE 27  - CONTENT -->
-            <div id="slide27" class="slide">
+            <!---------------- SLIDE 26  - CONTENT -->
+            <div id="slide26" class="slide stop">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -1526,12 +1499,12 @@
                     <div class="offset-5 col-4 offset-sm-5 col-sm-7 offset-md-6 col-md-6 offset-lg-7 col-lg-4 offset-xl-8 col-xl-4">
                         <!-- to exercises -->
                         <button type="button" class="back btn">Back</button>
-                        <button type="button" class="continue btn lectureLink">Exercises</a>
+                        <button type="button" class="continue btn ">Exercises</a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-1 col-sm-1">
-                        <div class="pageNumber">27</div>
+                        <div class="pageNumber">26</div>
                     </div>
                 </div>
             </div>
