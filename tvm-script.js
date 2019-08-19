@@ -88,7 +88,7 @@ $(document).ready(function () {
 
 // future value calculation is FV = PV(1 + i)^time
 
-/* ****************** for slide 15 on lecture1 ******************* */
+/* ****************** for first exercise slide midway through lecture1 ******************* */
 // exercise 1 - this exercise is in lecture1.html
 function FV(principal, interest, time) {
   if (principal == 100 && interest == .10 && time == 10) {
