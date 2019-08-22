@@ -13,13 +13,13 @@ body {
         margin-bottom: 10px;
     }
     .helpSlide {
-        background-color: #fbeff0;
+        background-color: #fdf4f5;
         width: 100%;
         position: relative;
         margin-bottom: 10px;
     }
     .exerciseSlide {
-        background-color: #eaf2fd;
+        background-color: #f1f7ff;
         width: 100%;
         position: relative;
         margin-bottom: 10px;
@@ -33,7 +33,7 @@ body {
         padding: 10px 0 0 0;
     }
     .secondaryTitle {
-        font-size: 20px; 
+        font-size: 18px; 
         padding: 0 0 10px 0;
     }
     .backgroundImage {
@@ -47,6 +47,12 @@ body {
     .content {
         margin: 20px;
     }
+    .space {
+        margin: 40px;
+    }
+    .pageNumber {
+        margin: 20px;
+    }
     .note {
         color: #575656;
         font-size: .85em;
@@ -55,9 +61,7 @@ body {
         color: #CC444B;
         font-size: .85em;
     }
-    .pageNumber {
-        margin: 20px;
-    }
+    
     button {
         text-decoration: none;
         cursor: pointer;
@@ -91,26 +95,37 @@ body {
         max-width: 500px;
         font-size: 1.1em;
     }
+    .math-big {
+        font-size: 1.4em;
+    }
     .indent {
         margin-left: 25px;
+    }
+    .compound {
+        color: #650d10;
+        font-weight: 800;
+    }
+    .simple {
+        color: #185499;
+        font-weight: bold;
     }
     .help {
         background-color: #CC444B;
     }
     .futureValue {
-        color: #008A00;
+        color:  #80a429;
         font-weight: 800;
     }
     .time {
-        color: #884DFF;
+        color: #613fa5;
         font-weight: 800;
     }
     .presentValue {
-        color: #FA6400; 
+        color: #fd7f39; 
         font-weight: 800;
     }
     .interest {
-        color: #EB004E;
+        color: #e653eb;
         font-weight: 800;
     }
     .question {
@@ -144,12 +159,12 @@ body {
         font-weight: 400;
     }
     button.time {
-        background-color: #884DFF;
+        background-color: #613fa5;
         color: #fff;
         font-weight: 400;
     }
     button.interest {
-        background-color: #EB004E;
+        background-color: #e653eb;
         color: #fff;
         font-weight: 400;
     }
@@ -162,6 +177,12 @@ body {
         box-sizing: border-box;
         font-size: .8em;
         box-shadow: 20px 10px 50px #eeeeee;
+    }
+    input[type=radio] {
+        padding: 10px 10px;
+        margin: 10px 10px;
+        font-size: 1.8em; 
+        transform: scale(1.3);
     }
     input[type=submit] {
         width: 50%;
@@ -190,9 +211,7 @@ body {
         background-position: right top;
         background-repeat: no-repeat;
     }
-    /* .exercisesContainer {
-
-    } */
+    
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -237,6 +256,9 @@ body {
     .calculateBtn {
         width: 20%;
         margin-left: 10%;
+    }
+    .math-img {
+        max-width: 500px;
     }
 }
 
