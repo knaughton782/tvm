@@ -101,7 +101,7 @@ body {
     .indent {
         margin-left: 25px;
     }
-    .compound {
+    .cmpd {
         color: #650d10;
         font-weight: 800;
     }
@@ -117,15 +117,15 @@ body {
         font-weight: 800;
     }
      .yrs {
-        color: #613fa5;
+        color: #6d4bb1;
         font-weight: 800;
     }
-    .presentValue {
+    .PV {
         color: #fd7f39; 
         font-weight: 800;
     }
     .int {
-        color: #e653eb;
+        color: #cf3ad4;
         font-weight: 800;
     }
     .question {
