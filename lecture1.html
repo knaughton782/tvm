@@ -181,7 +181,7 @@
                 <div class="row">
                     <div class="col-12 col-sm-12">
                         <div class="content">
-                            <p>What factors would you consider in determining how much <span class="futureValue">Future Value (FV)</span> the customer should pay at a later date?</p>
+                            <p>What factors would you consider in determining how much <span class="FV">Future Value (FV)</span> the customer should pay at a later date?</p>
                             <p>Let's attach some variable names to these factors to understand them better. <span class="note">Please note: these colors will be used throughout the tutorials to help identify the variables.</span></p>
                         </div>
                         <div id="presentValue" class="content">
@@ -189,19 +189,19 @@
                             <p>How much is being borrowed?<br>
                                 <span class="presentValue">Present Value (PV)</span> is the value in today's terms.</p>
                         </div>
-                        <div id="futureValue" class="content">
-                            <h4 class="futureValue">Future Value (FV)</h4>
+                        <div id="FV" class="content">
+                            <h4 class="FV">Future Value (FV)</h4>
                             <p>How much will you have in the future?<br>
-                                <span class="futureValue">Future Value (FV)</span> is the value you will have in the future given a certain interest rate and/or time period.</p>
+                                <span class="FV">Future Value (FV)</span> is the value you will have in the future given a certain interest rate and/or time period.</p>
                         </div>
                         <div id="time" class="content">
-                            <h4 class="time">Time (n)</h4>
+                            <h4 class="yrs">Time (n)</h4>
                             <p>How long before the customer pays?<br>
-                                <span class="time">Time (n)</span> is the measure of time in years.</p>
+                                <span class="yrs">Time (n)</span> is the measure of time in years.</p>
                         </div>
                         <div id="interest" class="content">
-                            <h4 class="interest">Interest (i)</h4>
-                            <p>What is the risk that the customer will not be able to pay the account at a later date? What else could your company do with the money if the customer paid now? If the loan is long enough, will inflation further erode the value of tomorrow's dollar? <span class="interest">Interest (i)</span> is the rate of return, compensating for risk and opportunity cost.</p>
+                            <h4 class="int">Interest (i)</h4>
+                            <p>What is the risk that the customer will not be able to pay the account at a later date? What else could your company do with the money if the customer paid now? If the loan is long enough, will inflation further erode the value of tomorrow's dollar? <span class="int">Interest (i)</span> is the rate of return, compensating for risk and opportunity cost.</p>
                         </div>
                     </div>
                 </div>
@@ -268,21 +268,21 @@
                             <p class="question">How much money would you have in 1 year if you invested $100 at a rate of 10%?</p>
                             <p>To figure out how much we will have in 1 year, we need to calculate the interest payment and then add the interest payment back to the initial investment (principal). Here are some tips:
                                 <ul>
-                                    <li><span class="interest">Interest (i)</span> is a rate. Look for a percentage or decimal.</li>
-                                    <li><span class="time">Time (n)</span> is an expression of time or number of years. </li>
-                                    <li><span class="futureValue">Future Value (FV)</span> and <span class="presentValue">Present Value (PV)</span>: To distinguish between <span class="presentValue">PV</span> and <span class="futureValue">FV</span>, ask yourself whether the dollar amount is money you have now or in the future. <span class="presentValue">Since the $100 is today's investment, it must be PV.</span> <span class="futureValue">The question asks what it <i>will</i> be worth, indicating we want to find FV.</span></li>
+                                    <li><span class="int">Interest (i)</span> is a rate. Look for a percentage or decimal.</li>
+                                    <li><span class="yrs">Time (n)</span> is an expression of time or number of years. </li>
+                                    <li><span class="FV">Future Value (FV)</span> and <span class="presentValue">Present Value (PV)</span>: To distinguish between <span class="presentValue">PV</span> and <span class="FV">FV</span>, ask yourself whether the dollar amount is money you have now or in the future. <span class="presentValue">Since the $100 is today's investment, it must be PV.</span> <span class="FV">The question asks what it <i>will</i> be worth, indicating we want to find FV.</span></li>
                                 </ul>
                             </p>
                             <p>To figure out the answer:
                                 <ol>
                                     <li>Calculate the interest payment.</li>
-                                    <p>First identify the interest rate and principle in the question. Then multiply the <span class="interest">interest rate</span> times the <span class="presentValue">principal</span> amount.
-                                        <p class="question">How much money would you have in 1 year if you invested <span class="presentValue">$100</span> at a rate of <span class="interest">10%</span>?
+                                    <p>First identify the interest rate and principle in the question. Then multiply the <span class="int">interest rate</span> times the <span class="presentValue">principal</span> amount.
+                                        <p class="question">How much money would you have in 1 year if you invested <span class="presentValue">$100</span> at a rate of <span class="int">10%</span>?
                                         </p>
-                                        <div class="math"><span class="interest">10%</span> x <span class="presentValue">$100</span> = <span class="interest">$10</span></div>
+                                        <div class="math"><span class="int">10%</span> x <span class="presentValue">$100</span> = <span class="int">$10</span></div>
                                     </p>
                                     <li>Finally, to calculate the amount you'd have in one year, add the interest payment back to the initial investment (principal).
-                                        <div class="math"><span class="presentValue">$100</span> + <span class="interest">$10</span> = <span class="futureValue">$110</span></div>
+                                        <div class="math"><span class="presentValue">$100</span> + <span class="int">$10</span> = <span class="FV">$110</span></div>
                                     </li>
                                 </ol>
                             </p>
@@ -392,12 +392,12 @@
                             <p>To figure out the answer:
 
                                 <ol>
-                                    <li>To find out how much we'll have after the 2nd year, we first need to calculate the interest payment for year 2. Recall that the interest rate is <span class="interest">10%</span>. This time the principal is <span class="presentValue">$110</span>. To find the interest payment, multiply the <span class="interest">interest rate</span> times the <span class="presentValue">principal (PV)</span> amount.
-                                        <div class="math"><span class="interest">10%</span> * <span class="presentValue">$110</span> = <span class="interest">$11</span></div>
+                                    <li>To find out how much we'll have after the 2nd year, we first need to calculate the interest payment for year 2. Recall that the interest rate is <span class="int">10%</span>. This time the principal is <span class="presentValue">$110</span>. To find the interest payment, multiply the <span class="int">interest rate</span> times the <span class="presentValue">principal (PV)</span> amount.
+                                        <div class="math"><span class="int">10%</span> * <span class="presentValue">$110</span> = <span class="int">$11</span></div>
                                     </li>
                                     <li>
                                         Now, add the interest payment to the initial investment (principal).
-                                        <div class="math"><span class="presentValue">$110</span> + <span class="interest">$11</span> = <span class="futureValue">$121</span></div>
+                                        <div class="math"><span class="presentValue">$110</span> + <span class="int">$11</span> = <span class="FV">$121</span></div>
                                     </li>
                                 </ol>
                             </p>
@@ -469,17 +469,17 @@
                             <p>To review:
                                 <ul>
                                     <li>We calculated the 1st year of interest earned by multiplying the interest rate, 10%, times the 1st year starting principle, $100.
-                                        <div class="math">(<span class="presentValue">$100</span> * <span class="interest">10%</span>) = <span class="interest">$10</span></div>
+                                        <div class="math">(<span class="presentValue">$100</span> * <span class="int">10%</span>) = <span class="int">$10</span></div>
                                     </li>
                                     <li>We calculated the 2nd year of interest earned by finding 10% of the 2nd year starting principal, $110.
-                                        <div class="math">(<span class="presentValue">$110</span c> * <span class="interest">10%</span>) = <span class="interest">$11</span></div>
+                                        <div class="math">(<span class="presentValue">$110</span c> * <span class="int">10%</span>) = <span class="int">$11</span></div>
                                     </li>
                                     <li>We added the 1st and 2nd year interest to the principal of $100.
-                                        <div class="math"><strong>(<span class="presentValue">$100</span> + <span class="interest">$10</span> + <span class="interest">$11</span>) = <span class="futureValue">$121</span></strong></div>
+                                        <div class="math"><strong>(<span class="presentValue">$100</span> + <span class="int">$10</span> + <span class="int">$11</span>) = <span class="FV">$121</span></strong></div>
                                     </li>
                                 </ul>
                             </p>
-                            <p>In other words, we calculated the interest earned in each individual year and added all the interest payments back to the principal to find the <span class="futureValue">Future Value (FV)</span>.</p>
+                            <p>In other words, we calculated the interest earned in each individual year and added all the interest payments back to the principal to find the <span class="FV">Future Value (FV)</span>.</p>
                         </div>
                     </div>
                 </div>
@@ -510,17 +510,17 @@
                     <div class="col-12 col-sm-12">
                         <div class="content">
                             <p>Although calculating the interest for each individual year and adding it to the principle does produce the correct answer, what would you do if asked for the future value after 100 years?</p>
-                            <p>You could create a spreadsheet of formulas with 100 interest payment calculations. However, its time consuming and fortunately, unncessary. Instead, we'll derive a general equation that will allow you to solve for <span class="futureValue">Future Value (FV)</span>, <span class="presentValue">Present Value (PV)</span>, <span class="interest">Interest rate (i)</span>, or number of <span class="time">years (n)</span>.</p>
+                            <p>You could create a spreadsheet of formulas with 100 interest payment calculations. However, its time consuming and fortunately, unncessary. Instead, we'll derive a general equation that will allow you to solve for <span class="FV">Future Value (FV)</span>, <span class="presentValue">Present Value (PV)</span>, <span class="int">Interest rate (i)</span>, or number of <span class="yrs">years (n)</span>.</p>
                             <p>Let's look back at our previous calculations:
                                 <ol>
                                     <li>Figure out the 1st year of interest by finding 10% of $100.
-                                        <div class="math">(<span class="presentValue">100</span> * <span class="interest">0.10</span>) = <span class="interest">10</span></div>
+                                        <div class="math">(<span class="presentValue">100</span> * <span class="int">0.10</span>) = <span class="int">10</span></div>
                                     </li>
                                     <li>Figure out the 2nd year of interest by finding 10% of $110.
-                                        <div class="math">(<span class="presentValue">110</span> * <span class="interest">0.10</span>) = <span class="interest">11</span></div>
+                                        <div class="math">(<span class="presentValue">110</span> * <span class="int">0.10</span>) = <span class="int">11</span></div>
                                     </li>
                                     <li>Add the 1st and 2nd year interest to the principal of 100.
-                                        <div class="math"><span class="presentValue">100</span> + <span class="interest">10</span> + <span class="interest">11</span> = <span class="futureValue">$121</span></div>
+                                        <div class="math"><span class="presentValue">100</span> + <span class="int">10</span> + <span class="int">11</span> = <span class="FV">$121</span></div>
                                     </li>
                                     <li>Now look at these steps as one equation.</li>
                                     <div class="text-center"><img src="./images/derive1.png" alt="interest calculation" class="img-fluid img-math"></div>
@@ -656,83 +656,83 @@
                             <p>Now that we have variables in place of numbers, its just a matter of simplifying the formula and grouping like variables.
                                 <div class="math">
                                     [(<span class="presentValue">PV</span> +
-                                    <span class="interest">i</span>)] +
+                                    <span class="int">i</span>)] +
                                     [(<span class="presentValue">PV</span> *
-                                    <span class="interest">i</span>) +
+                                    <span class="int">i</span>) +
                                     <span class="presentValue">PV</span>] *
-                                    <span class="interest">i</span> +
+                                    <span class="int">i</span> +
                                     <span class="presentValue">PV</span>
                                 </div>
                             </p>
                             <ol class="indent">
                                 <li>Start with the parenthesis by multiplying the variables within.
                                     <div class="math">
-                                        <span class="presentValue">PV</span><span class="interest">i</span> +
-                                        [<span class="presentValue">PV</span><span class="interest">i</span> +
-                                        <span class="presentValue">PV</span>] * <span class="interest">i</span> +
+                                        <span class="presentValue">PV</span><span class="int">i</span> +
+                                        [<span class="presentValue">PV</span><span class="int">i</span> +
+                                        <span class="presentValue">PV</span>] * <span class="int">i</span> +
                                         <span class="presentValue">PV</span>
                                     </div>
                                 </li>
                                 <li>Distribute the multiplication to the variables within the middle bracket.<br>
                                     <div class="math">
-                                        <span class="presentValue">PV</span><span class="interest">i</span> +
-                                        <span class="presentValue">PV</span><span class="interest">i</span><sup>2</sup> + <span class="presentValue">PV</span><span class="interest">i</span> +
+                                        <span class="presentValue">PV</span><span class="int">i</span> +
+                                        <span class="presentValue">PV</span><span class="int">i</span><sup>2</sup> + <span class="presentValue">PV</span><span class="int">i</span> +
                                         <span class="presentValue">PV</span>
                                     </div>
                                 </li>
                                 <li>Group like variables.
                                     <div class="math">
-                                        <i><span class="presentValue">PV</span><span class="interest">i</span></i> +
-                                        <span class="presentValue">PV</span><span class="interest">i</span><sup>2</sup> +
-                                        <i><span class="presentValue">PV</span><span class="interest">i</span></i> +
+                                        <i><span class="presentValue">PV</span><span class="int">i</span></i> +
+                                        <span class="presentValue">PV</span><span class="int">i</span><sup>2</sup> +
+                                        <i><span class="presentValue">PV</span><span class="int">i</span></i> +
                                         <span class="presentValue">PV</span> <b>&nbsp;&xrarr;&nbsp;</b>
-                                        <span class="presentValue">PV</span><span class="interest">i</span><sup>2</sup> +
-                                        2<span class="presentValue">PV</span><span class="interest">i</span> +
+                                        <span class="presentValue">PV</span><span class="int">i</span><sup>2</sup> +
+                                        2<span class="presentValue">PV</span><span class="int">i</span> +
                                         <span class="presentValue">PV</span>
                                     </div>
                                 </li>
                                 <li>Use the distributive property to separate the like term, PV.
                                     <div class="math">
                                         <i><span class="presentValue">PV</span></i>
-                                        <span class="interest">i</span><sup>2</sup> +
+                                        <span class="int">i</span><sup>2</sup> +
                                         2<i><span class="presentValue">PV</span></i>
-                                        <span class="interest">i</span> +
+                                        <span class="int">i</span> +
                                         <i><span class="presentValue">PV</span></i> <b>&nbsp;&xrarr; &nbsp;</b>
                                         <span class="presentValue">PV</span>
-                                        (<span class="interest">i</span><sup>2</sup> +
-                                        2<span class="interest">i</span> + 1)
+                                        (<span class="int">i</span><sup>2</sup> +
+                                        2<span class="int">i</span> + 1)
                                     </div>
                                 </li>
                                 <li>The equation in the parentheses can be simplified to (x + 1)(x + 1). You can find information on this equation in the math help under FOIL.
                                     <div class="math">
                                         <span class="presentValue">PV</span>
-                                        (<span class="interest">i</span><sup>2</sup> +
-                                        2<span class="interest">i</span> + 1) <b>&nbsp;&xrarr; &nbsp;</b>
-                                        <span class="presentValue">PV</span>(<span class="interest">i</span> + 1)(<span class="interest">i</span> + 1)
+                                        (<span class="int">i</span><sup>2</sup> +
+                                        2<span class="int">i</span> + 1) <b>&nbsp;&xrarr; &nbsp;</b>
+                                        <span class="presentValue">PV</span>(<span class="int">i</span> + 1)(<span class="int">i</span> + 1)
                                     </div>
                                 </li>
                                 <li>Think of (i + 1) as a number. A number multiplied by itself is that number squared.
                                     <div class="math">
-                                        <span class="presentValue">PV</span>(<span class="interest">i</span> + 1)(<span class="interest">i</span> + 1) <b>&nbsp;&xrarr; &nbsp;</b>
-                                        <span class="presentValue">PV</span>(<span class="interest">i</span> + 1)<sup>2</sup>
+                                        <span class="presentValue">PV</span>(<span class="int">i</span> + 1)(<span class="int">i</span> + 1) <b>&nbsp;&xrarr; &nbsp;</b>
+                                        <span class="presentValue">PV</span>(<span class="int">i</span> + 1)<sup>2</sup>
                                     </div>
                                 </li>
                                 <li>Remember back to the problem: the term is 2 years. Therefore, n = 2. We can replace the number in the exponent with the variable.
                                     <div class="math">
                                         <span class="presentValue">PV</span>(
-                                        <span class="interest">i</span> + 1)
-                                        <span class="time"><sup>2</sup></span>
+                                        <span class="int">i</span> + 1)
+                                        <span class="yrs"><sup>2</sup></span>
                                         <b>&nbsp;&xrarr; &nbsp;</b>
                                         <span class="presentValue">PV</span>(
-                                        <span class="interest">i</span> + 1)
-                                        <span class="time"><sup>n</sup></span>
+                                        <span class="int">i</span> + 1)
+                                        <span class="yrs"><sup>n</sup></span>
                                     </div>
                                 </li>
                             </ol>
                             <p>Click Help if you need to review the math principles. Click Continue if you understand how we got to this equation: <div class="math">
                                     <span class="presentValue">PV</span>(
-                                    <span class="interest">i</span> + 1)
-                                    <span class="time"><sup>n</sup></span>
+                                    <span class="int">i</span> + 1)
+                                    <span class="yrs"><sup>n</sup></span>
                                 </div>
                             </p>
                         </div>
@@ -767,9 +767,9 @@
                 <div class="row">
                     <div class="col-12 col-sm-12">
                         <div class="content">
-                            <p>This equation provides the future value so let's add <span class="futureValue">FV</span> to the other side of the equal sign.</p>
+                            <p>This equation provides the future value so let's add <span class="FV">FV</span> to the other side of the equal sign.</p>
                             <div class="math">
-                                <span class="futureValue">FV</span> = <span class="presentValue">PV</span>(1 + <span class="interest">i</span>)<span class="time"><sup>n</sup></span>
+                                <span class="FV">FV</span> = <span class="presentValue">PV</span>(1 + <span class="int">i</span>)<span class="yrs"><sup>n</sup></span>
                             </div>
                             <p>We could continue to derive the equation for 3, 10, 100 years. After a lot of algebraic manipulation, the outcome would be the same. Its not important that you can repeat the derivation, but that you understand <b>the equation can be derived from individual calculations</b>.</p>
                             <p>Now that we have a general equation, let's try some examples. Answer this question:</p>
@@ -794,7 +794,7 @@
 
 
             <!---------------- SLIDE 14 - CONTENT -->
-            <div id="slide14" class="slide exerciseSlide">
+            <div id="slide14" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -809,9 +809,9 @@
                             <p class="question">What would the $100 investment be worth in 10 years at 10% interest?</p>
                             <p>Here are some tips for identifying the variables.</p>
                             <ul>
-                                <li><span class="interest">i</span> is a rate. Look for a percentage or decimal.</li>
-                                <li><span class="time">n</span> is an expression of time or number of years.</li>
-                                <li>To distinguish between <span class="presentValue">PV</span> and <span class="futureValue">FV</span>, ask yourself whether the dollar amount is money you have now or in the future. Since the $100 is today's investment, it must be <span class="presentValue">PV</span>. The question asks what it <i>will be</i> worth, indicating we want to find <span class="futureValue">FV</span>.</li>
+                                <li><span class="int">i</span> is a rate. Look for a percentage or decimal.</li>
+                                <li><span class="yrs">n</span> is an expression of time or number of years.</li>
+                                <li>To distinguish between <span class="presentValue">PV</span> and <span class="FV">FV</span>, ask yourself whether the dollar amount is money you have now or in the future. Since the $100 is today's investment, it must be <span class="presentValue">PV</span>. The question asks what it <i>will be</i> worth, indicating we want to find <span class="FV">FV</span>.</li>
                             </ul>
                             <p>Test yourself! <span class="note">Note: Use a decimal for the interest box. Leave the unknown variable box empty.</span></p>
                             <div class="container">
@@ -821,13 +821,13 @@
                                         <label><span class="presentValue">PV</span> </label>
                                         <input id="pvalue" type="number" placeholder="0"><br>
 
-                                        <label><span class="futureValue">FV</span> </label>
-                                        <input id="futureValue" type="number" placeholder="0"><br>
+                                        <label><span class="FV">FV</span> </label>
+                                        <input id="FV" type="number" placeholder="0"><br>
 
-                                        <label>&nbsp;&nbsp;&nbsp;<span class="interest">i </span></label>
+                                        <label>&nbsp;&nbsp;&nbsp;<span class="int">i </span></label>
                                         <input id="int" type="number" placeholder=".00"><br>
 
-                                        <label>&nbsp;&nbsp;<span class="time">n</span> </label>
+                                        <label>&nbsp;&nbsp;<span class="yrs">n</span> </label>
                                         <input id="yrs" type="number" placeholder="0"><br>
 
                                     </form>
@@ -870,37 +870,37 @@
                             <p>First, identify the variables:</p>
                             <div class="math">
                                 <span class="presentValue">PV = 100</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <span class="futureValue">FV = ?</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <span class="interest">i = 10% or 0.10</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <span class="time">n = 10</span>
+                                <span class="FV">FV = ?</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span class="int">i = 10% or 0.10</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span class="yrs">n = 10</span>
                             </div>
                             <p>Once you've identified the variables, plug the numbers into the equation: </p>
-                            <div class="math"><span class="futureValue">FV</span> =
+                            <div class="math"><span class="FV">FV</span> =
                                 <span class="presentValue">PV</span>(1 +
-                                <span class="interest">i</span>)<sup>
-                                    <span class="time">n</span></sup>
+                                <span class="int">i</span>)<sup>
+                                    <span class="yrs">n</span></sup>
                             </div>
                             <ol>
                                 <li>Starting with the parentheses, add the numbers in place of the variables and do the addition.
                                     <div class="math">
-                                        <span class="futureValue">FV</span> =
+                                        <span class="FV">FV</span> =
                                         <span class="presentValue">100</span>(1 +
-                                        <span class="interest">0.10</span>)
-                                        <span class="time"><sup>10</sup></span>
+                                        <span class="int">0.10</span>)
+                                        <span class="yrs"><sup>10</sup></span>
                                         <b>&nbsp;&xrarr;&nbsp;</b>
-                                        <span class="futureValue">FV</span> =
+                                        <span class="FV">FV</span> =
                                         <span class="presentValue">100</span>(1.10)
-                                        <span class="time"><sup>10</sup></span>
+                                        <span class="yrs"><sup>10</sup></span>
                                     </div>
                                 </li><br>
                                 <li>Next, apply the exponent. Be careful about rounding.<br>
                                     <div class="math">
-                                        <span class="futureValue">FV</span> =
+                                        <span class="FV">FV</span> =
                                         <span class="presentValue">100</span>(2.5937424601)</div>
                                 </li>
                                 <br>
                                 <li>Finally, do the multiplication.<br>
-                                    <div class="math"><span class="futureValue">FV</span> = $259.37</div>
+                                    <div class="math"><span class="FV">FV</span> = $259.37</div>
                                 </li>
                             </ol>
                         </div>
@@ -933,7 +933,7 @@
                     <div class="col-12 col-sm-12">
                         <div class="content">
                             <p>In the problem we just solved, the number in parentheses is called the Future Value Factor. In the ‘good old days’ before calculators, people used tables of pre-calculated Future Value Factors to solve the TVM equation.</p>
-                            <p>First, find the intersection of the number of periods (years) on the left and the interest rate at the top to find the Future Value Factor. Then multiply <span class="presentValue">PV</span> times the Future Value Factor to calculate <span class="futureValue">FV</span>.</p>
+                            <p>First, find the intersection of the number of periods (years) on the left and the interest rate at the top to find the Future Value Factor. Then multiply <span class="presentValue">PV</span> times the Future Value Factor to calculate <span class="FV">FV</span>.</p>
                             <div class="text-center">
                                 <img src="./images/fv_factor_table_example_10_years.png" class="border img-fluid img-math ">
                             </div>
@@ -942,12 +942,12 @@
                             </div>
                             <div class="math">
                                 <p>
-                                    <span class="futureValue">FV</span> =
+                                    <span class="FV">FV</span> =
                                     <span class="presentValue">PV</span>(Future Value Factor)
                                 </p>
-                                <p><span class="futureValue">FV</span> = (100 * 2.5937)
+                                <p><span class="FV">FV</span> = (100 * 2.5937)
                                 </p>
-                                <p><span class="futureValue">FV</span> = $259.37
+                                <p><span class="FV">FV</span> = $259.37
                                 </p>
                             </div>
                         </div>
@@ -979,8 +979,8 @@
                 <div class="row">
                     <div class="col-12 col-sm-12">
                         <div class="content">
-                            <p>So far we have calculated <span class="futureValue">FV</span> with the TVM equation and the Future Value Factor. A third way to calculate TVM is with a financial calculator. If you have a financial calculator, now would be a good time to make sure you know how to use it.</p>
-                            <p>Plug in the numbers to verify that the equation and calculator find the same <span class="futureValue">FV</span> using the math question you are familiar with.</p>
+                            <p>So far we have calculated <span class="FV">FV</span> with the TVM equation and the Future Value Factor. A third way to calculate TVM is with a financial calculator. If you have a financial calculator, now would be a good time to make sure you know how to use it.</p>
+                            <p>Plug in the numbers to verify that the equation and calculator find the same <span class="FV">FV</span> using the math question you are familiar with.</p>
                             <p class="alert">Note: Your calculator must be on End mode -- this is the most common mistake made on tests. Also, notice that PV and FV are opposite signs (+/-).</p>
                             <p class="question">How much would $100 grow in 10 years at 10%?</p>
                             <p class="text-center">
@@ -1016,13 +1016,13 @@
                     <div class="col-12 col-sm-12">
                         <div class="content">
                             <p>Many textbooks will present you with four different TVM equations; one solving for each variable:
-                                <span class="futureValue">FV</span class>,
+                                <span class="FV">FV</span class>,
                                 <span class="presentValue">PV</span>,
-                                <span class="interest">i</span>, and
-                                <span class="time">n</span>.
+                                <span class="int">i</span>, and
+                                <span class="yrs">n</span>.
                                 As a result you have to memorize four equations instead of one. There's an easier route!</p>
                             <p>If you know the general TVM equation and have some basic math skills, you can solve for any of the four variables. We've already solved for
-                                <span class="futureValue">Future Value (FV)</span>. Now we'll try 3 more example problems, solving for the other 3 variables.</p>
+                                <span class="FV">Future Value (FV)</span>. Now we'll try 3 more example problems, solving for the other 3 variables.</p>
                             <p></p>For all these questions, solve without using the TVM buttons on your financial calculator.</p>
                         </div>
                     </div>
@@ -1094,40 +1094,40 @@
                                         <p>This time we’re looking for <span class="presentValue">PV</span>, because the question asks how much you would pay today.
                                             <div class="math"><span class="presentValue">PV</span> = ?</div>
                                         </p>
-                                        <p>We know that the $259.37 is the <span class="futureValue">FV</span>, because it will be paid in the future.
-                                            <div class="math"><span class="futureValue">FV</span> = $259.37</div>
+                                        <p>We know that the $259.37 is the <span class="FV">FV</span>, because it will be paid in the future.
+                                            <div class="math"><span class="FV">FV</span> = $259.37</div>
                                         </p>
-                                        <p>Remember that <span class="interest">i</span> is a percentage or decimal.
-                                            <div class="math"><span class="interest">i</span> = 10% or .10</div>
+                                        <p>Remember that <span class="int">i</span> is a percentage or decimal.
+                                            <div class="math"><span class="int">i</span> = 10% or .10</div>
                                         </p>
-                                        <p><span class="time">n</span> is an expression of time such as years or decades.
-                                            <div class="math"><span class="time">n</span> = 10</div>
+                                        <p><span class="yrs">n</span> is an expression of time such as years or decades.
+                                            <div class="math"><span class="yrs">n</span> = 10</div>
                                         </p>
                                     </li>
                                     <li>
                                         <p>Once you've identified the variables, plug the numbers into the equation: </p>
-                                        <div class="math"><span class="futureValue">FV</span> =
+                                        <div class="math"><span class="FV">FV</span> =
                                             <span class="presentValue">PV</span>(1 +
-                                            <span class="interest">i</span>)<sup>
-                                                <span class="time">n</span></sup> &nbsp;&nbsp;&xrarr;&nbsp;&nbsp;
-                                            <span class="futureValue">$259.37</span> =
+                                            <span class="int">i</span>)<sup>
+                                                <span class="yrs">n</span></sup> &nbsp;&nbsp;&xrarr;&nbsp;&nbsp;
+                                            <span class="FV">$259.37</span> =
                                             <span class="presentValue">PV</span>(1 +
-                                            <span class="interest">0.10</span>)<sup>
-                                                <span class="time">10</span></sup>
+                                            <span class="int">0.10</span>)<sup>
+                                                <span class="yrs">10</span></sup>
                                         </div>
                                     </li>
                                     <li>Then solve for the unknown variable, in this case PV. Remember to use the order of operations (PEMDAS).
                                         <ul>
                                             <li>Parentheses: Add the numbers in the parentheses.
                                                 <div class="math">
-                                                    <span class="futureValue">$259.37</span> =
+                                                    <span class="FV">$259.37</span> =
                                                     <span class="presentValue">PV</span>(1.10</span>)<sup>
-                                                        <span class="time">10</span></sup>
+                                                        <span class="yrs">10</span></sup>
                                                 </div>
                                             </li>
                                             <li>Exponents: Raise the number in the parentheses to the exponent. Leave enough significant digits so that you don’t commit a rounding error.
                                                 <div class="math">
-                                                    <span class="futureValue">$259.37</span> =
+                                                    <span class="FV">$259.37</span> =
                                                     <span class="presentValue">PV</span>(2.5937</span>)
                                                 </div>
                                             </li>
@@ -1211,7 +1211,7 @@
                         <div class="content">
                             <p>In the problem we just solved, the number in parentheses is called the Present Value Factor. </p>
                             <p>When there are no lump sums or payments, the Present Value Factor is just the reciprocal of the Future Value Factor. </p>
-                            <p>Multiply the <span class="futureValue">Future Value (FV)</span> times the Present Value Factor to calculate <span class="presentValue">Present Value (PV)</span class>.</p>
+                            <p>Multiply the <span class="FV">Future Value (FV)</span> times the Present Value Factor to calculate <span class="presentValue">Present Value (PV)</span class>.</p>
                             <div class="text-center"><img src="./images/pv_factors_table.png" class="img-fluid img-math" alt=""></div>
                             <div class="text-center"><img src="./images/tvm_basic_pv_factor_example.png" class="img-fluid img-math" alt=""></div>
                             <div class="text-center"><img src="./images/pv_factor_numbers.png" class="img-fluid img-math" alt="">
@@ -1278,7 +1278,7 @@
                     <div class="col-12 col-sm-12">
                         <div class="content">
                             <p class="question">If you need to triple your investment in 10 years, what interest rate will you need?</p>
-                            <p>Even though not all the numbers are listed in the problem, we can identify the time frame. Identifying <span class="futureValue">FV</span> and <span class="presentValue">PV</span> might be difficult since they aren't explicitly stated, however we know our future value will be 3 times our current value. This means we can use any current value for our calculation. To make it easy, use $1. This means our future value would be $3.</p>
+                            <p>Even though not all the numbers are listed in the problem, we can identify the time frame. Identifying <span class="FV">FV</span> and <span class="presentValue">PV</span> might be difficult since they aren't explicitly stated, however we know our future value will be 3 times our current value. This means we can use any current value for our calculation. To make it easy, use $1. This means our future value would be $3.</p>
                             <p>Remember: To find the reciprocal, turn the number into a fraction and then flip it over:
                                 <div class="math">
                                     <img src="./images/tvm1_reciprocal.png" alt="" class="img-fluid img-math">
@@ -1286,14 +1286,14 @@
                             </p>
                             <p>First, identify the variables in the problem. In essence, this question asks how much interest it will take to turn $1 that you have today into $3 in 10 years.</p>
                             <p class="math"><span class="presentValue">PV</span> = 1 &nbsp;&nbsp;&nbsp;&nbsp;
-                                <span class="futureValue">FV</span> = 3 &nbsp;&nbsp;&nbsp;&nbsp;
-                                <span class="interest">i</span> = ?&nbsp;&nbsp;&nbsp;&nbsp;
-                                <span class="time">n</span> = 10</p>
+                                <span class="FV">FV</span> = 3 &nbsp;&nbsp;&nbsp;&nbsp;
+                                <span class="int">i</span> = ?&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span class="yrs">n</span> = 10</p>
                             <p>
                                 Next, plug the numbers into the equation:
-                                <div class="math"><span class="futureValue">FV</span> = <span class="presentValue">PV</span> (1+<span class="interest">i</span>)<span class="time"><sup>n</sup></span> <b>&nbsp;&xrarr;&nbsp;</b> <span class="futureValue">3</span> = <span class="presentValue">1</span>(1+<span class="interest">i</span>)<sup>10</sup></div>
+                                <div class="math"><span class="FV">FV</span> = <span class="presentValue">PV</span> (1+<span class="int">i</span>)<span class="yrs"><sup>n</sup></span> <b>&nbsp;&xrarr;&nbsp;</b> <span class="FV">3</span> = <span class="presentValue">1</span>(1+<span class="int">i</span>)<sup>10</sup></div>
                             </p>
-                            <p>Then solve for the unknown variable, which is <span class="interest">i</span> in this problem. IMPORTANT: The order of operations still applies to this problem. However, we can’t start as we normally would by adding the numbers in the parentheses, because one is an unknown variable. We also have to skip the exponent for now, because of the unknown variable.</p>
+                            <p>Then solve for the unknown variable, which is <span class="int">i</span> in this problem. IMPORTANT: The order of operations still applies to this problem. However, we can’t start as we normally would by adding the numbers in the parentheses, because one is an unknown variable. We also have to skip the exponent for now, because of the unknown variable.</p>
                         </div>
                     </div>
                 </div>
@@ -1398,16 +1398,16 @@
                             <p class="question">How many years will it take for you to earn $500 on your $1000 investment if you are guaranteed a 9% rate of return?</p>
                             <p>First, identify the variables in the problem.</p>
                             <p class="math"><span class="presentValue">PV</span> = 1000 &nbsp;&nbsp;&nbsp;&nbsp;
-                                <span class="futureValue">FV</span> = 1500 &nbsp;&nbsp;&nbsp;&nbsp;
-                                <span class="interest">i</span> = 9% or 0.09 &nbsp;&nbsp;&nbsp;&nbsp;
-                                <span class="time">n</span> = ?</p>
+                                <span class="FV">FV</span> = 1500 &nbsp;&nbsp;&nbsp;&nbsp;
+                                <span class="int">i</span> = 9% or 0.09 &nbsp;&nbsp;&nbsp;&nbsp;
+                                <span class="yrs">n</span> = ?</p>
                             <p>Next, plug the numbers you've identified into the equation.</p>
-                            <div class="math"><span class="futureValue">FV</span> = <span class="presentValue">PV</span>(1 + <span class="interest">i</span>)<span class="time"><sup>n</sup></span> <b>&nbsp;&xrarr;&nbsp;</b> <span class="futureValue">1500</span> = <span class="presentValue">1000</span>(1 + <span class="interest">0.09</span>)<span class="time"><sup>n</sup></span></div>
+                            <div class="math"><span class="FV">FV</span> = <span class="presentValue">PV</span>(1 + <span class="int">i</span>)<span class="yrs"><sup>n</sup></span> <b>&nbsp;&xrarr;&nbsp;</b> <span class="FV">1500</span> = <span class="presentValue">1000</span>(1 + <span class="int">0.09</span>)<span class="yrs"><sup>n</sup></span></div>
                             </p>
-                            <p>Now solve for the unknown variable, in this case <span class="time">n</span>. <span class="note">Remember PEMDAS.</span> </p>
+                            <p>Now solve for the unknown variable, in this case <span class="yrs">n</span>. <span class="note">Remember PEMDAS.</span> </p>
                             <ol>
                                 <li><b>P</b>: Add the numbers in the parentheses.<br>
-                                    <div class="math"><span class="futureValue">1500</span> = <span class="presentValue">1000</span>(1.09)<sup>n</sup></div>
+                                    <div class="math"><span class="FV">1500</span> = <span class="presentValue">1000</span>(1.09)<sup>n</sup></div>
                                 </li>
                                 <li><b>MD</b>: Isolate the parentheses by dividing each side by 1000. Then convert the fraction on the left side of the equal sign to a decimal.
                                     <div class="text-center">
@@ -1490,7 +1490,7 @@
                 <div class="row">
                     <div class="col-12 col-sm-12">
                         <div class="content">
-                            <p>You have now solved a TVM equation for each of the 4 variables:<br> <span class="presentValue">Present Value</span>, <span class="futureValue">Future Value</span>, <span class="interest">Interest</span>, and <span class="time">Time</span>.</p>
+                            <p>You have now solved a TVM equation for each of the 4 variables:<br> <span class="presentValue">Present Value</span>, <span class="FV">Future Value</span>, <span class="int">Interest</span>, and <span class="yrs">Time</span>.</p>
                             <p>This proves that you can solve for any of the four variables if you know the general TVM equation and have some basic math skills. Therefore, we won’t go into the other 3 equations that you would otherwise have to memorize. You will have more opportunities to practice manipulating the equation in the Exercises section.</p>
                         </div>
                     </div>
@@ -1514,7 +1514,7 @@
             <!-- *************************** exercises *************************** -->
 
             <!-- exercise intro slide -->
-            <div id="exercise1-slide1" class="slide exerciseSlide">
+            <div id="exercise1-slide1" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -1547,7 +1547,7 @@
 
 
             <!-- exercises1 slide 2  : problem 2 -->
-            <div id="exercise1-slide2" class="slide exerciseSlide">
+            <div id="exercise1-slide2" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -1568,13 +1568,13 @@
                                         <label><span class="presentValue">PV</span> </label>
                                         <input id="pvalue-ex2" type="number" placeholder="0"><br>
 
-                                        <label><span class="futureValue">FV</span> </label>
+                                        <label><span class="FV">FV</span> </label>
                                         <input id="fvalue-ex2" type="number" placeholder="0"><br>
 
-                                        <label>&nbsp;&nbsp;&nbsp;<span class="interest">i </span></label>
+                                        <label>&nbsp;&nbsp;&nbsp;<span class="int">i </span></label>
                                         <input id="int-ex2" type="number" placeholder=".00"><br>
 
-                                        <label>&nbsp;&nbsp;<span class="time">n</span> </label>
+                                        <label>&nbsp;&nbsp;<span class="yrs">n</span> </label>
                                         <input id="yrs-ex2" type="number" placeholder="0"><br>
 
                                     </form>
@@ -1602,7 +1602,7 @@
 
 
             <!-- exercises1 slide 3 - problem 2 answer  -->
-            <div id="exercise1-slide3" class="slide exerciseSlide">
+            <div id="exercise1-slide3" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -1618,9 +1618,9 @@
                             <p>Variables:</p>
                             <p class="math">
                                 <span class="presentValue">PV</span> = 2000 <br>
-                                <span class="futureValue">FV</span> = ? <br>
-                                <span class="interest">i</span> = 8% &xrarr; 0.08<br>
-                                <span class="time">n</span> = 15
+                                <span class="FV">FV</span> = ? <br>
+                                <span class="int">i</span> = 8% &xrarr; 0.08<br>
+                                <span class="yrs">n</span> = 15
                             </p>
                         </div>
                     </div>
@@ -1640,7 +1640,7 @@
 
 
             <!-- exercise1-slide4 : problem 3 -->
-            <div id="exercise1-slide4" class="slide exerciseSlide">
+            <div id="exercise1-slide4" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -1653,12 +1653,12 @@
                             <!-- Exercises -->
                             <h4>Calculate the Unknown Variable</h4>
                             <p>Now solve the TVM equation from the last screen and enter the value of the unknown variable.</p>
-                            <p>Hint: The information from the last question shows we are looking for the <span class="futureValue">Future Value (FV)</span>.</p>
+                            <p>Hint: The information from the last question shows we are looking for the <span class="FV">Future Value (FV)</span>.</p>
                             <p class="question">If I deposit $2,000 in an account that earns an annually compounded rate of 8%, how much will my account be worth in 15 years?</p>
                             <div class="container">
                                 <div class="">
                                     <form action="" class="indent">
-                                        <label><span class="futureValue">FV</span> </label>
+                                        <label><span class="FV">FV</span> </label>
                                         <input id="fvalue-ex3" type="number" placeholder="0"><br>
                                     </form>
                                     <button onclick="exercise_3()" type="button" class="btn calculateBtn">Submit</button>
@@ -1685,7 +1685,7 @@
 
 
             <!-- exercise1-slide5 : answer problem 3 -->
-            <div id="exercise1-slide5" class="slide exerciseSlide">
+            <div id="exercise1-slide5" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -1701,19 +1701,19 @@
 
                             <p>Variables:</p>
                             <p class="math"><span class="presentValue">PV</span> = 2000<br>
-                                <span class="futureValue">FV</span> = ?<br>
-                                <span class="interest">i</span> = 0.08<br>
-                                <span class="time">n</span> = 15</p>
+                                <span class="FV">FV</span> = ?<br>
+                                <span class="int">i</span> = 0.08<br>
+                                <span class="yrs">n</span> = 15</p>
 
                             <p>Plug the numbers into the equation:</p>
-                            <p class="math"><span class="futureValue">FV</span> = <span class="presentValue">PV</span>(1 + <span class="interest">i</span>)<span class="time"><sup>n</sup></span> <br>
+                            <p class="math"><span class="FV">FV</span> = <span class="presentValue">PV</span>(1 + <span class="int">i</span>)<span class="yrs"><sup>n</sup></span> <br>
 
-                                <span class="futureValue">FV</span> = <span class="presentValue">2000</span>(1 + <span class="interest">0.08</span>)<span class="time"><sup>15</sup></span><br>
+                                <span class="FV">FV</span> = <span class="presentValue">2000</span>(1 + <span class="int">0.08</span>)<span class="yrs"><sup>15</sup></span><br>
 
-                                <span class="futureValue">FV</span> = <span class="presentValue">2000</span>(1.08)<span class="time"><sup>15</sup></span> <br>
+                                <span class="FV">FV</span> = <span class="presentValue">2000</span>(1.08)<span class="yrs"><sup>15</sup></span> <br>
 
-                                <span class="futureValue">FV</span> = <span class="presentValue">2000</span>(3.172169)<br>
-                                <b><span class="futureValue">FV</span> = $6,344.34</b></p>
+                                <span class="FV">FV</span> = <span class="presentValue">2000</span>(3.172169)<br>
+                                <b><span class="FV">FV</span> = $6,344.34</b></p>
                         </div>
                     </div>
                 </div>
@@ -1736,7 +1736,7 @@
 
 
             <!-- exercise1-slide6 :  problem 4 -->
-            <div id="exercise1-slide6" class="slide exerciseSlide">
+            <div id="exercise1-slide6" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -1755,11 +1755,11 @@
                                     <form action="" class="indent">
                                         <label><span class="presentValue">PV</span> </label>
                                         <input id="pvalue-ex4" type="number" placeholder="0"><br>
-                                        <label><span class="futureValue">FV</span> </label>
+                                        <label><span class="FV">FV</span> </label>
                                         <input id="fvalue-ex4" type="number" placeholder="0"><br>
-                                        <label>&nbsp;&nbsp;&nbsp;<span class="interest">i </span></label>
+                                        <label>&nbsp;&nbsp;&nbsp;<span class="int">i </span></label>
                                         <input id="int-ex4" type="number" placeholder=".00"><br>
-                                        <label>&nbsp;&nbsp;<span class="time">n</span> </label>
+                                        <label>&nbsp;&nbsp;<span class="yrs">n</span> </label>
                                         <input id="yrs-ex4" type="number" placeholder="0"><br>
                                     </form>
                                     <button onclick="exercise_4()" type="button" class="btn calculateBtn">Submit</button>
@@ -1786,7 +1786,7 @@
 
 
             <!-- exercise1-slide7 :  answer problem 4 -->
-            <div id="exercise1-slide7" class="slide exerciseSlide">
+            <div id="exercise1-slide7" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -1799,9 +1799,9 @@
                             <h4>Solution</h4>
                             <p class="question">A zero coupon bond pays $1,000 at maturity in 20 years. If the appropriate required return for this level of risky asset is 12%, how much would I be willing to pay for this bond? (assume annual compounding/discounting)</p>
                             <p class="math"><span class="presentValue">PV</span> = ?<br>
-                                <span class="futureValue">FV</span> = 1000<br>
-                                <span class="interest">i</span> = 12% or 0.12<br>
-                                <span class="time">n</span> = 20</p>
+                                <span class="FV">FV</span> = 1000<br>
+                                <span class="int">i</span> = 12% or 0.12<br>
+                                <span class="yrs">n</span> = 20</p>
                         </div>
                     </div>
                 </div>
@@ -1820,7 +1820,7 @@
 
 
             <!-- exercise1-slide8 :   problem 5 -->
-            <div id="exercise1-slide8" class="slide exerciseSlide">
+            <div id="exercise1-slide8" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -1863,7 +1863,7 @@
 
 
             <!-- exercise1-slide9 :   answer problem 5 -->
-            <div id="exercise1-slide9" class="slide exerciseSlide">
+            <div id="exercise1-slide9" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -1877,17 +1877,17 @@
                             <p class="question">A zero coupon bond pays $1,000 at maturity in 20 years. If the appropriate required return for this level of risky asset is 12%, how much would I be willing to pay for this bond? (assume annual compounding/discounting)</p>
                             <p>Variables:</p>
                             <p class="math"><span class="presentValue">PV</span> = ?<br>
-                                <span class="futureValue">FV</span> = 1000<br>
-                                <span class="interest">i</span> = 0.12<br>
-                                <span class="time">n</span> = 20</p>
+                                <span class="FV">FV</span> = 1000<br>
+                                <span class="int">i</span> = 0.12<br>
+                                <span class="yrs">n</span> = 20</p>
 
                             <p>Plug the numbers into the equation:</p>
                             <p class="math">
-                                <span class="futureValue">FV</span> = <span class="presentValue">PV</span>(1 + <span class="interest">i</span>)<span class="time"><sup>n</sup></span><br>
-                                <span class="futureValue">1000</span class> = <span class="presentValue">PV</span>(1 + 0.12)<sup>20</sup><br>
-                                <span class="futureValue">1000</span> = <span class="presentValue">PV</span>(1.12)<sup>20</sup><br>
-                                <span class="futureValue">1000</span clas> = <span class="presentValue">PV</span>(9.64629309)<br>
-                                <span class="futureValue">1000</span clas> / 9.64629309 = <span class="presentValue">PV</span><br>
+                                <span class="FV">FV</span> = <span class="presentValue">PV</span>(1 + <span class="int">i</span>)<span class="yrs"><sup>n</sup></span><br>
+                                <span class="FV">1000</span class> = <span class="presentValue">PV</span>(1 + 0.12)<sup>20</sup><br>
+                                <span class="FV">1000</span> = <span class="presentValue">PV</span>(1.12)<sup>20</sup><br>
+                                <span class="FV">1000</span clas> = <span class="presentValue">PV</span>(9.64629309)<br>
+                                <span class="FV">1000</span clas> / 9.64629309 = <span class="presentValue">PV</span><br>
                                 <b><span class="presentValue">PV</span> = $103.67</b>
                             </p>
                         </div>
@@ -1911,7 +1911,7 @@
 
 
             <!-- exercise1-slide10 : problem 6  -->
-            <div id="exercise1-slide10" class="slide exerciseSlide">
+            <div id="exercise1-slide10" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -1930,11 +1930,11 @@
                                     <form action="" class="indent">
                                         <label><span class="presentValue">PV</span> </label>
                                         <input id="pvalue-ex6" type="number" placeholder="0"><br>
-                                        <label><span class="futureValue">FV</span> </label>
+                                        <label><span class="FV">FV</span> </label>
                                         <input id="fvalue-ex6" type="number" placeholder="0"><br>
-                                        <label>&nbsp;&nbsp;&nbsp;<span class="interest">i </span></label>
+                                        <label>&nbsp;&nbsp;&nbsp;<span class="int">i </span></label>
                                         <input id="int-ex6" type="number" placeholder=".00"><br>
-                                        <label>&nbsp;&nbsp;<span class="time">n</span> </label>
+                                        <label>&nbsp;&nbsp;<span class="yrs">n</span> </label>
                                         <input id="yrs-ex6" type="number" placeholder="0"><br>
                                     </form>
                                     <button onclick="exercise_6()" type="button" class="btn calculateBtn">Submit</button>
@@ -1961,7 +1961,7 @@
 
 
             <!-- exercise1-slide11 :   answer problem 6 -->
-            <div id="exercise1-slide11" class="slide exerciseSlide">
+            <div id="exercise1-slide11" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -1973,12 +1973,12 @@
                         <div class="content">
                             <h4>Solution</h4>
                             <p class="question">What interest rate (annual basis) is required for a deposit to double in 10 years?</p>
-                            The problem states that we want to double the investment, which means <span class="futureValue">FV</span> will be twice the amount of <span class="presentValue">PV</span>. You can use any numbers, as long as you maintain as the <span class="futureValue">FV</span> to <span class="presentValue">PV</span> ratio, which is 2:1. However, to cut out the need to simplify the math later, it’s best to start with <span class="futureValue">FV</span> = 2 and <span class="presentValue">PV</span> = 1.
+                            The problem states that we want to double the investment, which means <span class="FV">FV</span> will be twice the amount of <span class="presentValue">PV</span>. You can use any numbers, as long as you maintain as the <span class="FV">FV</span> to <span class="presentValue">PV</span> ratio, which is 2:1. However, to cut out the need to simplify the math later, it’s best to start with <span class="FV">FV</span> = 2 and <span class="presentValue">PV</span> = 1.
                             <p>Variables:</p>
                             <p class="math"><span class="presentValue">PV</span> = 1<br>
-                                <span class="futureValue">FV</span> = 2<br>
-                                <span class="interest">i</span> = ?<br>
-                                <span class="time">n</span> = 10
+                                <span class="FV">FV</span> = 2<br>
+                                <span class="int">i</span> = ?<br>
+                                <span class="yrs">n</span> = 10
                             </p>
 
                         </div>
@@ -2000,7 +2000,7 @@
 
 
             <!-- exercise1-slide12 : problem 7  -->
-            <div id="exercise1-slide12" class="slide exerciseSlide">
+            <div id="exercise1-slide12" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -2017,7 +2017,7 @@
                             <div class="container">
                                 <div class="">
                                     <form action="" class="indent">
-                                        <label><span class="interest">i </span></label>
+                                        <label><span class="int">i </span></label>
                                         <input id="int-ex7" type="number" placeholder="0.000"><br>
                                     </form>
                                     <button onclick="exercise_7()" type="button" class="btn calculateBtn">Submit</button>
@@ -2044,7 +2044,7 @@
 
 
             <!-- exercise1-slide13 :   answer problem 7 -->
-            <div id="exercise1-slide13" class="slide exerciseSlide">
+            <div id="exercise1-slide13" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -2056,12 +2056,12 @@
                         <div class="content">
                             <h4>Solution</h4>
                             <p>What interest rate (annual basis) is required for a deposit to double in 10 years?</p>
-                            <p>Remember to maintain the 2:1 ratio. It makes the math easy to start with <span class="futureValue">FV</span> = 2 and <span class="presentValue">PV</span> = 1.</p>
+                            <p>Remember to maintain the 2:1 ratio. It makes the math easy to start with <span class="FV">FV</span> = 2 and <span class="presentValue">PV</span> = 1.</p>
                             <p>Variables:</p>
                             <p class="math"><span class="presentValue">PV</span> = 1<br>
-                                <span class="futureValue">FV</span> = 2<br>
-                                <span class="interest">i</span> = ?<br>
-                                <span class="time">n</span> = 10
+                                <span class="FV">FV</span> = 2<br>
+                                <span class="int">i</span> = ?<br>
+                                <span class="yrs">n</span> = 10
                             </p>
                             <p>Plug the numbers into the equation:</p>
                             <p class="math">
@@ -2086,7 +2086,7 @@
 
 
             <!-- exercise1-slide14 : problem 8  -->
-            <div id="exercise1-slide14" class="slide exerciseSlide">
+            <div id="exercise1-slide14" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -2105,11 +2105,11 @@
                                     <form action="" class="indent">
                                         <label><span class="presentValue">PV</span> </label>
                                         <input id="pvalue-ex8" type="number" placeholder="0"><br>
-                                        <label><span class="futureValue">FV</span> </label>
+                                        <label><span class="FV">FV</span> </label>
                                         <input id="fvalue-ex8" type="number" placeholder="0"><br>
-                                        <label>&nbsp;&nbsp;&nbsp;<span class="interest">i </span></label>
+                                        <label>&nbsp;&nbsp;&nbsp;<span class="int">i </span></label>
                                         <input id="int-ex8" type="number" placeholder=".00"><br>
-                                        <label>&nbsp;&nbsp;<span class="time">n</span> </label>
+                                        <label>&nbsp;&nbsp;<span class="yrs">n</span> </label>
                                         <input id="yrs-ex8" type="number" placeholder="0"><br>
                                     </form>
                                     <button onclick="exercise_8()" type="button" class="btn calculateBtn">Submit</button>
@@ -2136,7 +2136,7 @@
 
 
             <!-- exercise1-slide15 :   answer problem 8 -->
-            <div id="exercise1-slide15" class="slide exerciseSlide">
+            <div id="exercise1-slide15" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -2148,12 +2148,12 @@
                         <div class="content">
                             <h4>Solution</h4>
                             <p>At a rate of 12% annual interest, how long would it take for an amount to double?</p>
-                            <p>LIke one of the previous exercises, the amount invested today will double. In other words, the <span class="futureValue">FV</span c> to <span class="presentValue">PV</span> ratio is 2:1. Use <span class="futureValue">FV</span> = 2 and <span class="presentValue">PV</span> = 1.</p>
+                            <p>LIke one of the previous exercises, the amount invested today will double. In other words, the <span class="FV">FV</span c> to <span class="presentValue">PV</span> ratio is 2:1. Use <span class="FV">FV</span> = 2 and <span class="presentValue">PV</span> = 1.</p>
                             <p class="math">
                                 <span class="presentValue">PV</span> = 1<br>
-                                <span class="futureValue">FV</span> = 2<br>
-                                <span class="interest">i</span> = 12% &xrarr; .12<br>
-                                <span class="time">n</span> = ?
+                                <span class="FV">FV</span> = 2<br>
+                                <span class="int">i</span> = 12% &xrarr; .12<br>
+                                <span class="yrs">n</span> = ?
                             </p>
                         </div>
                     </div>
@@ -2174,7 +2174,7 @@
 
 
             <!-- exercise1-slide16 : problem 9  -->
-            <div id="exercise1-slide16" class="slide exerciseSlide">
+            <div id="exercise1-slide16" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -2191,7 +2191,7 @@
                             <div class="container">
                                 <div class="">
                                     <form action="" class="indent">
-                                        <label><span class="time">n</span> </label>
+                                        <label><span class="yrs">n</span> </label>
                                         <input id="yrs-ex9" type="number" placeholder="0"><br>
                                     </form>
                                     <button onclick="exercise_9()" type="button" class="btn calculateBtn">Submit</button>
@@ -2219,7 +2219,7 @@
 
 
             <!-- exercise1-slide17 :   answer problem 9 -->
-            <div id="exercise1-slide17" class="slide exerciseSlide">
+            <div id="exercise1-slide17" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -2230,11 +2230,11 @@
                     <div class="col-12 col-sm-12">
                         <div class="content">
                             <h4>Solution</h4>
-                            <p>At a rate of 12% annual interest, how long would it take for an amount to double? Like one of the previous exercises, the amount invested today will double. In other words, the <span class="futureValue">FV</span> to <span class="presentValue">PV</span> ratio is 2:1. Use <span class="futureValue">FV</span> = 2 and <span class="presentValue">PV</span> = 1.</p>
+                            <p>At a rate of 12% annual interest, how long would it take for an amount to double? Like one of the previous exercises, the amount invested today will double. In other words, the <span class="FV">FV</span> to <span class="presentValue">PV</span> ratio is 2:1. Use <span class="FV">FV</span> = 2 and <span class="presentValue">PV</span> = 1.</p>
                             <p class="math"><span class="presentValue">PV</span> = 1<br>
-                                <span class="futureValue">FV</span> = 2<br>
-                                <span class="interest">i</span> = 12% &xrarr; .12<br>
-                                <span class="time">n</span> = ?</p>
+                                <span class="FV">FV</span> = 2<br>
+                                <span class="int">i</span> = 12% &xrarr; .12<br>
+                                <span class="yrs">n</span> = ?</p>
                             <p>Then plug the numbers into the equation.</p>
                             <p class="math"><img src="./images/tvm1_question4.png" class="img-fluid img-math" alt=""></p>
                         </div>
@@ -2256,7 +2256,7 @@
 
 
             <!-- exercise1-slide18 : problem 10  -->
-            <div id="exercise1-slide18" class="slide exerciseSlide">
+            <div id="exercise1-slide18" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -2273,7 +2273,7 @@
                             <div class="container">
                                 <div class="">
                                     <form action="" class="indent">
-                                        <label><span class="futureValue">Future Value Factor</span> </label>
+                                        <label><span class="FV">Future Value Factor</span> </label>
                                         <input id="fvalue-ex10" type="number" placeholder="0.0000"><br>
                                     </form>
                                     <button onclick="exercise_10()" type="button" class="btn calculateBtn">Submit</button>
@@ -2304,7 +2304,7 @@
 
 
             <!-- exercise1-slide19 :   answer problem 10 -->
-            <div id="exercise1-slide19" class="slide exerciseSlide">
+            <div id="exercise1-slide19" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -2340,7 +2340,7 @@
 
 
             <!-- exercise1-slide20 : problem 11  -->
-            <div id="exercise1-slide20" class="slide exerciseSlide">
+            <div id="exercise1-slide20" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -2353,13 +2353,13 @@
                             <!-- Exercises -->
 
                             <h4>Use the Future Value factor to calculate FV</h4>
-                            <p>Given the Future Value factor found in the previous question, what is the <span class="futureValue">FV</span>?</p>
+                            <p>Given the Future Value factor found in the previous question, what is the <span class="FV">FV</span>?</p>
 
                             <p class="question">How much will $3,000 in a certificate of deposit that pays 3% annual interest be worth in 4 years?</p>
                             <div class="container">
                                 <div class="">
                                     <form action="" class="indent">
-                                        <label><span class="futureValue">FV</span> </label>
+                                        <label><span class="FV">FV</span> </label>
                                         <input id="fvalue-ex11" type="number" placeholder="0"><br>
                                     </form>
                                     <button onclick="exercise_11()" type="button" class="btn calculateBtn">Submit</button>
@@ -2388,7 +2388,7 @@
 
 
             <!-- exercise1-slide21 :   answer problem 11 -->
-            <div id="exercise1-slide21" class="slide exerciseSlide">
+            <div id="exercise1-slide21" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -2401,12 +2401,12 @@
                             <h4>Solution</h4>
                             <p class="qeustion">How much will $3,000 in a certificate of deposit that pays 3% annual interest be worth in 4 years?</p>
                             <p class="math"><span class="presentValue">PV</span> = 3000<br>
-                                <span class="futureValue">FV</span> = ?<br>
+                                <span class="FV">FV</span> = ?<br>
                                 Future Value factor = 1.1255</p>
-                            <p>To find the <span class="futureValue">FV</span> using the Future Value factor, multiply the Present Value by the Future Value factor:</p>
-                            <p class="math"><span class="futureValue">FV</span> = <span class="presentValue">PV</span>(Future Value Factor)<br>
-                                <span class="futureValue">FV</span> = <span class="presentValue">3000</span>(1.1255)<br>
-                                <b><span class="futureValue">FV</span> = $3,376.50</b></p>
+                            <p>To find the <span class="FV">FV</span> using the Future Value factor, multiply the Present Value by the Future Value factor:</p>
+                            <p class="math"><span class="FV">FV</span> = <span class="presentValue">PV</span>(Future Value Factor)<br>
+                                <span class="FV">FV</span> = <span class="presentValue">3000</span>(1.1255)<br>
+                                <b><span class="FV">FV</span> = $3,376.50</b></p>
                         </div>
                     </div>
                 </div>
@@ -2428,7 +2428,7 @@
 
 
             <!-- exercise1-slide22 : problem 12  -->
-            <div id="exercise1-slide22" class="slide exerciseSlide">
+            <div id="exercise1-slide22" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -2447,11 +2447,11 @@
                                     <form action="" class="indent">
                                         <label><span class="presentValue">PV</span> </label>
                                         <input id="pvalue-ex12" type="number" placeholder="0"><br>
-                                        <label><span class="futureValue">FV</span> </label>
+                                        <label><span class="FV">FV</span> </label>
                                         <input id="fvalue-ex12" type="number" placeholder="0"><br>
-                                        <label>&nbsp;&nbsp;&nbsp;<span class="interest">i </span></label>
+                                        <label>&nbsp;&nbsp;&nbsp;<span class="int">i </span></label>
                                         <input id="int-ex12" type="number" placeholder=".00"><br>
-                                        <label>&nbsp;&nbsp;<span class="time">n</span> </label>
+                                        <label>&nbsp;&nbsp;<span class="yrs">n</span> </label>
                                         <input id="yrs-ex12" type="number" placeholder="0"><br>
                                     </form>
                                     <button onclick="exercise_12()" type="button" class="btn calculateBtn">Submit</button>
@@ -2479,7 +2479,7 @@
 
 
             <!-- exercise1-slide23 :   answer problem 12 -->
-            <div id="exercise1-slide23" class="slide exerciseSlide">
+            <div id="exercise1-slide23" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -2493,9 +2493,9 @@
                             <p class="question">If I know that I want to give my child $20,000 for college on his 18th birthday, how much will I need to invest at 7% when the child is born?</p>
                             <div class="math">
                                 <span class="presentValue">PV</span> = ?<br>
-                                <span class="futureValue">FV</span> = 20000<br>
-                                <span class="interest">i</span> = 7% &xrarr; 0.07<br>
-                                <span class="time">n</span> = 18
+                                <span class="FV">FV</span> = 20000<br>
+                                <span class="int">i</span> = 7% &xrarr; 0.07<br>
+                                <span class="yrs">n</span> = 18
                             </div>
                         </div>
                     </div>
@@ -2516,7 +2516,7 @@
 
 
             <!-- exercise1-slide24 : problem 13  -->
-            <div id="exercise1-slide24" class="slide exerciseSlide">
+            <div id="exercise1-slide24" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -2561,7 +2561,7 @@
 
 
             <!-- exercise1-slide25 :   answer problem 13 -->
-            <div id="exercise1-slide25" class="slide exerciseSlide">
+            <div id="exercise1-slide25" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -2576,9 +2576,9 @@
                             <p>Variables:</p>
                             <p class="math">
                                 <span class="presentValue">PV</span> = ?<br>
-                                <span class="futureValue">FV</span> = 20000<br>
-                                <span class="interest">i</span> = 7% &xrarr; 0.07<br>
-                                <span class="time">n</span> = 18</p>
+                                <span class="FV">FV</span> = 20000<br>
+                                <span class="int">i</span> = 7% &xrarr; 0.07<br>
+                                <span class="yrs">n</span> = 18</p>
                             <p>Then plug the numbers into the equation:</p>
                             <div class="math">
                                 <img src="./images/tvm1_question12.png" class="img-fluid img-math" alt="">
@@ -2602,7 +2602,7 @@
 
 
             <!-- exercise1-slide26 : problem 14  -->
-            <div id="exercise1-slide26" class="slide exerciseSlide">
+            <div id="exercise1-slide26" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -2621,11 +2621,11 @@
                                     <form action="" class="indent">
                                         <label><span class="presentValue">PV</span> </label>
                                         <input id="pvalue-ex14" type="number" placeholder="0"><br>
-                                        <label><span class="futureValue">FV</span> </label>
+                                        <label><span class="FV">FV</span> </label>
                                         <input id="fvalue-ex14" type="number" placeholder="0"><br>
-                                        <label>&nbsp;&nbsp;&nbsp;<span class="interest">i </span></label>
+                                        <label>&nbsp;&nbsp;&nbsp;<span class="int">i </span></label>
                                         <input id="int-ex14" type="number" placeholder=".00"><br>
-                                        <label>&nbsp;&nbsp;<span class="time">n</span> </label>
+                                        <label>&nbsp;&nbsp;<span class="yrs">n</span> </label>
                                         <input id="yrs-ex14" type="number" placeholder="0"><br>
                                     </form>
                                     <button onclick="exercise_14()" type="button" class="btn calculateBtn">Submit</button>
@@ -2651,7 +2651,7 @@
 
 
             <!-- exercise1-slide27 :   answer problem 14 -->
-            <div id="exercise1-slide27" class="slide exerciseSlide">
+            <div id="exercise1-slide27" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -2665,9 +2665,9 @@
                             <p class="question">What would you expect to pay today for a bond that’s face value is $10,000, matures in 10 years, and pays returns 4% annual interest?</p>
                             <div class="math">
                                 <span class="presentValue">PV</span> = ?<br>
-                                <span class="futureValue">FV</span> = 10000<br>
-                                <span class="interest">i</span> = 4% &xrarr; .04<br>
-                                <span class="time">n</span> = 10
+                                <span class="FV">FV</span> = 10000<br>
+                                <span class="int">i</span> = 4% &xrarr; .04<br>
+                                <span class="yrs">n</span> = 10
                             </div>
                         </div>
                     </div>
@@ -2689,7 +2689,7 @@
 
 
             <!-- exercise1-slide28 : problem 15  -->
-            <div id="exercise1-slide28" class="slide exerciseSlide">
+            <div id="exercise1-slide28" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -2735,7 +2735,7 @@
 
 
             <!-- exercise1-slide29 :   answer problem 15 -->
-            <div id="exercise1-slide29" class="slide exerciseSlide">
+            <div id="exercise1-slide29" class="slide exercises">
                 <div class="row slideTitle">
                     <div class="col-12 col-sm-12">
                         <h2 class="primaryTitle">TVM: The Basics</h2>
@@ -2750,9 +2750,9 @@
                             <p>Variables:</p>
                             <div class="math">
                                 <span class="presentValue">PV</span> = ?<br>
-                                <span class="futureValue">FV</span> = 10000<br>
-                                <span class="interest">i</span> = 4% &xrarr; 0.04<br>
-                                <span class="time">n</span> = 10</div>
+                                <span class="FV">FV</span> = 10000<br>
+                                <span class="int">i</span> = 4% &xrarr; 0.04<br>
+                                <span class="yrs">n</span> = 10</div>
                             <p>Then plug the numbers into the equation:</p>
                             <div class="math">
                                 <img src="./images/tvm1_question14.png" class="img-fluid img-math" alt="">

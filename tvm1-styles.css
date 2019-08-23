@@ -18,7 +18,7 @@ body {
         position: relative;
         margin-bottom: 10px;
     }
-    .exerciseSlide {
+    .exercises {
         background-color: #f1f7ff;
         width: 100%;
         position: relative;
@@ -112,11 +112,11 @@ body {
     .help {
         background-color: #CC444B;
     }
-    .futureValue {
+    .FV {
         color:  #80a429;
         font-weight: 800;
     }
-    .time {
+     .yrs {
         color: #613fa5;
         font-weight: 800;
     }
@@ -124,7 +124,7 @@ body {
         color: #fd7f39; 
         font-weight: 800;
     }
-    .interest {
+    .int {
         color: #e653eb;
         font-weight: 800;
     }
@@ -153,21 +153,9 @@ body {
     .calculateBtn:active, .calculateBtn:focus {
         color: white;
     }
-    button.presentValue {
-        background-color: #FA6400;
-        color: #fff;
-        font-weight: 400;
-    }
-    button.time {
-        background-color: #613fa5;
-        color: #fff;
-        font-weight: 400;
-    }
-    button.interest {
-        background-color: #e653eb;
-        color: #fff;
-        font-weight: 400;
-    }
+    
+    
+    
     input[type=text], input[type=password], input[type=email], input[type=number], textarea, select {
         width: 70%;
         padding: 10px 10px;
