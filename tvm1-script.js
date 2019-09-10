@@ -1,19 +1,14 @@
 $(document).ready(function () {
 
-  var hash = window.location.hash; // would be "#div1" anchor tag info
-  if (hash != "") {
-    var id = hash.substr(1); // get rid of #
-    document.getElementById(id).innerHTML;
-  }
   /** continue/back BUTTON FUNCTIONALITY  **/
 
   /** HIDE ALL SLIDES EXCEPT CURRENT, starts with first slide **/
 
-  $('.allSlides .slide').each(function (e) {
-    if (e != 0) {
-      $(this).hide();
-    }
-  });
+  // $('.allSlides .slide').each(function (e) {
+  //   if (e != 0) {
+  //     $(this).hide();
+  //   }
+  // });
 
   // for each click on the continue button, hide the current slide and show the next one
   $('.continue').click(function () {

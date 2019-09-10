@@ -14,15 +14,9 @@ body {
     }
     .helpSlide {
         background-color: #fdf4f5;
-        width: 100%;
-        position: relative;
-        margin-bottom: 10px;
     }
-    .exercises {
+    .exerciseSlide {
         background-color: #f1f7ff;
-        width: 100%;
-        position: relative;
-        margin-bottom: 10px;
     }
     .slideTitle {
         background-color: #466365;
@@ -46,9 +40,10 @@ body {
     }  
     .content {
         margin: 20px;
+        min-height: 400px;
     }
-    .space {
-        margin: 40px;
+    .bottomSpace {
+        margin-bottom: 40px;
     }
     .pageNumber {
         margin: 20px;
@@ -61,7 +56,6 @@ body {
         color: #CC444B;
         font-size: .85em;
     }
-    
     button {
         text-decoration: none;
         cursor: pointer;
@@ -132,7 +126,6 @@ body {
         color: #292929;
         font-style: italic;
         font-size: 1.08em;
-        margin-left: 25px;
     }
     .answer {
         font-size: 1.08em;
@@ -152,10 +145,7 @@ body {
     }
     .calculateBtn:active, .calculateBtn:focus {
         color: white;
-    }
-    
-    
-    
+    }    
     input[type=text], input[type=password], input[type=email], input[type=number], textarea, select {
         width: 70%;
         padding: 10px 10px;
