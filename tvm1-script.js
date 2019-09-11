@@ -4,25 +4,20 @@ $(document).ready(function () {
 
   /** HIDE ALL SLIDES EXCEPT CURRENT, starts with first slide **/
 
-  // $('.allSlides .slide').each(function (e) {
-  //   if (e != 0) {
-  //     $(this).hide();
-  //   }
-  // });
-
+  $('.allSlides .slide').each(function (e) {
+    if (e != 0) {
+      $(this).hide();
+    }
+  });
   
   // for each click on the continue button, hide the current slide and show the next one
   $('.continue').click(function () {
     if ($('.allSlides .slide:visible').next().length != 0) {
-        
       $('.allSlides .slide:visible')
         .next()
         .show()
         .prev()
-        .hide()
-      $('div.pageNumber').text(function (index) {
-        return (index + 1);
-      });
+        .hide();
     } else {
       $('.allSlides .slide:visible').hide();
       $('.allSlides .slide:first').show(); //wraps around and shows first slide again
@@ -33,14 +28,12 @@ $(document).ready(function () {
   // for each click on the back button, hide the current slide and show the previous one
   $('.back').click(function () {
     if ($('.allSlides .slide:visible').prev().length != 0) {
+      
       $('.allSlides .slide:visible')
         .prev()
         .show()
         .next()
-        .hide()
-      $('div.pageNumber').text(function (index) {
-        return (index - 1);
-      });
+        .hide();
     } else {
       $('.allSlides .slide:visible').hide();
       $('.allSlides .slide:last').show();
@@ -58,10 +51,7 @@ $(document).ready(function () {
         .nextUntil('div.stop')
         .show()
         .prev()
-        .hide()
-        $('div.pageNumber').text(function (index) {
-          return (index + 1);
-        });
+        .hide();
       console.log('skip to stop triggered');
     } else {
       $('.allSlides .slide:visible').hide();
@@ -88,6 +78,20 @@ $(document).ready(function () {
     }
     return false;
   });
+
+  $('.pgUp').click(function () {
+    $('.pageNumber').html(function(i, val) {
+      return val * 1 + 1;
+    });
+  });
+
+  $('.pgDown').click(function () {
+    $('.pageNumber').html(function (i, val) {
+      return val * 1 - 1;
+    });
+  });
+
+
 
 });
 
