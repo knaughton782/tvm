@@ -10,14 +10,19 @@ $(document).ready(function () {
   //   }
   // });
 
+  
   // for each click on the continue button, hide the current slide and show the next one
   $('.continue').click(function () {
     if ($('.allSlides .slide:visible').next().length != 0) {
+        
       $('.allSlides .slide:visible')
         .next()
         .show()
         .prev()
-        .hide();
+        .hide()
+      $('div.pageNumber').text(function (index) {
+        return (index + 1);
+      });
     } else {
       $('.allSlides .slide:visible').hide();
       $('.allSlides .slide:first').show(); //wraps around and shows first slide again
@@ -32,7 +37,10 @@ $(document).ready(function () {
         .prev()
         .show()
         .next()
-        .hide();
+        .hide()
+      $('div.pageNumber').text(function (index) {
+        return (index - 1);
+      });
     } else {
       $('.allSlides .slide:visible').hide();
       $('.allSlides .slide:last').show();
@@ -50,7 +58,10 @@ $(document).ready(function () {
         .nextUntil('div.stop')
         .show()
         .prev()
-        .hide();
+        .hide()
+        $('div.pageNumber').text(function (index) {
+          return (index + 1);
+        });
       console.log('skip to stop triggered');
     } else {
       $('.allSlides .slide:visible').hide();
@@ -79,6 +90,7 @@ $(document).ready(function () {
   });
 
 });
+
 
 
 // future value calculation is FV = PV(1 + i)^time
